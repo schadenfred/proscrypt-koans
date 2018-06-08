@@ -29,4 +29,18 @@ Things she will need:
 
  ## Step 1: Terminal
 
- Open your terminal. If you do not know what a terminal is, go to [duckduckgo.com](http://duckduckgo.com/) and type "How do I open my OPERATING SYSTEM terminal," replacing the capitalized letters in this sentence's immediately preceding clause with the name of your current machine's OS. When you've opened your terminal, you should see something like [this](https://en.wikipedia.org/wiki/Bash_)
+ Open your terminal. If you do not know what a terminal is, go to [duckduckgo.com](http://duckduckgo.com/) and type "How do I open my OPERATING SYSTEM terminal," replacing the capitalized letters in this sentence's immediately preceding clause with the name of your current machine's OS. When you've opened your terminal, and see something like [the image on the right side of this pae](https://en.wikipedia.org/wiki/Bash_), move on.
+
+ ## Step 2: Git
+
+In your terminal, type:
+
+`$ git --version`
+
+If typing the above doesn't return something like:
+
+`
+git version 2.17.0
+`
+
+then please follow [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Otherwise, move on.
