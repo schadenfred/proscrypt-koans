@@ -8,7 +8,7 @@ Have you ever wondered if it might be fun to build something using computers and
 
 ### Terminal
 
-These koans will require you to use your terminal rather than some kind of Graphical User Interface you may be used to. Please open your terminal now or, if you do not know what a terminal is or how to open it, go to [duckduckgo.com](http://duckduckgo.com/) and type "How do I open my OPERATING SYSTEM terminal," replacing the capitalized letters in this sentence's immediately preceding clause with the name of your current machine's OS.
+These koans will require you to become familiar with your terminal if you are not already. Please open your terminal now or go to [duckduckgo.com](http://duckduckgo.com/) and type "How do I open my OPERATING SYSTEM terminal," replacing the capitalized letters with the name of your current machine's OS.
 
 When you've opened your terminal, you should see something like [the image on the right side of this pae](https://en.wikipedia.org/wiki/Bash_).
 
