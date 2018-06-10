@@ -29,6 +29,3 @@ git version 2.17.0
 If it does not, please follow [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 Git is a version control system developers use to track the history of changes to their files and, in the event we've screwed something up, go back to the last working copy. The site you're reading these koans on uses Git under the hood as well. Each new chapter in our koans is also a branch in our code. Using this webpage, please select the branch for "Chapter 1" and read on.  
-
-
-Once you have git installed, please us
