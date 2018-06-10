@@ -2,24 +2,33 @@
 
 ## Introduction
 
-The goal of ProScrypt Koans is to help you decide if you like building things using computers and software. You do not need to be good at math, or good at science, or even to be particularly smart. No matter how smart you are, there will always be someone smarter than you and even that person will be made to feel stupid by a computer from time to time. Speaking of computers, you do not need a fancy one, almost any computer with an Internet connection will do. You do not need good grades or even a credit card. You should not need help from anyone, though if you do it is the writer's fault, not yours. All you need is a good attitude, curiosity, stubbornness, attention to detail, and a desire to serve others.
+Have you ever wondered if it might be fun to build something using computers and software that makes life better? The goal of ProScrypt Koans is to help you find out. You won't need to be good at math or science or computers, or to have gotten good grades, or even to be particularly smart. There will always be someone smarter than you, and that person has probably been made to feel stupid by a computer five times today.
 
-## Step 1: Terminal
+Speaking of computers, you will not need a fancy new one, almost any with an Internet connection will do. Nor will you need a credit card. All you will need is a good attitude, curiosity, stubbornness, attention to detail, and a desire to serve others. You should not need help from anyone else -- though if you do need help, that is the writer's fault and not yours.
 
-Open your terminal. If you do not know what a terminal is, go to [duckduckgo.com](http://duckduckgo.com/) and type "How do I open my OPERATING SYSTEM terminal," replacing the capitalized letters in this sentence's immediately preceding clause with the name of your current machine's OS. When you've opened your terminal, and see something like [the image on the right side of this pae](https://en.wikipedia.org/wiki/Bash_), move on.
+## Mise en Place
 
-## Step 2: Git
+### Terminal
 
-In your terminal, type:
+These koans will require you to use your terminal rather than some kind of Graphical User Interface you may be used to. Please open your terminal now or, if you do not know what a terminal is or how to open it, go to [duckduckgo.com](http://duckduckgo.com/) and type "How do I open my OPERATING SYSTEM terminal," replacing the capitalized letters in this sentence's immediately preceding clause with the name of your current machine's OS.
+
+When you've opened your terminal, you should see something like [the image on the right side of this pae](https://en.wikipedia.org/wiki/Bash_).
+
+## Git
+
+In your terminal, please type:
 
 `$ git --version`
 
-If typing the above doesn't return something like:
+Your console should return something like:
 
 `
 git version 2.17.0
 `
 
-then please follow [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Otherwise, move on.
+If it does not, please follow [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-Step 3: Set up shop.
+Git is a version control system developers use to track the history of changes to their files and, in the event we've screwed something up, go back to the last working copy. The site you're reading these koans on uses Git under the hood as well. Each new chapter in our koans is also a branch in our code. Using this webpage, please select the branch for "Chapter 1" and read on.  
+
+
+Once you have git installed, please us
