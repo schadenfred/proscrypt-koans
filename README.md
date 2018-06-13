@@ -26,4 +26,4 @@ I'm not a Zen Buddhist monk and don't want you to abandon reason, but I dislike 
 
 ### Your first koan
 
-The site you're reading these koans on is all about managing different versions or branches of a codebase -- or any group of files. These koans are organized into different chapters, which also correspond to different versions of our codebase. Please take some time to click around on this site to get a feel for it, indulging your curiosity. When you've figured out how to change the "branch" of this codebase to "chapter-1", and are ready, please do so.  
+The site you're reading these koans on is all about managing different versions or branches of a codebase -- or any group of files. These koans are organized into different chapters, which also correspond to different versions of our codebase. Please take some time to click around on this site to get a feel for it, indulging your curiosity. When you've figured out how to change the "branch" of this codebase to "chapter-1", and are otherwise ready, please do so.  
