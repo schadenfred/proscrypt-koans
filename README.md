@@ -1,8 +1,8 @@
-Congratulations! You've solved your first koan and unlocked more koans. Drink that in for second before I bastardize a French culinary phrase.
+Congratulations, you've solved your first koan! Drink that in for second before I bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, cigarettes and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Mise-en-place will change depending on the menu the cook is responsible for reproducing, just as your tools will change depending on the problems you're trying to solve. There's no one mise-en-place to rule them all, but this tutorial will present a mise-en-place you can look at and reflect on before deciding on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Mise-en-place will change depending on the menu the cook is responsible for reproducing, just as your tools will change depending on the problems you're trying to solve. There's no one mise-en-place to rule them all, but this tutorial will present a mise-en-place you can look at and reflect on before deciding on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -10,30 +10,52 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are. We'll go into each in enough detail later for you to be svelte. But creating your mise-en-place is one of the most difficult things you have to do as a developer, and this chapter is the most difficult set of koans in this tutorial. If you can get through these koans, the rest of it will feel like teaching your dog how to sit and fetch after finally getting him potty trained. 
+Don't worry if you don't know what these things are. We'll go into each in enough detail later for you to be svelte. For now just understand that creating your mise-en-place is one of the most difficult things you have to do as a developer. This chapter is the most difficult set of koans in this tutorial. If you can get through, the rest of will feel like teaching your dog how to sit and fetch after finally getting him potty trained.
 
 ## koan 1.1: Terminal or Console
 
-These koans require you to use your terminal.
+These koans require you to use your terminal. If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the pornography viewer, and what jokes about how dumb white people are to Chris Rock.   
 
 When you've opened your terminal and see something like [the image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
-[reflect for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
+[reflect on terminal for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
 
-[reflect for mac](https://duckduckgo.com/?q=how+do+open+terminal+on+mac&t=h_&ia=web)
+[reflect on terminal for mac](https://duckduckgo.com/?q=how+do+open+terminal+on+mac&t=h_&ia=web)
 
-[reflect for linux](https://duckduckgo.com/?q=how+do+open+terminal+on+linux&t=h_&ia=web)
+[reflect on terminal for linux](https://duckduckgo.com/?q=how+do+open+terminal+on+linux&t=h_&ia=web)
 
 
 ## koan 1.2: Work Directories
 
-Create a directory in your home folder called "work." Then change into that directory and from inside it, create another directory called "training" and change into it.
+Here's what my terminal prompt looks like:
 
-When you can type this command without the terminal barfing, you're ready to move on:
+`schadenfred@summerseve:~$`
+
+It doesn't matter what yours looks like. However when I ask that you type in a command at the command line, the prompt will be abbreviated like this:
+
+`$ <command>`
+
+Let's go to your home directory. To do so, enter 'cd' at your terminal prompt like so:
+
+`$ cd`
+
+This puts you into your home folder on most machines. I hope. Now let's create a new directory to work in called, perhaps unsurprisingly, 'work' like so:
+
+`$ mkdir work`
+
+To confirm that the above command created a directory in your home folder type 'ls' like so:
+
+`$ ls`
+
+Now let's change into the work directory using the 'cd' command like so:
+
+`$ cd work`
+
+Now from inside this directory, create a new directory called 'training' and change into it. When you can type this command without the terminal barfing, you're ready to move on:
 
 `$ cd ~/work/training`
 
-[reflect](http://mally.stanford.edu/~sr/computing/basic-unix.html).  
+[reflect on how to create directories and change into them](http://mally.stanford.edu/~sr/computing/basic-unix.html).  
 
 ## koan 1.3: Git
 
@@ -47,7 +69,7 @@ If something like the following is returned:
 
 ...then you're ready to move on.
 
-[reflect](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+[reflect on how to install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## koan 1.4: Create a GitHub Account
 
@@ -61,7 +83,7 @@ When you can navigate with your browser to:
 
 ## koan 1.5: Fork these koans
 
-Log into your GitHub account and fork these koans.
+For the purpose of these koans, you may think of forking as the same thing as copying it. Log into your GitHub account and fork this repo into your account.
 
 When you can navigate to:
 
@@ -69,7 +91,8 @@ When you can navigate to:
 
 ...you're ready to move on.
 
-[reflect](https://help.github.com/articles/fork-a-repo/)
+
+[reflect on forking](https://help.github.com/articles/fork-a-repo/)
 
 ## koan 1.6: Clone your Fork
 
