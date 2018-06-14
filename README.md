@@ -16,7 +16,7 @@ We'll go into each of these in more detail later.
 
 These koans will require you to become familiar with your terminal.
 
-When you've opened your terminal and see something like [the image](https://en.wikipedia.org/wiki/Bash_) on the right side of this pate, you're ready to move on.
+When you've opened your terminal and see something like [the image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
 [reflect for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
 
@@ -55,7 +55,7 @@ Create an account on GiHub.
 
 When you can navigate with your browser to:
 
-'https://github.com/YOUR-USERNAME'
+`https://github.com/YOUR-USERNAME`
 
 ...where YOUR-USERNAME is the name you've chosen to sign up with, you're ready to move on.
 
@@ -94,7 +94,9 @@ and it returns something like:
 ...you're ready to move on.
 
 [reflect mac](https://docs.docker.com/docker-for-mac/install/)
+
 [reflect windows](https://docs.docker.com/docker-for-windows/install/)
+
 [reflect linux](https://docs.docker.com/engine/installation/linux/)
 
 ## koan 1.7: Docker Compose
