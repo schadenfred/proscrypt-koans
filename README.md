@@ -2,7 +2,7 @@ Congratulations! You've solved your first koan and unlocked more koans. Drink th
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes and cigarettes arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Mise en place will change depending on the menu the cook is responsible for reproducing, just as your tools will change depending on the problems you're trying to solve and the things you are trying to build. There's no one mise-en-place. But this tutorial will present one you can look at and reflect on before deciding on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes and cigarettes arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Mise en place will change depending on the menu the cook is responsible for reproducing, just as your tools will change depending on the problems you're trying to solve and the things you are trying to build. There's no one mise-en-place but this tutorial will present a mise-en-place you can look at and reflect on before deciding on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -16,7 +16,7 @@ We'll go into each of these in more detail later.
 
 These koans will require you to become familiar with your terminal.
 
-When you've opened your terminal and see something like [the image on the right side of this pae](https://en.wikipedia.org/wiki/Bash_), you're ready to move on.
+When you've opened your terminal and see something like [the image](https://en.wikipedia.org/wiki/Bash_) on the right side of this pate, you're ready to move on.
 
 [reflect for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
 
@@ -83,7 +83,7 @@ Clone these koans onto your machine from your fork. When you can type:
 
 ## koan 1.7: Docker
 
-Developers work with other developers, and thus their code must run on other machines. One way to make this easier is to standardize the operating system and environment our application runs in using a set of tools called Docker. Please install Docker now. When you can type:
+Developers work with other developers, and thus their code must run on other machines. One way to make this easier is to standardize the operating system and environment our application runs in using a set of tools called Docker. When you can type:
 
 `$ docker --version`
 
@@ -113,7 +113,7 @@ and it returns something like:
 
 ## koan 1.8: Text Editor
 
-If you have a text editor or IDE installed and that you prefer to use, skip this step. Otherwise, install Atom. When you can type:
+If you have a text editor or IDE installed and that you prefer to use, namaste. Otherwise, install Atom. When you can type:
 
 `$ atom . &`
 
