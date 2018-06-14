@@ -2,7 +2,7 @@ Congratulations! You've solved your first koan and unlocked more koans. Drink th
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes and cigarettes arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Mise en place will change depending on the menu the cook is responsible for reproducing, just as your tools will change depending on the problems you're trying to solve and the things you are trying to build. There's no one mise-en-place but this tutorial will present a mise-en-place you can look at and reflect on before deciding on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, cigarettes and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Mise-en-place will change depending on the menu the cook is responsible for reproducing, just as your tools will change depending on the problems you're trying to solve. There's no one mise-en-place to rule them all, but this tutorial will present a mise-en-place you can look at and reflect on before deciding on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -10,11 +10,11 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-We'll go into each of these in more detail later.
+Don't worry if you don't know what these things are. We'll go into each in enough detail later for you to be svelte. But creating your mise-en-place is one of the most difficult things you have to do as a developer, and this chapter is the most difficult set of koans in this tutorial. If you can get through these koans, the rest of it will feel like teaching your dog how to sit and fetch after finally getting him potty trained. 
 
 ## koan 1.1: Terminal or Console
 
-These koans will require you to become familiar with your terminal.
+These koans require you to use your terminal.
 
 When you've opened your terminal and see something like [the image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
