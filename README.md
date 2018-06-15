@@ -1,8 +1,10 @@
-Congratulations, you've solved your first koan! Drink that in for second before we bastardize a French culinary phrase.
+Congratulations, you've solved your first koan, which if you think about it is kind of like solving a koan about solving koans, which if I think about it is another way of saying that you've been introduced to the concept of recursion in programming. We'll explore recursion in more depth later but for now you can think of recursion as Jack Dorsey fixing his hair inside a house of mirrors. Speaking of mirrors, or at least of reflection, each koan will have a link at the end of it you can use to "reflect" on it if the answer isn't immediately clear.
+
+Now I'm going to bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. Just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise-en-place to rule them all, but this tutorial will present a mise-en-place you can start with and reflect on before settling on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine; and just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but this tutorial will present one you can start with before settling on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -10,19 +12,19 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are. We'll go into each in enough detail later for you to be svelte. For now understand that setting up your environment is one of the most difficult things you have to do, and if I could have you do this chapter later after building your confidence first, I would.  
+Don't worry if you don't know what these things are. We'll go into each in enough detail later for you to be svelte. For now understand that setting up your environment is one of the most difficult things you will have to do, and if I could have you do this chapter later after building your confidence first, I would. But I can't. So lock and load.
 
 ## koan 1.1: Terminal or Console
 
 If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the pornography viewer, and what jokes about how dumb white people are to Chris Rock.   
 
-[reflect on terminal for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
+When you've opened your terminal and see something like the [image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
-[reflect on terminal for mac](https://duckduckgo.com/?q=how+do+open+terminal+on+mac&t=h_&ia=web)
+[Reflect for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
 
-[reflect on terminal for linux](https://duckduckgo.com/?q=how+do+open+terminal+on+linux&t=h_&ia=web)
+[Reflect for mac](https://duckduckgo.com/?q=how+do+open+terminal+on+mac&t=h_&ia=web)
 
-When you've opened your terminal and see something like [the image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
+[Reflect for linux](https://duckduckgo.com/?q=how+do+open+terminal+on+linux&t=h_&ia=web)
 
 
 ## koan 1.2: Work Directories
@@ -31,11 +33,11 @@ Here's what my terminal prompt looks like:
 
 `schadenfred@summerseve:~$`
 
-It doesn't matter what your terminal prompt looks like but when I ask that you type in a command at the prompt, I'll abbreviate it to the '$' character, followed by the command like so:
+It doesn't matter what your terminal prompt looks like but when I ask that you type in a command at the prompt I'll abbreviate it to the '$' character followed by the command like so:
 
 `$ <command>`
 
-Let's go to your home directory. To do so, enter 'cd' at your prompt like so:
+Now let's go to your home directory. To do so, enter 'cd' at your prompt like so:
 
 `$ cd`
 
@@ -51,11 +53,11 @@ Now let's change into the work directory using the 'cd' command like so:
 
 `$ cd work`
 
-Now from inside this directory, create a new directory called 'training' and change into it. When you can type this command without the terminal barfing, you're ready to move on:
+Now from inside this directory, let's create a new directory called 'training,' and change into it. When you can type this command without the terminal barfing, you're ready to move on:
 
 `$ cd ~/work/training`
 
-[reflect on how to create directories and change into them](http://mally.stanford.edu/~sr/computing/basic-unix.html).  
+[Reflect](http://mally.stanford.edu/~sr/computing/basic-unix.html).  
 
 ## koan 1.3: Git
 
@@ -69,7 +71,7 @@ If something like the following is returned:
 
 ...then you're ready to move on.
 
-[reflect on how to install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+[Reflect on how to install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## koan 1.4: Create a GitHub Account
 
@@ -89,7 +91,7 @@ You may think of forking a repository as making a copy of it and pretending it's
 
 ...then you're ready to move on.
 
-[reflect on forking](https://help.github.com/articles/fork-a-repo/)
+[Reflect on forking](https://help.github.com/articles/fork-a-repo/)
 
 ## koan 1.6: Clone your Fork
 
@@ -113,11 +115,11 @@ and it returns something like:
 
 ...you're ready to move on.
 
-[reflect mac](https://docs.docker.com/docker-for-mac/install/)
+[Reflect mac](https://docs.docker.com/docker-for-mac/install/)
 
-[reflect windows](https://docs.docker.com/docker-for-windows/install/)
+[Reflect windows](https://docs.docker.com/docker-for-windows/install/)
 
-[reflect linux](https://docs.docker.com/engine/installation/linux/)
+[Reflect linux](https://docs.docker.com/engine/installation/linux/)
 
 ## koan 1.7: Docker Compose
 
@@ -145,4 +147,4 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 
 ## What you've learned
 
-As noted above, this is the hardest chapter.
+I'm told that the hardest part of being a lesbian heroin addict is getting over your fear of needles and tourniquets and coming out to your family. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy kale-fueled conversations about your feelings with Ashton Kutcher about code. You should be proud of yourself. I know I'm proud of you.  
