@@ -33,7 +33,7 @@ Here's what my terminal prompt looks like:
 
 `schadenfred@summerseve:~$`
 
-It doesn't matter what your terminal prompt looks like but when I ask that you type in a command at the prompt I'll abbreviate it to the '$' character followed by the command like so:
+It doesn't matter what your terminal prompt looks like but when I ask that you enter a command at the prompt I'll abbreviate it to the '$' character, followed by the command like so:
 
 `$ <command>`
 
@@ -53,7 +53,7 @@ Now let's change into the work directory using the 'cd' command like so:
 
 `$ cd work`
 
-Now from inside this directory, let's create a new directory called 'training,' and change into it. When you can type this command without the terminal barfing, you're ready to move on:
+Now from inside this directory, let's create a new directory called 'training,' and change into it. When you can do this command without the terminal barfing, you're ready to move on:
 
 `$ cd ~/work/training`
 
@@ -95,7 +95,7 @@ You may think of forking a repository as making a copy of it and pretending it's
 
 ## koan 1.6: Clone your Fork
 
-Let's get a copy of your fork of this repository onto your machine using the 'clone' command. When you can type:
+Let's get a copy of your fork of this repository onto your machine using the 'clone' command. When you do:
 
 `$ cd ~/work/training/proscrypt-koans`
 
@@ -105,7 +105,7 @@ Let's get a copy of your fork of this repository onto your machine using the 'cl
 
 ## koan 1.7: Docker
 
-Developers work with other developers, and thus their code must run on other machines. One way to make this less frustrating is to standardize the operating system and environment our application runs in using a set of tools called Docker. When you can type:
+Developers work with other developers, and thus their code must run on other machines. One way to make this less frustrating is to standardize the operating system and environment our application runs in using a set of tools called Docker. When you do:
 
 `$ docker --version`
 
@@ -123,7 +123,7 @@ and it returns something like:
 
 ## koan 1.7: Docker Compose
 
-While we're at it, let's see if Docker Compose is installed. When you can type:
+While we're at it, let's see if Docker Compose is installed. When you do:
 
 `$ docker-compose --version`
 
@@ -137,7 +137,7 @@ and it returns something like:
 
 ## koan 1.8: Text Editor
 
-If you already have a text editor you prefer to use, namaste. Otherwise, let's install Atom. When you can type:
+If you already have a text editor you prefer to use, namaste. Otherwise, let's install Atom. When you do:
 
 `$ atom . &`
 
@@ -147,4 +147,6 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 
 ## What you've learned
 
-I'm told that the hardest part of being a lesbian heroin addict is getting over your fear of needles and tourniquets and coming out to your family. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy kale-fueled conversations about your feelings with Ashton Kutcher about code. You should be proud of yourself. I know I'm proud of you.  
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with William Gibson. You should be proud of yourself. Now take a break after running this command, which will take a little while:
+
+`$ docker-compose up`
