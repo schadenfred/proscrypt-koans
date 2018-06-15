@@ -1,8 +1,16 @@
 FROM ruby:2.5
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN mkdir /myapp
-WORKDIR /myapp
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
+
+LABEL maintainer="fred.schoeneman@gmail.com"
+RUN apt-get update -yqq
+RUN apt-get install -yqq --no-install-recommends nodejs
+
+COPY Gemfile* /usr/src/app/
+
+WORKDIR /usr/src/app
+
 RUN bundle install
-COPY . /myapp
+
+COPY . /usr/src/app/
+
+# may not need this with docker-compoase "command" under "build"
+# CMD ["rails", "s", "-b", "0.0.0.0"]
