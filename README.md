@@ -22,8 +22,8 @@ What's a koan? Here's a definition of a koan that seems legit:
 
 > a paradox to be meditated upon that is used to train Zen Buddhist monks to abandon ultimate dependence on reason and to force them into gaining sudden intuitive enlightenment
 
-I'm not a Zen Buddhist monk and don't want you to abandon reason, but I dislike lecturing, or going into too much detail trying to explain things you may already know. And so I'm going to give you a problem to solve and let you figure out how to solve it on your own, in the same way a monk might gain enlightenment by reflecting on a koan.
+I'm not a Zen Buddhist monk and don't want you to abandon reason, but I dislike lecturing, or going into too much detail trying to explain things you may already know. And so I'm going to give you a problem to solve and let you figure out how to solve it on your own, in the same way a monk might gain enlightenment by reflecting on a koan. If you'r ehaving trouble with a koan, look for the blue link to "reflect" on it further.
 
 ### Your first koan
 
-The site you're reading these koans on is all about managing different versions or branches of a code base -- or any group of files. These koans are organized into different chapters, which also correspond to different versions of our code base. Please take some time to click around on this site to get a feel for it and when you've figured out how to change the "branch" of this codebase to "chapter-1", and have otherwise indulged your curiosity, please do so.  
+The site you're reading these koans on is all about managing different versions or branches of a code base, or any group of files, known as a repository. The koans are organized into different chapters which conveniently correspond to different versions of our the code in our repository. Click around to get a feel for the site and when you've figured out how to change the "branch" of this repository to "chapter-1" and have otherwise indulged your curiosity, go ahead and change it.  
