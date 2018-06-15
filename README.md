@@ -22,7 +22,7 @@ What's a koan? Here's a definition of a koan that seems legit:
 
 > a paradox to be meditated upon that is used to train Zen Buddhist monks to abandon ultimate dependence on reason and to force them into gaining sudden intuitive enlightenment
 
-I'm not a Zen Buddhist monk and don't want you to abandon reason, but I dislike lecturing, or going into too much detail trying to explain things you may already know. And so I'm going to give you a problem to solve and let you figure out how to solve it in the same way a monk might gain enlightenment by reflecting on a koan. This sounds cooler than it is, but really I'm just lazy and a big fan of [Jim Weirich, RIP](http://rubykoans.com/).
+I'm not a Zen Buddhist monk and don't want you to abandon reason, but I dislike lecturing, or going into too much detail trying to explain things you may already know. And so I'm going to give you a problem to solve and let you figure out how to solve it on your own, in the same way a monk might gain enlightenment by reflecting on a koan.
 
 ### Your first koan
 
