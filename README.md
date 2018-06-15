@@ -1,10 +1,10 @@
-Congratulations, you've solved your first koan, which if you think about it is kind of like solving a koan about solving koans, which if I think about it is another way of saying that you've been introduced to the concept of recursion in programming. We'll explore recursion in more depth later but for now you can think of recursion as Jack Dorsey fixing his hair inside a house of mirrors. Speaking of mirrors, or at least of reflection, each koan will have a link at the end of it you can use to "reflect" on it if the answer isn't immediately clear.
+Congratulations, you've solved your first koan, which if you think about it is kind of like solving a koan about solving koans, which if I think about it is another way of saying that you've been introduced to the concept of recursion in programming. We'll explore recursion in more depth later but for now you can think of recursion as Jack Dorsey fixing his hair inside a house of mirrors.
 
 Now I'm going to bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine; and just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but this tutorial will present one you can start with before settling on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine; and just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but thee one presented in this chapter is a good starting point before settling on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -12,7 +12,7 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are. We'll go into each in enough detail later for you to be svelte. For now understand that setting up your environment is one of the most difficult things you will have to do, and if I could have you do this chapter later after building your confidence first, I would. But I can't. So lock and load.
+Don't worry if you don't know what these things are because we'll go into each in enough detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't. So lock and load.
 
 ## koan 1.1: Terminal or Console
 
@@ -61,7 +61,7 @@ Now from inside this directory, let's create a new directory called 'training,' 
 
 ## koan 1.3: Git
 
-You're reading these koans on Github, which uses a version control system called Git under the hood. Since Github expects you to have Git installed on your machine, let's see if it is:
+You're reading these koans on Github, which uses a version control system called Git under the hood. Since GitHub expects you to have Git installed on your machine, let's see if it is:
 
 `$ git --version`
 
@@ -71,11 +71,11 @@ If something like the following is returned:
 
 ...then you're ready to move on.
 
-[Reflect on how to install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+[Reflect](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## koan 1.4: Create a GitHub Account
 
-Create an account on GiHub.
+Create an account on [GiHub](https://github.com).
 
 When you can navigate with your browser to:
 
@@ -91,7 +91,7 @@ You may think of forking a repository as making a copy of it and pretending it's
 
 ...then you're ready to move on.
 
-[Reflect on forking](https://help.github.com/articles/fork-a-repo/)
+[Reflect](https://help.github.com/articles/fork-a-repo/)
 
 ## koan 1.6: Clone your Fork
 
@@ -101,7 +101,7 @@ Let's get a copy of your fork of this repository onto your machine using the 'cl
 
 ...then you're ready move on.
 
-[Reflect on cloning](https://help.github.com/articles/cloning-a-repository/)
+[Reflect](https://help.github.com/articles/cloning-a-repository/)
 
 ## koan 1.7: Docker
 
@@ -147,6 +147,4 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with William Gibson. You should be proud of yourself. Now take a break after running this command, which will take a little while:
-
-`$ docker-compose up`
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with William Gibson. You should be proud of yourself. Now change to the "chapter-2 branch."
