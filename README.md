@@ -155,8 +155,15 @@ Let's get your machine switched to this branch of our code. To do so we're going
 
 ## koan 1.10:
 
-Let's get our new rails app running using Docker Compose but first let's make it yours.
+Let's get our new rails app running using Docker Compose:
 
+`$ docker-compose up -d`
+
+And then let's create our database:
+
+`$ docker-compose exec web rails db:create`
+
+When you can click [this link](http://localhost:3000/) and it says: "Yay, You're on Rails!," you're ready to move on.
 
 ## What you've learned
 
