@@ -1,0 +1,9 @@
+# Git
+.git
+.gitignore
+
+# Logs
+log/*
+
+# Temp files
+tmp/*
