@@ -11,6 +11,3 @@ WORKDIR /usr/src/app
 RUN bundle install
 
 COPY . /usr/src/app/
-
-# may not need this with docker-compoase "command" under "build"
-# CMD ["rails", "s", "-b", "0.0.0.0"]
