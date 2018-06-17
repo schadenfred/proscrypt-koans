@@ -1,10 +1,12 @@
-Congratulations, you've solved your first koan, which if you think about it is kind of like solving a koan about solving koans, which if I think about it is another way of saying that you've been introduced to the concept of recursion in programming. We'll explore recursion in more depth later but for now you can think of recursion as Jack Dorsey fixing his hair inside a house of mirrors.
+# Chapter 1
+
+Congratulations! You've solved your first koan, which if you think about it is kind of like solving a koan about solving koans -- which if I think about it is kind of another way of saying that I've successfully introduced you to the concept of recursion in programming. We'll explore recursion in more depth later but for now you can think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 Now I'm going to bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine; and just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but thee one presented in this chapter is a good starting point before settling on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine; and just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but the one presented in this chapter is a good starting point before settling on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -12,7 +14,7 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are because we'll go into each in enough detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't. So lock and load.
+Don't worry if you don't know what these things are because we'll go into each in some detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't. So lock and load.
 
 ## koan 1.1: Terminal or Console
 
@@ -85,17 +87,17 @@ When you can navigate with your browser to:
 
 ## koan 1.5: Fork these koans
 
-You may think of forking a repository as making a copy of it and pretending it's your own. If you can navigate to:
+You may think of forking a repository as making a copy of it, and pretending it's your own. Once you can navigate to:
 
 `https://github.com/YOUR-USERNAME/proscrypt-koans`
 
-...then you're ready to move on.
+...you're ready to move on.
 
 [Reflect](https://help.github.com/articles/fork-a-repo/)
 
 ## koan 1.6: Clone your Fork
 
-Let's get a copy of your fork of this repository onto your machine using the 'clone' command. When you do:
+Let's get a copy of your fork of this repository onto your machine using the 'clone' command. When you can do:
 
 `$ cd ~/work/training/proscrypt-koans`
 
@@ -144,6 +146,16 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 ...and it opens up our project, you're ready to move on.
 
 [reflect](https://flight-manual.atom.io/getting-started/sections/installing-atom/)
+
+## koan 1.9: Checkout this branch on your machine
+
+Let's get your machine switched to this branch of our code. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument is to checkout a branch '-b' and the second argument is what we'd like to call the branch, 'chapter-1.' We also want our branch to track the our remote's 'chapter-1' branch. When you can open a copy of this README.md file in your text editor, you're ready to move on.
+
+[reflect](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
+
+## koan 1.10:
+
+
 
 ## What you've learned
 
