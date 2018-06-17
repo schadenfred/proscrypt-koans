@@ -155,8 +155,9 @@ Let's get your machine switched to this branch of our code. To do so we're going
 
 ## koan 1.10:
 
+Let's get our new rails app running using Docker Compose but first let's make it yours.
 
 
 ## What you've learned
 
-The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with William Gibson. You should be proud of yourself. Now change to the "chapter-2 branch."
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with William Gibson. You should be proud of yourself. Now change to the "chapter-2 branch."
