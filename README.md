@@ -1,6 +1,6 @@
 # Chapter 1
 
-Congratulations! You've solved your first koan, which if you think about it is kind of like solving a koan about solving koans -- which if I think about it is kind of another way of saying that I've successfully introduced you to the concept of recursion in programming. We'll explore recursion in more depth later but for now you can think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+Congratulations! You've solved your first koan, which if you think about it is like solving a koan about solving koans. And which if I think about it is kind of another way of saying that I've successfully introduced you to the concept of recursion in programming. We'll explore recursion in more depth later, but for now you can think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 Now I'm going to bastardize a French culinary phrase.
 
@@ -14,7 +14,7 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are because we'll go into each in some detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't. So lock and load.
+Don't worry if you don't know what these things are because we'll go into each in some detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't. So Ranger up.
 
 ## koan 1.1: Terminal or Console
 
@@ -149,7 +149,7 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 
 ## koan 1.9: Checkout this branch on your machine
 
-Let's get your machine switched to this branch of our code. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument is to checkout a branch '-b' and the second argument is what we'd like to call the branch, 'chapter-1.' We also want our branch to track the our remote's 'chapter-1' branch. When you can open a copy of this README.md file in your text editor, you're ready to move on.
+Let's get your machine switched to this branch of our code. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument is to checkout a branch '-b' and the second argument is what we'd like to call the branch, 'chapter-1,' and the third argument is that we'd like our local chapter-1 to track our 'origin' remote's 'chapter-1' branch. When you can open a copy of this README.md file in your text editor, you're ready to move on.
 
 [reflect](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
 
@@ -167,4 +167,4 @@ When you can click [this link](http://localhost:3000/) and it says: "Yay, You're
 
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with William Gibson. You should be proud of yourself. Now change to the "chapter-2 branch."
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Sloane Crosley. You should be proud of yourself. Now change to the "chapter-2 branch."
