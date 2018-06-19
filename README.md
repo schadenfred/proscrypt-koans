@@ -1,6 +1,6 @@
 # Chapter 1
 
-Congratulations! You've solved your first koan, which if you think about it is like solving a koan about solving koans. And which if I think about it is kind of another way of saying that I've successfully introduced you to the concept of recursion in programming. We'll explore recursion in more depth later, but for now you can think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+Congratulations, you've solved your first koan! -- Which if you think about it is kind of like solving a koan about solving koans. And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll explore recursion in more depth later, but for now you can think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 Now I'm going to bastardize a French culinary phrase.
 
@@ -167,4 +167,4 @@ When you can click [this link](http://localhost:3000/) and it says: "Yay, You're
 
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, to follow the metaphor, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Sloane Crosley. You should be proud of yourself. Now change to the "chapter-2 branch."
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume. Now change to the "chapter-2 branch."
