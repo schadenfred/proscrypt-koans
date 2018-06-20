@@ -163,7 +163,7 @@ And then let's create our database:
 
 `$ docker-compose exec web rails db:create`
 
-When you can click [this link](http://localhost:3000/) and it says "Yay, You're on Rails!" and looks something like [this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png) you're ready to move on.
+When you can click ![this link](http://localhost:3000/) and it says "Yay, You're on Rails!" and looks something like [this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png) you're ready to move on.
 
 ## What you've learned
 
