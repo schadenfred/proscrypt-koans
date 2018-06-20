@@ -1,6 +1,3 @@
-![Image](../blob/master/public_html/img/nokia.png?raw=true)
-![Image](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
-
 # Chapter 2
 
 I promised I'd show you how to build something awesome and which would solve a real problem, one that affects me as well as the 61% of Americans who wear glasses.
