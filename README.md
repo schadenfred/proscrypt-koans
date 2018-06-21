@@ -1,6 +1,6 @@
 # Chapter 2
 
-Now that our mise en place is set up, what are we going to do? A warrior I greatly admire used to say that all decisions we make follow a cycle of observe, orient, decide, act -- and then repeat. It's not as simple as that but his name was [John Boyd](https://en.wikipedia.org/wiki/OODA_loop), and you can read more about his cycle [here](https://www.artofmanliness.com/articles/ooda-loop/). Let's get started with an observation.
+A warrior I greatly admire used to say that all decisions we make follow a cycle of observe, orient, decide, act -- and then repeat. It's not as simple as that but his name was [John Boyd](https://en.wikipedia.org/wiki/OODA_loop), and you can read more about his cycle [here](https://www.artofmanliness.com/articles/ooda-loop/). Let's get started with an observation.
 
 ## Observation
 
@@ -13,6 +13,22 @@ But it bugged me that the optometrist wouldn't even send a copy of the old presc
 Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. You might have a mental model in place that allows you to avoid the frustration I experienced; maybe you asked your optometrist to email you a copy of your prescription so you can search for it later. But a regular person doesn't have tools or mental model to fight against crony health care -- except maybe with your vote or if you're wealthy enough, with a politician bribe. But a developer does. Your mental models are the tools we installed, your understanding of what it is to be polite to others and how to show respect, your understanding of economics, accounting, and business processes, and as we go through these koans you'll understand other models like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 ## Decide
+
+We don't have to know much about what we're going to build to decide that we're going to build, well, something. Something awesome. Something that helps people. Most of the time I like to think of people as users. So let's start by building a way for users to sign up, sign in, log out, and update their personal information.
+
+## Act
+
+### koan 2.1
+
+
+
+
+
+
+know much about what our solution will look like. But we know we aren't going to just sit back and not fight. We're going to fight. exactly what our app will look like but let's decide to get started anyway, using . We're  You miss 100% of the shots you don't take, Let's get back at these cronies by building a website that gets back at the cronies, gives you control of your medical records, and forces them to respect us.
+
+
+Wihypothesis
 
 <table>
 <thead>
