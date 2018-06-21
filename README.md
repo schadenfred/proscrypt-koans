@@ -1,12 +1,12 @@
 # Chapter 1
 
-Congratulations, you've solved your first koan! -- Which if you think about it is kind of like solving a koan about solving koans. And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll explore recursion in more depth later, but for now you can think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+Congratulations, you've solved your first koan! -- Which if you think about it is kind of like solving a koan about solving koans. And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll explore recursion in more depth later, but for now you may simply think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 Now I'm going to bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine; and just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but the one presented in this chapter is a good starting point before settling on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. And just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but the mise presented in this chapter is a good starting point before settling on your own. It will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -14,7 +14,7 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are because we'll go into each in some detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't. So Ranger up.
+Don't worry if you don't know what these things are because we'll go into each in some detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't.
 
 ## koan 1.1: Terminal or Console
 
@@ -35,23 +35,23 @@ Here's what my terminal prompt looks like:
 
 `schadenfred@summerseve:~$`
 
-It doesn't matter what your terminal prompt looks like but when I ask that you enter a command at the prompt I'll abbreviate it to the '$' character, followed by the command like so:
+It doesn't matter what your terminal prompt looks like, but when I ask that you enter a command at the prompt, I'll abbreviate the above to just the '$' character, followed by the command -- like so:
 
 `$ <command>`
 
-Now let's go to your home directory. To do so, enter 'cd' at your prompt like so:
+Now let's go to your home directory. To do so, enter 'cd' at your prompt:
 
 `$ cd`
 
-This puts you into your home folder on most machines. Now let's create a new directory to work in called 'work' like so:
+This puts you into your home folder on most machines. Now let's create a new directory to work in called 'work' -- like so:
 
 `$ mkdir work`
 
-To confirm the above command created a directory in your home folder, let's ask for a list of directories and files by typing 'ls,' like so:
+To confirm the above command created a directory in your home folder, let's ask for a list of directories and files by typing 'ls,' -- like so:
 
 `$ ls`
 
-Now let's change into the work directory using the 'cd' command like so:
+Now let's change into the work directory using the 'cd' command:
 
 `$ cd work`
 
@@ -139,7 +139,7 @@ and it returns something like:
 
 ## koan 1.8: Text Editor
 
-If you already have a text editor you prefer to use, namaste. Otherwise, let's install Atom. When you do:
+If you already have a text editor you prefer to use, namaste. Otherwise, let's install Atom. When you can do something similar to:
 
 `$ atom . &`
 
@@ -149,7 +149,11 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 
 ## koan 1.9: Checkout this branch on your machine
 
-Let's get your machine switched to this branch of our code. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument is to checkout a branch '-b' and the second argument is what we'd like to call the branch, 'chapter-1,' and the third argument is that we'd like our local chapter-1 to track our 'origin' remote's 'chapter-1' branch. When you can open a copy of this README.md file in your text editor, you're ready to move on.
+Let's get your machine switched to this branch of our code. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument is that we'd like to checkout a branch '-b', the second argument is what we'd like to call the branch, 'chapter-1,' and the third argument is that we'd like our local chapter-1 to track our 'origin' remote's 'chapter-1' branch.
+
+`$ git checkout -b chapter-1 origin/chapter-1`
+
+When you can open a copy of this README.md file in your text editor, you're ready to move on.
 
 [reflect](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
 
@@ -169,4 +173,4 @@ When you can click [this link](http://localhost:3000/) and it says "Yay, You're 
 
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume. Now change to the "chapter-2 branch."
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, these koans should feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume. Now switch to the "chapter-2 branch."
