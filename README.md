@@ -10,11 +10,24 @@ But it bugged me that the optometrist wouldn't even send a copy of the old presc
 
 ## Orient
 
-Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. You might have a mental model in place already for stuff like this, where you asked your optometrist to email you a copy of your prescription so that you have a copy of it in your email. But a regular person doesn't have tools or mental model to fight against crony health care, or the patronizing system they've created -- except maybe with her vote or if she's wealthy enough to bribe someone in the legislature. But a developer does, you will have these tools. Your mental models will consist of the tools we installed as well as your model of what it is to be polite to others and how to show respect, your understanding of economics, accounting, and business processes, and also things like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
+Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. You might have a mental model in place that allows you to avoid the frustration I experienced; maybe you asked your optometrist to email you a copy of your prescription so you can search for it later. But a regular person doesn't have tools or mental model to fight against crony health care -- except maybe with your vote or if you're wealthy enough, with a politician bribe. But a developer does. Your mental models are the tools we installed, your understanding of what it is to be polite to others and how to show respect, your understanding of economics, accounting, and business processes, and as we go through these koans you'll understand other models like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 ## Decide
 
-Let's get back at these cronies by building a website that gets back at the cronies, gives you control of your medical records, and forces them to respect us.
+<table>
+<thead>
+<tr>
+<th>foo</th>
+<th>bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baz</td>
+<td>bim</td>
+</tr></tbody></table>
+
+We don't know exactly what our app will look like but let's decide to get started anyway, using . We're  You miss 100% of the shots you don't take, Let's get back at these cronies by building a website that gets back at the cronies, gives you control of your medical records, and forces them to respect us.
 
 
 
