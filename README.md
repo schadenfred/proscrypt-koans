@@ -1,8 +1,30 @@
 # Chapter 2
 
-I promised I'd show you how to build something awesome and which would solve a real problem, one that affects me as well as the 61% of Americans who wear glasses.
+Now that our mise en place is set up, what are we going to do? A warrior I greatly admire used to say that all decisions we make follow a cycle of observe, orient, decide, act -- and then repeat. It's not as simple as that but his name was [John Boyd](https://en.wikipedia.org/wiki/OODA_loop), and you can read more about his cycle [here](https://www.artofmanliness.com/articles/ooda-loop/). Let's get started with an observation.
 
-I had broken my glasses skiing, and was out of contact lenses, and had to get a new pair. So I went to the eyeglass store and told them I needed a new pair, and they were all like "great, let's see your prescription." I told him I didn't have it on me -- I mean, who keeps eyeglass prescriptions in their wallet though anyways, right? -- and he said he could call and get it from the optometrist. We called, only to be told the prescription was out of date, and that it was the optometrist's policy not to send copies of out-of-date prescriptions. Apparently it is also the law in California and every other state where crony healthcare optometrists have captured government in order to force cows like you and me to pay them. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I probably I would. But I feel like that would probably make you angry, just as what the optometrists are doing every day makes me angry. I mean it's my record, right? Why can't I have access to my records? Patronizing little crony jerks. So now it's payback time. I'm going to show you how to build a web app that takes away their power and gives it back to people like you and me. Obviously they'll fight and cry and try to make what we're doing illegal or something, but let's fight that battle when we have millions of dollars in venture capital to buy lawyers and politicians and beat them at their own game.
+## Observation
+
+I had broken my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) in Carson City, Nevada. I showed Wesley there my broken glasses. He asked if I had my prescription. I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right? -- Then he said he could call and get it from my optometrist. We called, only to be told the prescription was out of date, and it was the optometrist's policy not to send copies of out-of-date prescriptions. I didn't have time to get an appointment with a nearby optometrist, so Wesley used a machine to analyze the broken glasses to guess ate the prescription, and told me he'd have them ready the next day. Then wired my broken frames together and sent me home, amazed at his customer service and genuine concern.
+
+But it bugged me that the optometrist wouldn't even send a copy of the old prescription. I mean, it's my medical record, not his, and I payed for it, so why can't I just have a copy of it, right? It turns out that optometrists in California and pretty much everywhere else in the US have bribed their state legislatures to prevent opticians from making glasses based on out of date prescriptions, supposedly in the patient's interest, but really in their own. They want you pay. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I probably I would.
+
+## Orient
+
+Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. You might have a mental model in place already for stuff like this, where you asked your optometrist to email you a copy of your prescription so that you have a copy of it in your email. But a regular person doesn't have tools or mental model to fight against crony health care, or the patronizing system they've created -- except maybe with her vote or if she's wealthy enough to bribe someone in the legislature. But a developer does, you will have these tools. Your mental models will consist of the tools we installed as well as your model of what it is to be polite to others and how to show respect, your understanding of economics, accounting, and business processes, and also things like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
+
+## Decide
+
+Let's get back at these cronies by building a website that gets back at the cronies, gives you control of your medical records, and forces them to respect us.
+
+
+
+
+ and beat them other than
+
+ If you aren't a programmer, maybe your mental model would include calling your local representatives in congress. Or just complaining. But as developers, we have a whole bunch of different mental models we can use.
+
+
+But I feel like that would probably make you angry, just as what optometrists are doing every day makes me angry. I mean it's my record, right? Why can't I have access to my records? Patronizing little crony jerks. So now it's payback time. I'm going to show you how to build a web app that takes away their power and gives it back to people like you and me. Obviously they'll fight and cry and try to make what we're doing illegal or something, but let's fight that battle when we have millions of dollars in venture capital to buy lawyers and politicians and beat them at their own game.
 
 ## koan 2.1
 
