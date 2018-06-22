@@ -23,3 +23,13 @@ services:
       - ./tmp/db:/var/lib/postgresql/data
     env_file:
       - .env.dev.database
+
+  guard:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    env_file:
+      - .env.dev.database
+      - .env.dev.web
+
+    command: bundle exec guard --no-bundler-warning --no-interactions
