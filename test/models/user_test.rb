@@ -10,7 +10,7 @@ describe User do
 
     specify "columns & types" do
 
-      must_have_column(:email, :inet)
+      must_have_column(:email)
       must_have_column(:encrypted_password)
       must_have_column(:reset_password_token)
       must_have_column(:reset_password_sent_at, :datetime)
