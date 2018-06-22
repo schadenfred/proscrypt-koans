@@ -30,7 +30,7 @@ Check out the chapter-2 branch on your machine using koan 1.9 as inspiration. Wh
 
 ### koan 2.2
 
-add devise to gemfile
+Up until now, you've been reading koans add devise to gemfile
 run bundle
 rails g devise install
 
