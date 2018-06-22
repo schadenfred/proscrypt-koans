@@ -1,8 +1,8 @@
 # Chapter 2
 
-According to Franklin Spinney, [Ghengis John Boyd](http://radio-weblogs.com/0107127/stories/2002/12/23/genghisJohnChuckSpinneysBioOfJohnBoyd.html) believed that
+According to Franklin Spinney, [Ghengis John Boyd](http://radio-weblogs.com/0107127/stories/2002/12/23/genghisJohnChuckSpinneysBioOfJohnBoyd.html) believed that:
 
-> ...any conflict could be viewed as a duel wherein each adversary observes (O) his opponent's actions, orients (O) himself to the unfolding situation, decides (D) on the most appropriate response or counter-move, then acts (A). The competitor who moves through this OODA-loop cycle the fastest gains an inestimable advantage by disrupting his enemy's ability to respond effectively. He showed in excruciating detail how these cycles create continuous and unpredictable change, and argued that our tactics, strategy, and supporting weapons' technologies should be based on the idea of shaping and adapting to this change — and doing so faster than one's adversary.
+> [A]ny conflict could be viewed as a duel wherein each adversary observes (O) his opponent's actions, orients (O) himself to the unfolding situation, decides (D) on the most appropriate response or counter-move, then acts (A). The competitor who moves through this OODA-loop cycle the fastest gains an inestimable advantage by disrupting his enemy's ability to respond effectively. He showed in excruciating detail how these cycles create continuous and unpredictable change, and argued that our tactics, strategy, and supporting weapons' technologies should be based on the idea of shaping and adapting to this change — and doing so faster than one's adversary.
 
 There's much more to Boyd's thinking, and you can read more about it [here](https://www.artofmanliness.com/articles/ooda-loop/), but for now, let's get started with an observation.
 
@@ -18,13 +18,11 @@ Turns out I'm wrong, and that optometrists in California and pretty much everywh
 
 ## Orient
 
-Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and of her opponents, and her 3-point skills. If you wear contacts, you might have a mental model in place that allowed you to avoid the frustration I had above; maybe you thought ahead unlike my dumb ass and bought extra pairs of glasses and contacts; or maybe you asked your optometrist to email you a copy of your prescription way back when and you can find it by searching your email and then you can use it buy unregulated eyeglasses made by child laborers in Phnom Penh.
-
-Regular people don't always have tools or mental models to fight against cronyism -- except maybe with your vote, or if you're wealthy enough, with a well timed political donation. But you aren't regular.
+Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and of her opponents, and her 3-point skills. If you wear contacts, you might have a mental model in place that allowed you to avoid the frustration I had above; maybe you thought ahead unlike my dumb ass and bought extra pairs of glasses and contacts; or maybe you asked your optometrist to email you a copy of your prescription way back when and you can find it by searching your email and then you can use it buy unregulated eyeglasses made by child laborers in Phnom Penh. Regular people don't always have tools or mental models to fight against cronyism -- except maybe with your vote, or if you're wealthy enough, with a well timed political donation. But you aren't regular.
 
 You're fucking elite.
 
-If you've gotten this far, you have mental models of some kind already: Knowing what it is to be polite, how to show respect, how to persuade, your understanding of economics, accounting, and business processes, your sense of humor. Maybe you're a little bit entrepreneurial. Maybe you've developed mental models of Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or of Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed as well as new ones, including [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
+If you've gotten this far, you have mental models of some kind already: Knowing what it is to be polite, how to show respect, how to persuade, other people's wants and needs, your understanding of economics, accounting, and business processes, and your sense of humor. Maybe you're a little bit entrepreneurial. Maybe you've developed mental models of Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or of Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed, as well as with new ones, including [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development). Some will prove useful later, others won't. Take what you like.
 
 ## Decide
 
@@ -32,7 +30,7 @@ We don't have to know much about what we're going to build to decide that we're 
 
 Where to start though?
 
-Well, most of the time I like to think of people as users. So let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information.
+Well, since most of the time when I'm developing, I think of people as users. So let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information.
 
 ## Act
 
@@ -40,9 +38,10 @@ Check out the chapter-2 branch on your machine using koan 1.9 as inspiration. Wh
 
 `$ git branch`
 
-...and it shows 'chapter-2' with an asterisk next to it, go back to the terminal you ran koan 1.10 in and do:
+...and it shows 'chapter-2' with an asterisk next to it, go back to the terminal you ran koan 1.11 in and do:
 
-`$ docker-compose down`
+`$ docker-compose up`
+
 
 ### koan 2.2
 
