@@ -33,13 +33,23 @@ gem 'redis', '~> 4.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'devise'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'minitest-nyan-cat'
+  gem 'minitest-given'
+  gem 'launchy'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
 end
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -53,9 +63,13 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
+  gem 'minitest-rails-capybara'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
+  gem 'shoulda-matchers', '~> 3.1'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

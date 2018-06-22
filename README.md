@@ -1,10 +1,10 @@
 # Chapter 2
 
-A warrior I greatly admire used to say that all decisions we make follow a cycle of observe, orient, decide, act -- and then repeat. It's not as simple as that but his name was [John Boyd](https://en.wikipedia.org/wiki/OODA_loop), and you can read more about his cycle [here](https://www.artofmanliness.com/articles/ooda-loop/). Let's get started with an observation.
+A warrior I greatly admire used to say that all decisions we make follow a cycle:  Observe, orient, decide, act -- and then repeat. It's not as simple as that but his name was [John Boyd](https://en.wikipedia.org/wiki/OODA_loop), and you can read more about his cycle [here](https://www.artofmanliness.com/articles/ooda-loop/). Let's get started with an observation.
 
 ## Observation
 
-I had broken my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) in Carson City, Nevada. I showed Wesley there my broken glasses. He asked if I had my prescription. I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right? -- Then he said he could call and get it from my optometrist. We called, only to be told the prescription was out of date, and it was the optometrist's policy not to send copies of out-of-date prescriptions. I didn't have time to get an appointment with a nearby optometrist, so Wesley used a machine to analyze the broken glasses to guess ate the prescription, and told me he'd have them ready the next day. Then wired my broken frames together and sent me home, amazed at his customer service and genuine concern.
+I had broken my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) in Carson City, Nevada. I showed Wesley Deputy the optician my broken glasses. He asked if I had my prescription. I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right? -- Then he said he could call and get it from my optometrist. We called, only to be told the prescription was out of date, and it was the optometrist's policy not to send copies of out-of-date prescriptions. I didn't have time to get an appointment with a nearby optometrist, so Wesley used a machine to analyze the broken glasses to guess ate the prescription, and told me he'd have them ready the next day. Then wired my broken frames together and sent me home, amazed at his customer service and genuine concern.
 
 But it bugged me that the optometrist wouldn't even send a copy of the old prescription. I mean, it's my medical record, not his, and I payed for it, so why can't I just have a copy of it, right? It turns out that optometrists in California and pretty much everywhere else in the US have bribed their state legislatures to prevent opticians from making glasses based on out of date prescriptions, supposedly in the patient's interest, but really in their own. They want you pay. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I probably I would.
 
@@ -14,13 +14,54 @@ Humans have different mental models we use to make decisions. A fighter pilot in
 
 ## Decide
 
-We don't have to know much about what we're going to build to decide that we're going to build, well, something. Something awesome. Something that helps people. Most of the time I like to think of people as users. So let's start by building a way for users to sign up, sign in, log out, and update their personal information.
+We don't have to know much about what we're going to build to decide that we're going to build, well, something. Something awesome. Something that helps people.
+
+Most of the time I like to think of people as users. So let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information.
 
 ## Act
 
 ### koan 2.1
 
+Check out the chapter-2 branch on your machine using koan 1.9 as inspiration. When you do:
 
+`$ git branch`
+
+...and it shows 'chapter-2' with an asterisk next to it, move on.
+
+### koan 2.2
+
+add devise to gemfile
+run bundle
+rails g devise install
+
+add config.action default url
+add confirmable module
+
+. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+  4. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+
+install devise
 
 
 
