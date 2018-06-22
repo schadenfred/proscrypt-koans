@@ -34,6 +34,7 @@ add devise to gemfile
 run bundle
 rails g devise install
 
+docker compose up -d database web
 add config.action default url
 add confirmable module
 

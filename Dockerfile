@@ -1,9 +1,12 @@
-FROM ruby:2.5
+FROM ruby:2.5-alpine
 
 LABEL maintainer="fred.schoeneman@gmail.com"
-RUN apt-get update -yqq
-RUN apt-get install -yqq --no-install-recommends nodejs qt5-default
-
+RUN apk add --no-cache --update build-base \
+                                linux-headers \
+                                git \
+                                postgresql-dev \
+                                nodejs \
+                                tzdata
 COPY Gemfile* /usr/src/app/
 
 WORKDIR /usr/src/app
