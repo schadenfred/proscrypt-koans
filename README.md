@@ -1,32 +1,48 @@
 # Chapter 2
 
-A warrior I greatly admire used to say that all decisions we make follow a cycle:  Observe, orient, decide, act -- and then repeat. It's not as simple as that but his name was [John Boyd](https://en.wikipedia.org/wiki/OODA_loop), and you can read more about his cycle [here](https://www.artofmanliness.com/articles/ooda-loop/). Let's get started with an observation.
+According to Franklin Spinney, [Ghengis John Boyd](http://radio-weblogs.com/0107127/stories/2002/12/23/genghisJohnChuckSpinneysBioOfJohnBoyd.html) believed that
+
+> ...any conflict could be viewed as a duel wherein each adversary observes (O) his opponent's actions, orients (O) himself to the unfolding situation, decides (D) on the most appropriate response or counter-move, then acts (A). The competitor who moves through this OODA-loop cycle the fastest gains an inestimable advantage by disrupting his enemy's ability to respond effectively. He showed in excruciating detail how these cycles create continuous and unpredictable change, and argued that our tactics, strategy, and supporting weapons' technologies should be based on the idea of shaping and adapting to this change — and doing so faster than one's adversary.
+
+There's much more to Boyd's thinking, and you can read more about it [here](https://www.artofmanliness.com/articles/ooda-loop/), but for now, let's get started with an observation.
 
 ## Observation
 
-I had broken my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) in Carson City, Nevada. I showed Wesley Deputy the optician my broken glasses. He asked if I had my prescription. I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right? -- Then he said he could call and get it from my optometrist. We called, only to be told the prescription was out of date, and it was the optometrist's policy not to send copies of out-of-date prescriptions. I didn't have time to get an appointment with a nearby optometrist, so Wesley used a machine to analyze the broken glasses to guess ate the prescription, and told me he'd have them ready the next day. Then wired my broken frames together and sent me home, amazed at his customer service and genuine concern.
+I had broken my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) down in Carson City, Nevada. I showed Wesley, the Optician, my broken glasses. He asked if I had my prescription. I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right? -- Then he said he could call and get it faxed to him by my optometrist. We called, only to be told the prescription was out of date, and it was the optometrist's policy not to send copies of out-of-date prescriptions. I didn't have time to get an appointment with a nearby optometrist, so Wesley used a machine to analyze the broken glasses to guess at the prescription, and told me he'd have them ready the next day before wiring my broken frames together and sending me home. No problem there, at least with Wesley -- I'm still impressed by his customer service and that he seemed to so genuinely care -- but it bugged me that the optometrist wouldn't even send a copy of the old prescription. I mean, it's my medical record, not his, and I payed for it, so why can't I just have a copy of it? Am I right? Or amirite?
 
-But it bugged me that the optometrist wouldn't even send a copy of the old prescription. I mean, it's my medical record, not his, and I payed for it, so why can't I just have a copy of it, right? It turns out that optometrists in California and pretty much everywhere else in the US have bribed their state legislatures to prevent opticians from making glasses based on out of date prescriptions, supposedly in the patient's interest, but really in their own. They want you pay. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I probably I would.
+Turns out I'm wrong, and that optometrists in California and pretty much everywhere else in this country have bribed their state legislatures to prevent opticians from making glasses based on out of date prescriptions. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I probably I would.
+
+"But I'm poor," you'd say.
+
+"Fuck you, pay me," I'd say.
 
 ## Orient
 
-Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. You might have a mental model in place that allows you to avoid the frustration I experienced; maybe you asked your optometrist to email you a copy of your prescription so you can search for it later. But a regular person doesn't have tools or mental model to fight against crony health care -- except maybe with your vote or if you're wealthy enough, with a politician bribe. But a developer does. Your mental models are the tools we installed, your understanding of what it is to be polite to others and how to show respect, your understanding of economics, accounting, and business processes, and as we go through these koans you'll understand other models like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
+Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke, her radio, her gauges and instruments, and her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and of her opponents, and her 3-point skills. If you wear contacts, you might have a mental model in place that allowed you to avoid the frustration I had above; maybe you thought ahead unlike my dumb ass and bought extra pairs of glasses and contacts; or maybe you asked your optometrist to email you a copy of your prescription way back when and you can find it by searching your email and then you can use it buy unregulated eyeglasses made by child laborers in Phnom Penh.
+
+Regular people don't always have tools or mental models to fight against cronyism -- except maybe with your vote, or if you're wealthy enough, with a well timed political donation. But you aren't regular.
+
+You're fucking elite.
+
+If you've gotten this far, you have mental models of some kind already: Knowing what it is to be polite, how to show respect, how to persuade, your understanding of economics, accounting, and business processes, your sense of humor. Maybe you're a little bit entrepreneurial. Maybe you've developed mental models of Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or of Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed as well as new ones, including [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 ## Decide
 
-We don't have to know much about what we're going to build to decide that we're going to build, well, something. Something awesome. Something that helps people.
+We don't have to know much about what we're going to build to decide that we're going to build, well, something. Something awesome. Something that helps people and pays these patronizing cronies back.
 
-Most of the time I like to think of people as users. So let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information.
+Where to start though?
+
+Well, most of the time I like to think of people as users. So let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information.
 
 ## Act
-
-### koan 2.1
 
 Check out the chapter-2 branch on your machine using koan 1.9 as inspiration. When you do:
 
 `$ git branch`
 
-...and it shows 'chapter-2' with an asterisk next to it, move on.
+...and it shows 'chapter-2' with an asterisk next to it, go back to the terminal you ran koan 1.10 in and do:
+
+`$ docker-compose down`
 
 ### koan 2.2
 
