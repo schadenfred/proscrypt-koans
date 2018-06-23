@@ -171,6 +171,31 @@ When you can click [this link](http://localhost:3000/) and it says "Yay, You're 
 
 ...you're ready to move on.
 
+## koan 1.11:
+
+Let's shut our containers down using Compose:
+
+`$ docker-compose down`
+
+And let's clean up any unnecessary containers:
+
+`$ docker system prune`
+
+When you can do:
+
+`$ docker ps`
+
+...and see there are no running containers, move on.
+
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Now that you've finished the hard part of this tutorial, these koans should feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume. Now switch to the "chapter-2 branch."
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. You, too, are past the hard parts but let's recap:
+
+  1. You've figured out how to open and use your terminal.
+  2. You've set up a professional text editor. There are plenty of great text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is plenty good for now.
+  3. You've created an account on GitHub, forked these koans, cloned a copy of them onto your machine, and then checked out and switched into a new branch.
+  4. You've installed Docker and Docker Compose, and learned a few powerful commands that basically turn you into Leonardo DiCaprio in Inception if that move was about computers inside computers inside computers instead of dreams inside dreams inside dreams.
+
+Now that you've finished the hard part, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
+
+Now switch to the "chapter-2 branch."
