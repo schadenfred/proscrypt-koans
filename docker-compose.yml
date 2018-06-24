@@ -25,16 +25,6 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
-  test:
-    build: .
-    volumes:
-      - .:/usr/src/app
-    env_file:
-      - .env/development/database
-      - .env/development/web
-
-    command: bundle exec guard --no-bundler-warning --no-interactions
-
 volumes:
   db-data:
     #   - ./tmp/db:/var/lib/postgresql/data

@@ -10,6 +10,12 @@ describe "\nchapter 2 koans \n\n" do
       \n\n\......." }
   end
 
+  it "must have converted views from .erb to .haml" do
+    refute File.exist?('app/views/layouts/application.html.erb'), koan_msg(
+      "Life is too short for ugly code. Please convert your application layout from .erb to .haml.",
+      "$ bundle exec rake haml:erb2haml")
+  end
+
   it "must add devise to Gemfile" do
     File.read('Gemfile').must_include "gem \'devise\'", koan_msg(
       "There is no gem called \'devise'\ in the Gemfile. Add it now.",
