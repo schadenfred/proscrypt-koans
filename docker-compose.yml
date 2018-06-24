@@ -1,36 +1,59 @@
 version: '3'
 
 services:
+
   web:
+
     build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
-    stdin_open: true
-    tty: true
-    
     ports:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
     env_file:
-      - .env.dev.database
-      - .env.dev.web
+      - .env/development/database
+      - .env/development/web
 
-  redis:
-    image: redis
+    command: ["rm", "-f", "tmp/pids/server.pid"]
+    command: ["bundle", "exec", "rails", "s", "-p", "3000", "-b", "0.0.0.0"]
+    stdin_open: true
+    tty: true
 
   database:
     image: postgres
-    volumes:
-      - ./tmp/db:/var/lib/postgresql/data
     env_file:
-      - .env.dev.database
+      - .env/development/database
+    volumes:
+      - db-data:/var/lib/postgresql/data
 
   test:
     build: .
     volumes:
       - .:/usr/src/app
     env_file:
-      - .env.dev.database
-      - .env.dev.web
+      - .env/development/database
+      - .env/development/web
 
     command: bundle exec guard --no-bundler-warning --no-interactions
+
+volumes:
+  db-data:
+    #   - ./tmp/db:/var/lib/postgresql/data
+    # env_file:
+    #   - .env.dev.database
+  #   env_file:
+  #     - .env.dev.database
+  #     - .env.dev.web
+  #
+  # redis:
+  #   image: redis
+  #
+  #
+  # test:
+  #   build: .
+  #   volumes:
+  #     - .:/usr/src/app
+  #   env_file:
+  #     - .env.dev.database
+  #     - .env.dev.web
+  #
+  #   command: bundle exec guard --no-bundler-warning --no-interactions

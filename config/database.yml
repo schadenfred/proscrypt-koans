@@ -4,15 +4,17 @@ default: &default
   host:     <%= ENV.fetch('DATABASE_HOST') %>
   username: <%= ENV.fetch('POSTGRES_USER') %>
   password: <%= ENV.fetch('POSTGRES_PASSWORD') %>
+  database: <%= ENV.fetch('POSTGRES_DB') %>
   pool: 5
   variables:
     statement_timeout: 5000
+
 development:
   <<: *default
-  database: myapp_development
+
 test:
   <<: *default
-  database: myapp_test
+  database: proscrypt_test
+
 production:
   <<: *default
-  database: myapp_production

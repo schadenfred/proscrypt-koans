@@ -3,7 +3,7 @@ require_relative '../config/environment'
 require 'rails/test_help'
 require 'minitest/autorun'
 require 'minitest/nyan_cat'
-require 'byebug'
+# require 'byebug'
 # require 'shoulda'
 
 Dir[File.expand_path('test/support/*.rb')].each { |file| require file }

@@ -14,14 +14,6 @@ module TestMatchers
     s.respond_to?(method).must_equal false
   end
 
-  def must_have_table(table_name)
-    ActiveRecord::Base.connection.tables.must_include table_name, message {
-      message = "Your test database has no '#{table_name}' table. Did you run your migrations? Try:"
-      suggestion = "\n\t$ rails db:migrate"
-      message_wrapper(message, suggestion)
-    }
-  end
-
   def must_have_column(column, type=nil)
     table = subject.table_name.upcase + " table"
     msg = "#{table} doesn't have an \'#{column}\' column. To generate it:"

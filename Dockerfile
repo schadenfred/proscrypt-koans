@@ -1,15 +1,14 @@
 FROM ruby:2.5-alpine
 
 LABEL maintainer="fred.schoeneman@gmail.com"
-RUN apk add --no-cache --update build-base \
-                                linux-headers \
-                                git \
-                                postgresql-dev \
-                                nodejs \
-                                tzdata
+
+RUN apk add --no-cache --update build-base linux-headers postgresql-dev nodejs tzdata
+
 COPY Gemfile* /usr/src/app/
 
 WORKDIR /usr/src/app
+
+ENV BUNDLE_PATH /gems
 
 RUN bundle install
 
