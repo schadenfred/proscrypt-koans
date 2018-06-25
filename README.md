@@ -1,12 +1,16 @@
 # Chapter 1
 
-Congratulations, you've solved your first koan! -- Which if you think about it is kind of like solving a koan about solving koans. And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll explore recursion in more depth later, but for now you may simply think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+Congratulations, you've solved your first koan!
 
-Now I'm going to bastardize a French culinary phrase.
+Which if you think about it, is kind of like solving a koan about solving koans.
+
+And which if I think about it, is kind of like saying I've introduced you to recursion in programming. We'll explore recursion in more depth later, but for now you may think of recursion as not unlike Russell Brand fixing his hair inside a house of mirrors.
+
+And now I'm going to bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. And just as a cook's mise en place will change depending on the menu she's responsible for reproducing, so too will your tools change depending on the things you're trying to build. There's no one mise to rule them all, but the mise presented in this chapter is a good starting point before settling on your own. It will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes, to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. A cook's mise en place will change depending on the menu she's responsible for reproducing, as will yours depending on the things you're trying to build. The mise presented in this chapter is a plausible starting point, and will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -14,11 +18,11 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are because we'll go into each in some detail later. For now understand that setting up your environment is one of the most difficult things you will have to do. If I could have you do this chapter later after building your confidence first, I would. But I can't.
+Don't worry if you don't know what these things are. For now just understand that setting up your environment is one of the most difficult things developers have to do. If I could have you do this chapter later after building your confidence first, I would, but I can't.
 
 ## koan 1.1: Terminal or Console
 
-If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the pornography viewer, and what jokes about how dumb white people are to Chris Rock.   
+If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the sex addict, and what jokes about how dumb white people are to Chris Rock.   
 
 When you've opened your terminal and see something like the [image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
@@ -35,27 +39,29 @@ Here's what my terminal prompt looks like:
 
 `schadenfred@summerseve:~$`
 
-It doesn't matter what your terminal prompt looks like, but when I ask that you enter a command at the prompt, I'll abbreviate the above to just the '$' character, followed by the command -- like so:
+It doesn't matter what your terminal prompt looks like, but it probably ends with a `#` or a `%` or a `$`. When I ask that you enter a command at the prompt, I'll abbreviate the above prompt to just the '$' character, followed by the command:
 
 `$ <command>`
 
-Now let's go to your home directory. To do so, enter 'cd' at your prompt:
+Now let's go to your home directory. To do so, enter 'cd':
 
 `$ cd`
 
-This puts you into your home folder on most machines. Now let's create a new directory to work in called 'work' -- like so:
+This puts you into your home folder on most machines. Now let's create a new directory to work in called 'work':
 
 `$ mkdir work`
 
-To confirm the above command created a directory in your home folder, let's ask for a list of directories and files by typing 'ls,' -- like so:
+To confirm the above command created a directory in your home folder, let's ask for a list of directories and files by typing 'ls':
 
 `$ ls`
 
-Now let's change into the work directory using the 'cd' command:
+Now let's 'change' into the work 'directory':
 
 `$ cd work`
 
-Now from inside this directory, let's create a new directory called 'training,' and change into it. When you can do this command without the terminal barfing, you're ready to move on:
+Now from inside this directory, create a new directory called 'training,' and change into it.
+
+When you can do this command without the terminal barfing, you're ready to move on:
 
 `$ cd ~/work/training`
 
@@ -63,7 +69,7 @@ Now from inside this directory, let's create a new directory called 'training,' 
 
 ## koan 1.3: Git
 
-You're reading these koans on Github, which uses a version control system called Git under the hood. Since GitHub expects you to have Git installed on your machine, let's see if it is:
+You're reading these koans on Github, which uses a version control system called Git under the hood. Since GitHub expects you to have Git installed, let's see if it is:
 
 `$ git --version`
 
@@ -107,7 +113,7 @@ Let's get a copy of your fork of this repository onto your machine using the 'cl
 
 ## koan 1.7: Docker
 
-Developers work with other developers, and thus their code must run on other machines. One way to make this less frustrating is to standardize the operating system and environment our application runs in using a set of tools called Docker. When you do:
+Developers work with other developers, and thus their code must run on other machines. Docker is basically like that movie 'Inception' except instead of dreams inside of dreams, it gives you machines inside of machines. Install it. When you can do:
 
 `$ docker --version`
 
@@ -125,7 +131,7 @@ and it returns something like:
 
 ## koan 1.7: Docker Compose
 
-While we're at it, let's see if Docker Compose is installed. When you do:
+While we're at it, let's install Docker Compose. When you can do:
 
 `$ docker-compose --version`
 
@@ -139,7 +145,7 @@ and it returns something like:
 
 ## koan 1.8: Text Editor
 
-If you already have a text editor you prefer to use, namaste. Otherwise, let's install Atom. When you can do something similar to:
+If you already have a text editor, namaste. Otherwise, install Atom. When you can do something similar to:
 
 `$ atom . &`
 
@@ -149,7 +155,7 @@ If you already have a text editor you prefer to use, namaste. Otherwise, let's i
 
 ## koan 1.9: Checkout this branch on your machine
 
-Let's get your machine switched to this branch of our code. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument is that we'd like to checkout a branch '-b', the second argument is what we'd like to call the branch, 'chapter-1,' and the third argument is that we'd like our local chapter-1 to track our 'origin' remote's 'chapter-1' branch.
+Let's get your machine switched to this branch of our code -- the one you're reading. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument to Git is that we'd like to checkout a branch '-b'; the second argument is that we'd like to call the branch 'chapter-1,' and the third argument is that we'd like our local branch 'chapter-1' to track our 'origin' remote's 'chapter-1' branch.
 
 `$ git checkout -b chapter-1 origin/chapter-1`
 
@@ -159,15 +165,19 @@ When you can open a copy of this README.md file in your text editor, you're read
 
 ## koan 1.10:
 
-Let's get our new rails app running using Docker Compose:
+Let's build our starter ProScrypt app using Docker Compose:
 
 `$ docker-compose up -d`
 
-And then let's create our database:
+And spool it up:
+
+`$ docker-compose up -d`
+
+And create our database:
 
 `$ docker-compose exec web rails db:create`
 
-When you can click [this link](http://localhost:3000/) and it says "Yay, You're on Rails!" and looks something like ![this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
+When you can click [this link](http://localhost:3000/), and it says "Yay, You're on Rails!" and looks something like ![this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
 
 ...you're ready to move on.
 
@@ -189,13 +199,13 @@ When you can do:
 
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. You, too, are past the hard parts but let's recap:
+I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Let's recapitulate:
 
   1. You've figured out how to open and use your terminal.
   2. You've set up a professional text editor. There are plenty of great text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is plenty good for now.
   3. You've created an account on GitHub, forked these koans, cloned a copy of them onto your machine, and then checked out and switched into a new branch.
   4. You've installed Docker and Docker Compose, and learned a few powerful commands that basically turn you into Leonardo DiCaprio in Inception if that move was about computers inside computers inside computers instead of dreams inside dreams inside dreams.
 
-Now that you've finished the hard part, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
+Now that you've finished the hard part the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
 
 Now switch to the "chapter-2 branch."
