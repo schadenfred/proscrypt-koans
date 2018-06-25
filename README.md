@@ -208,4 +208,4 @@ I'm told that the hardest parts of being a novelist and heroin addict are gettin
 
 Now that you've finished the hard part the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
 
-Now switch to the "chapter-2 branch."
+Switch to the "chapter-2 branch."
