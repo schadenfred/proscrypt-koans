@@ -44,6 +44,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    ansi (1.5.0)
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
@@ -158,6 +159,11 @@ GEM
       minitest (> 4.3)
     minitest-nyan-cat (0.0.1)
       nyan-cat-formatter (= 0.11)
+    minitest-reporters (1.1.19)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     msgpack (1.2.4)
     multi_json (1.13.1)
     nenv (0.3.0)
@@ -226,6 +232,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
+    ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
     ruby_parser (3.11.0)
       sexp_processor (~> 4.9)
@@ -300,8 +307,10 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   launchy
   listen (>= 3.0.5, < 3.2)
+  minitest
   minitest-given
   minitest-nyan-cat
+  minitest-reporters (= 1.1.19)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rack-livereload

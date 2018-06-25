@@ -37,7 +37,7 @@ guard 'livereload' do
   watch(%r{config/locales/.+\.yml})
 end
 
-guard :minitest, cli: "-f" do
+guard :minitest do #, cli: "-f" do
   # with Minitest::Unit
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
   watch(%r{^test/(.*)\/?(.*)_test\.rb$})
@@ -45,7 +45,7 @@ guard :minitest, cli: "-f" do
   watch(%r{^test/test_helper\.rb$})      { 'test' }
   watch(%r{^test/support/matchers.rb$})      { 'test' }
 
-  watch(%r{^lib/test/devise_install_test.rb$}) { 'lib/test'}
+  watch(%r{^lib/test/chapter_2_koans_test.rb$}) { 'lib/test'}
 
 
 
