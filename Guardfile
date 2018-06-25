@@ -37,7 +37,7 @@ guard 'livereload' do
   watch(%r{config/locales/.+\.yml})
 end
 
-guard :minitest do #, cli: "-f" do
+guard :minitest, cli: "-f" do
   # with Minitest::Unit
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
   watch(%r{^test/(.*)\/?(.*)_test\.rb$})

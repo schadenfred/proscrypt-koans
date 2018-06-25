@@ -6,7 +6,8 @@ describe "\nchapter 2 koans \n\n" do
 
   def koan_msg(msg, hint=nil)
     message {
-      "\n\tKoan 2.#{self.name.split("_")[1].to_i}:\n\n\t#{msg}\n\n\t#{hint}
+      "\n\n\tKoan 2.#{self.name.split("_")[1].to_i}:
+      \n\t#{msg}\n\n\t#{hint}
       \n\n\......." }
   end
 
@@ -41,8 +42,6 @@ describe "\nchapter 2 koans \n\n" do
       "$ bin/rails g devise User")
   end
 
-
-
   it "must have converted views from .erb to .haml" do
     refute File.exist?('app/views/layouts/application.html.erb'), koan_msg(
       "Life is too short for ugly code. Convert your application layout from .erb to .haml.",
@@ -61,7 +60,7 @@ describe "\nchapter 2 koans \n\n" do
     code = "root 'static#home'"
 
     file_contents.must_include code, koan_msg(
-      "We need a root route.",
+      "When a user sends a request to your application, the application needs to know where to send it for processing. For example, when a user hits www.proscrypt.com, it needs to send that request to somewhere in your app that knows to spit back the home page. In Ruby on Rails, we provide that instruction in the 'config/routes.rb' file. We need a root route.",
       "Open #{file} and add #{code}")
   end
 
