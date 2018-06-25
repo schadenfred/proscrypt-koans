@@ -22,8 +22,8 @@ describe "\nchapter 2 koans \n\n" do
     file = 'config/initializers/devise.rb'
     file_contents = File.read(file)
     code = "# config.secret_key"
-    file_contents.wont_include code, koan_msg(
-      "Devise needs a secret key. Uncomment the line:",
+    assert file_contents.match(code).nil?, koan_msg(
+      "Devise needs a secret key. Open 'config/initializers/devise.rb' and uncomment the line:",
       "# config.secret_key = ...")
   end
 
@@ -31,7 +31,7 @@ describe "\nchapter 2 koans \n\n" do
     file = 'config/environments/development.rb'
     file_contents = File.read(file)
     code = "config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }"
-    file_contents.must_include code, koan_msg(
+    assert file_contents.match(code), koan_msg(
       "ActionMailer has not been configured in development.",
       "reflect: https://github.com/plataformatec/devise#starting-with-rails")
   end
@@ -39,34 +39,34 @@ describe "\nchapter 2 koans \n\n" do
   it "must generate a user model" do
     assert File.exist?("app/models/user.rb"), koan_msg(
       "There is no user model at app/models/user.rb. Use Devise to generate one:",
-      "$ bin/rails g devise User")
+      "$ bin/rails g devise User && bin/rails db:migrate")
   end
 
-  it "must have converted views from .erb to .haml" do
-    refute File.exist?('app/views/layouts/application.html.erb'), koan_msg(
-      "Life is too short for ugly code. Convert your application layout from .erb to .haml.",
-      "$ bundle exec rake haml:erb2haml")
-  end
-  # it "must run devise migration" do
-  #   ActiveRecord::Base.connection.tables.must_include "users", koan_msg(
-  #     "Your db has no USERS table.",
-  #     "$ rails db:migrate")
+  # it "must have converted views from .erb to .haml" do
+  #   refute File.exist?('app/views/layouts/application.html.erb'), koan_msg(
+  #     "Life is too short for ugly code. Convert your application layout from .erb to .haml.",
+  #     "$ bundle exec rake haml:erb2haml")
   # end
-
-  it "must establish a root route in config/routes.rb" do
-
-    file = 'config/routes.rb'
-    file_contents = File.read(file)
-    code = "root 'static#home'"
-
-    file_contents.must_include code, koan_msg(
-      "When a user sends a request to your application, the application needs to know where to send it for processing. For example, when a user hits www.proscrypt.com, it needs to send that request to somewhere in your app that knows to spit back the home page. In Ruby on Rails, we provide that instruction in the 'config/routes.rb' file. We need a root route.",
-      "Open #{file} and add #{code}")
-  end
-
-  it "must generate a static pages controller" do
-    assert File.exist?("app/controllers/static_controller.rb"), koan_msg(
-      "We need a controller to handle our static pages.",
-      "$ rails g controller Static home about contact terms privacy")
-  end
+  # # it "must run devise migration" do
+  # #   ActiveRecord::Base.connection.tables.must_include "users", koan_msg(
+  # #     "Your db has no USERS table.",
+  # #     "$ rails db:migrate")
+  # # end
+  #
+  # it "must establish a root route in config/routes.rb" do
+  #
+  #   file = 'config/routes.rb'
+  #   file_contents = File.read(file)
+  #   code = "root 'static#home'"
+  #
+  #   file_contents.must_include code, koan_msg(
+  #     "When a user sends a request to your application, the application needs to know where to send it for processing. For example, when a user hits www.proscrypt.com, it needs to send that request to somewhere in your app that knows to spit back the home page. In Ruby on Rails, we provide that instruction in the 'config/routes.rb' file. We need a root route.",
+  #     "Open #{file} and add #{code}")
+  # end
+  #
+  # it "must generate a static pages controller" do
+  #   assert File.exist?("app/controllers/static_controller.rb"), koan_msg(
+  #     "We need a controller to handle our static pages.",
+  #     "$ rails g controller Static home about contact terms privacy")
+  # end
 end
