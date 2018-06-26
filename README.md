@@ -54,20 +54,11 @@ Check out the chapter-2 branch on your machine. When you do:
 
 Inside the terminal you'll see a bunch of output from our database that looks something like this:
 
-< database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+> database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
 database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv6 address "::", port 5432
 database_1  | 2018-06-26 20:06:02.835 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
 database_1  | 2018-06-26 20:06:02.874 UTC [22] LOG:  database system was shut down at 2018-06-26 07:01:42 UTC
 database_1  | 2018-06-26 20:06:02.900 UTC [1] LOG:  database system is ready to accept connections
-web_1       | => Booting Puma
-web_1       | => Rails 5.2.0 application starting in development
-web_1       | => Run `rails server -h` for more startup options
-web_1       | Puma starting in single mode...
-web_1       | * Version 3.11.4 (ruby 2.5.1-p57), codename: Love Song
-web_1       | * Min threads: 5, max threads: 5
-web_1       | * Environment: development
-web_1       | * Listening on tcp://0.0.0.0:3000
-web_1       | Use Ctrl-C to stop
 
 
 the server and Let's open a new terminal to
