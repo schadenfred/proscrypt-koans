@@ -4,9 +4,9 @@ According to Franklin Spinney, [Ghengis John Boyd](http://radio-weblogs.com/0107
 
 > [A]ny conflict could be viewed as a duel wherein each adversary observes (O) his opponent's actions, orients (O) himself to the unfolding situation, decides (D) on the most appropriate response or counter-move, then acts (A). The competitor who moves through this OODA-loop cycle the fastest gains an inestimable advantage by disrupting his enemy's ability to respond effectively.
 
-[!image](https://www.seba.blog/wp-content/uploads/2017/07/ooda-loop-e1500631690732.png)
+![image](https://www.seba.blog/wp-content/uploads/2017/07/ooda-loop-e1500631690732.png)
 
-There's much more to Boyd's thinking, and you can read more [here](https://www.seba.blog/2017/07/ooda-loop-method-for-dealing-with-uncertainty/), but for now, let's get started with an observation, or a story, take your pick.
+There's much more to Boyd's thinking, and you can read more [here](https://www.seba.blog/2017/07/ooda-loop-method-for-dealing-with-uncertainty/) but for now, let's get started with an observation, or a story, take your pick.
 
 ## Observe
 
