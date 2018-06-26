@@ -1,8 +1,8 @@
-FROM ruby:2.5
+FROM ruby:2.5-alpine
 
 LABEL maintainer="fred.schoeneman@gmail.com"
-RUN apt-get update -yqq
-RUN apt-get install -yqq --no-install-recommends nodejs
+
+RUN apk add --no-cache --update build-base linux-headers postgresql-dev nodejs tzdata
 
 COPY Gemfile* /usr/src/app/
 
