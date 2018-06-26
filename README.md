@@ -4,7 +4,7 @@ Congratulations, you've solved your first koan!
 
 Which if you think about it, is kind of like solving a koan about solving koans.
 
-And which if I think about it, is kind of like saying I've introduced you to recursion in programming. We'll explore recursion in more depth later, but for now you may think of recursion as not unlike Russell Brand fixing his hair inside a house of mirrors.
+And which if I think about it, is kind of like saying I've introduced you to recursion in programming, which is something you can learn about later, once you've figured out if you even like developing. For now you may think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 And now I'm going to bastardize a French culinary phrase.
 
@@ -22,7 +22,7 @@ Don't worry if you don't know what these things are. For now just understand tha
 
 ## koan 1.1: Terminal or Console
 
-If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the sex addict, and what jokes about how dumb white people are to Chris Rock.   
+If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the sex addict, and what jokes about how dumb, white, and racist Trump voters all are to Trevor Noah.
 
 When you've opened your terminal and see something like the [image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
@@ -47,23 +47,26 @@ Now let's go to your home directory. To do so, enter 'cd':
 
 `$ cd`
 
-This puts you into your home folder on most machines. Now let's create a new directory to work in called 'work':
+This puts you into your home folder on most machines. Now let's make a new directory to work in called, not coincidentally, 'work':
 
 `$ mkdir work`
 
-To confirm the above command created a directory in your home folder, let's ask for a list of directories and files by typing 'ls':
+To confirm the above command made a directory in your home folder, let's ask for a list of directories and files by typing 'ls':
 
 `$ ls`
 
-Now let's 'change' into the work 'directory':
+Let's 'change' into the work 'directory' we just made:
 
 `$ cd work`
 
-Now from inside this directory, create a new directory called 'training,' and change into it.
+From inside this directory, let's make a new directory called 'training,' and change into it.
 
-When you can do this command without the terminal barfing, you're ready to move on:
+When you can do this command without the terminal barfing:
+
 
 `$ cd ~/work/training`
+
+...you're ready to move on:
 
 [Reflect](http://mally.stanford.edu/~sr/computing/basic-unix.html).  
 
@@ -77,7 +80,7 @@ If something like the following is returned:
 
 `git version 2.17.0`
 
-...then you're ready to move on.
+...you're ready to move on.
 
 [Reflect](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -107,21 +110,13 @@ Let's get a copy of your fork of this repository onto your machine using the 'cl
 
 `$ cd ~/work/training/proscrypt-koans`
 
-...then you're ready move on.
+...you're ready move on.
 
 [Reflect](https://help.github.com/articles/cloning-a-repository/)
 
 ## koan 1.7: Docker
 
-Developers work with other developers, and thus their code must run on other machines. Docker is basically like that movie 'Inception' except instead of dreams inside of dreams, it gives you machines inside of machines. Install it. When you can do:
-
-`$ docker --version`
-
-and it returns something like:
-
-`Docker version 18.03.1-ce, build 9ee9f40`
-
-...you're ready to move on.
+Since developers work with other developers, their code must run on other developers' machines. To make sure that our code works on your machine, which might be Windows, Mac, or one of the Linux flavors, we'll set up a 'virtual machine' inside whichever Operating System you're on, download and install a custom 'image' and use several linked 'containers' I've specified which will allow you to work through our code in a standardized way. Docker and virtual machines and images and containers are pretty neat things, and I encourage you to explore them later once you know if you like developing, but for now you may think of them as kind of like that movie 'Inception,' except instead of Leonardo DiCaprio navigaging dreams inside of dreams, it will be you running machines inside of machines. Install it.
 
 [Reflect mac](https://docs.docker.com/docker-for-mac/install/)
 
@@ -129,23 +124,39 @@ and it returns something like:
 
 [Reflect linux](https://docs.docker.com/engine/installation/linux/)
 
+When you can do:
+
+`$ docker --version`
+
+...and it returns something like:
+
+`Docker version 18.03.1-ce, build 9ee9f40`
+
+...you're ready to move on.
+
 ## koan 1.7: Docker Compose
 
-While we're at it, let's install Docker Compose. When you can do:
+Let's also install Docker Compose:
+
+[Mac](https://docs.docker.com/v17.09/compose/install/#mac)
+
+[Windows](https://docs.docker.com/v17.09/compose/install/#windows)
+
+[Linux](https://docs.docker.com/v17.09/compose/install/#linux)
+
+When you can do:
 
 `$ docker-compose --version`
 
-and it returns something like:
+...and it returns something like:
 
 `docker-compose version 1.20.1, build 5d8c71b`
 
 ...you're ready to move on.
 
-[reflect](https://docs.docker.com/v17.09/compose/install/)
-
 ## koan 1.8: Text Editor
 
-If you already have a text editor, namaste. Otherwise, install Atom.
+If you already have a text editor, namaste. Otherwise, install Atom:
 
 [reflect](https://flight-manual.atom.io/getting-started/sections/installing-atom/)
 
@@ -153,15 +164,15 @@ When you can do something similar to:
 
 `$ atom . &`
 
-...and it opens up our project, you're almost there. Now install the 'haml' package, which we'll need, because we value good looking code:
+...and it opens up our project, you're almost there. Now install the 'haml' package:
 
 [reflect](https://flight-manual.atom.io/using-atom/sections/atom-packages/)
 
 Once you have the haml package installed, you're ready to move on.
 
-## koan 1.9: Checkout this branch on your machine
+## koan 1.9: Checkout this branch
 
-Let's get your machine switched to this branch of our code -- the one you're reading. To do so we'll pass a 'checkout' command, and several arguments to Git. The first argument to Git is that we'd like to checkout a branch '-b'; the second argument is that we'd like to call the branch 'chapter-1,' and the third argument is that we'd like our local branch 'chapter-1' to track our 'origin' remote's 'chapter-1' branch.
+Let's get your cloned version of your fork of our code on this machine switched to this branch of our code -- the 'chapter-1' branch. To do so we'll pass a 'checkout' command, and several arguments to Git. The first argument to Git is to checkout a new branch '-b'; the second is to name the new branch 'chapter-1,' and the third is to pull 'chapter-1' from 'origin' into our new local 'chapter-1' branch.
 
 `$ git checkout -b chapter-1 origin/chapter-1`
 
@@ -173,7 +184,7 @@ When you can open a copy of this README.md file in your text editor, you're read
 
 Let's build our starter ProScrypt app using Docker Compose:
 
-`$ docker-compose up -d`
+`$ docker-compose build`
 
 And spool it up:
 
@@ -183,7 +194,7 @@ And create our database:
 
 `$ docker-compose exec web rails db:create`
 
-When you can click [this link](http://localhost:3000/), and it says "Yay, You're on Rails!" and looks something like ![this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
+When you can click [this link](http://localhost:3000/), and it looks something like: ![this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
 
 ...you're ready to move on.
 
@@ -191,11 +202,11 @@ When you can click [this link](http://localhost:3000/), and it says "Yay, You're
 
 Let's shut our containers down using Compose:
 
-`$ docker-compose down`
+`$ docker-compose stop`
 
-And let's clean up any unnecessary containers:
+And let's remove our stopped containers:
 
-`$ docker system prune`
+`$ docker-compose rm -f -v`
 
 When you can do:
 
@@ -205,13 +216,13 @@ When you can do:
 
 ## What you've learned
 
-I'm told that the hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Let's recapitulate:
+The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Let's recapitulate:
 
   1. You've figured out how to open and use your terminal.
   2. You've set up a professional text editor. There are plenty of great text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is plenty good for now.
   3. You've created an account on GitHub, forked these koans, cloned a copy of them onto your machine, and then checked out and switched into a new branch.
   4. You've installed Docker and Docker Compose, and learned a few powerful commands that basically turn you into Leonardo DiCaprio in Inception if that move was about computers inside computers inside computers instead of dreams inside dreams inside dreams.
 
-Now that you've finished the hard part the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
+Now that you've finished the hard part, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
 
 Switch to the "chapter-2 branch."
