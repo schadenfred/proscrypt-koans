@@ -64,4 +64,52 @@ describe "\nchapter 2 koans \n\n" do
       "Now that we have a root route defined such that a request to 'www.proscrypt.com' goes to a controller named 'static' and an action inside that controller named 'home', let's go ahead and generate both:",
       "$ bin/rails g controller Static home ")
   end
+
+  it "must have flash message partial" do
+    assert File.exist?("app/views/application/_flash_messages.html.haml"), koan_msg(
+      "Our users need to see notices and flash messages for successes and failures, for example when they successfully log in. Let's create a partial to put our code in:",
+      "$ mkdir app/views/shared\n\n\t$ touch app/views/application/_flash_messages.html.haml")
+  end
+
+  it "must include flash partial in application.html.haml" do
+    file = File.read("app/views/layouts/application.html.haml")
+    assert file.match("flash_messages"), koan_msg(
+      "Include our partial in our application layout. Add this line beneath '%body' indented and just above '= yield':",
+      "= render \'flash_messages\'")
+  end
+
+  it "must have flash code" do
+    file = File.read("app/views/application/_flash_messages.html.haml")
+    assert file.match("= notice"), koan_msg(
+      "put this code in 'app/views/application/_flash_messages.html.haml':",
+      "%p.notice
+          = notice
+        %p.alert
+          = alert")
+  end
+
+  it "must have auth links partial" do
+    assert File.exist?("app/views/application/_auth_links.html.haml"), koan_msg(
+      "Our users need links to signup, sign in, and sign out.",
+      "Create 'app/views/application/_auth_links.html.haml'")
+  end
+
+  it "must include auth_links partial in application.html.haml" do
+    file = File.read("app/views/layouts/application.html.haml")
+    assert file.match("render 'auth_links'"), koan_msg(
+      "Include our partial in our application layout. Add this line beneath '%body' indented and just above '= yield':",
+      "= render \'auth_links\'")
+  end
+
+  it "must have flash code" do
+    file = File.read("app/views/application/_auth_links.html.haml")
+    assert file.match("if user_signed_in"), koan_msg(
+      "put this code in 'shared/_flash.html.haml':",
+      "- if user_signed_in?
+          %li= link_to 'home', root_path
+          %li= link_to 'sign out \#{current_user.email}', destroy_user_session_path, method: 'delete'
+        - else
+          %li= link_to 'Sign in', new_user_session_path
+          %li= link_to 'Sign up', new_user_registration_path")
+  end
 end
