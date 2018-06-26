@@ -23,7 +23,7 @@ describe "\nchapter 2 koans \n\n" do
     file_contents = File.read(file)
     code = "# config.secret_key"
     assert file_contents.match(code).nil?, koan_msg(
-      "Devise needs a secret key. Open 'config/initializers/devise.rb' and uncomment the line:",
+      "Devise needs a secret key. Open 'config/initializers/devise.rb' and remove the '#' character to uncomment the line:",
       "# config.secret_key = ...")
   end
 
@@ -42,31 +42,37 @@ describe "\nchapter 2 koans \n\n" do
       "$ bin/rails g devise User && bin/rails db:migrate")
   end
 
-  # it "must have converted views from .erb to .haml" do
-  #   refute File.exist?('app/views/layouts/application.html.erb'), koan_msg(
-  #     "Life is too short for ugly code. Convert your application layout from .erb to .haml.",
-  #     "$ bundle exec rake haml:erb2haml")
-  # end
-  # # it "must run devise migration" do
-  # #   ActiveRecord::Base.connection.tables.must_include "users", koan_msg(
-  # #     "Your db has no USERS table.",
-  # #     "$ rails db:migrate")
-  # # end
-  #
-  # it "must establish a root route in config/routes.rb" do
-  #
-  #   file = 'config/routes.rb'
-  #   file_contents = File.read(file)
-  #   code = "root 'static#home'"
-  #
-  #   file_contents.must_include code, koan_msg(
-  #     "When a user sends a request to your application, the application needs to know where to send it for processing. For example, when a user hits www.proscrypt.com, it needs to send that request to somewhere in your app that knows to spit back the home page. In Ruby on Rails, we provide that instruction in the 'config/routes.rb' file. We need a root route.",
-  #     "Open #{file} and add #{code}")
-  # end
-  #
-  # it "must generate a static pages controller" do
-  #   assert File.exist?("app/controllers/static_controller.rb"), koan_msg(
-  #     "We need a controller to handle our static pages.",
-  #     "$ rails g controller Static home about contact terms privacy")
-  # end
+  it "must have converted views from .erb to .haml" do
+    refute File.exist?('app/views/layouts/application.html.erb'), koan_msg(
+      "Life is too short for ugly code. Convert your application layout from .erb to .haml.",
+      "$ bundle exec rake haml:erb2haml")
+  end
+
+  it "must establish a root route in config/routes.rb" do
+
+    file = 'config/routes.rb'
+    file_contents = File.read(file)
+    code = "root 'static#home'"
+
+    assert file_contents.match(code), koan_msg(
+      "When a user types 'www.proscrypt.com' in her browser and hits enter, her browser sends a 'request' to the our server, and then routes the request to application. In Rails, we customize some of this routing. Open 'config/routes.rb' and add this just above the last 'end' statement:",
+      "#{code}")
+  end
+
+  it "must have valid fixtures" do
+skip
+    file = 'test/fixtures/user'
+    file_contents = File.read(file)
+    code = "root 'static#home'"
+
+    assert file_contents.match(code), koan_msg(
+      "When a user types 'www.proscrypt.com' in her browser and hits enter, her browser sends a 'request' to the our server, and then routes the request to application. In Rails, we customize some of this routing. Open 'config/routes.rb' and add this just above the last 'end' statement:",
+      "#{code}")
+  end
+
+  it "must generate a static pages controller" do
+    assert File.exist?("app/controllers/static_controller.rb"), koan_msg(
+      "Now that we have a root route defined such that a request to 'www.proscrypt.com' goes to a controller named 'static' and an action inside that controller named 'home', let's go ahead and generate both:",
+      "$ bin/rails g controller Static home about contact terms privacy")
+  end
 end
