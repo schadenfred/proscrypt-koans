@@ -60,7 +60,6 @@ describe "\nchapter 2 koans \n\n" do
   end
 
   it "must have valid fixtures" do
-skip
     file = 'test/fixtures/user'
     file_contents = File.read(file)
     code = "root 'static#home'"
