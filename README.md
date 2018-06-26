@@ -10,7 +10,7 @@ Maybe you're a project manager who wants to understand when the neckbearded shit
 
 You do not need to be smart.
 
-What you do need is a few hour-long blocks of uninterrupted time to get started, a good attitude, some unhealthy curiosity, some obsessiveness, some stubborn, the humility to ask people for help when you're stuck, a little bit of anger, and the ability focus and to pay attention to detail. I've found coffee, ephedrine, and Adderall useful at different times in the past. Because this tutorial and these koans are really hard, and computers and software and other developers will make you feel stupid. They make me feel stupid every day. I wish I knew how to help you find out if you like developing without making you feel stupid. But I do know that if you finish these koans, nobody will be happier for you than me.
+What you do need is a few hour-long blocks of uninterrupted time to get started, a good attitude, some unhealthy curiosity, some obsessiveness, some stubbornness, the humility to ask people for help when you're stuck, a little bit of anger, and the ability focus and to pay attention to detail. I've found coffee, ephedrine, and Adderall useful at different times in the past. Because this tutorial and these koans are really hard, and computers and software and other developers will make you feel stupid. They make me feel stupid every day. I wish I knew how to help you find out if you like developing without making you feel stupid. But I do know that if you finish these koans, nobody will be happier for you than me.
 
 Not even your Mom.
 
