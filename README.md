@@ -62,7 +62,7 @@ You'll see output from our database container like this:
 > database_1  | 2018-06-26 20:06:02.874 UTC [22] LOG:  database system was shut down at 2018-06-26 07:01:42 UTC
 > database_1  | 2018-06-26 20:06:02.900 UTC [1] LOG:  database system is ready to accept connections
 
-Let's stop our database container using Ctrl-C. When the terminal prompt reappears, let's bring up our web container:
+Let's stop our database container using Ctrl-C. When the terminal prompt reappears, bring up our web container:
 
 `$ docker-compose up web`
 
