@@ -9,10 +9,10 @@ default: &default
     statement_timeout: 5000
 development:
   <<: *default
-  database: myapp_development
+  database: proscrypt_development
 test:
   <<: *default
-  database: myapp_test
+  database: proscrypt_test
 production:
   <<: *default
-  database: myapp_production
+  database: proscrypt_production
