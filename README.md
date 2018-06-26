@@ -145,17 +145,23 @@ and it returns something like:
 
 ## koan 1.8: Text Editor
 
-If you already have a text editor, namaste. Otherwise, install Atom. When you can do something similar to:
-
-`$ atom . &`
-
-...and it opens up our project, you're ready to move on.
+If you already have a text editor, namaste. Otherwise, install Atom.
 
 [reflect](https://flight-manual.atom.io/getting-started/sections/installing-atom/)
 
+When you can do something similar to:
+
+`$ atom . &`
+
+...and it opens up our project, you're almost there. Now install the 'haml' package, which we'll need, because we value good looking code:
+
+[reflect](https://flight-manual.atom.io/using-atom/sections/atom-packages/)
+
+Once you have the haml package installed, you're ready to move on.
+
 ## koan 1.9: Checkout this branch on your machine
 
-Let's get your machine switched to this branch of our code -- the one you're reading. To do so we're going to pass a 'checkout' command, and several arguments to Git. The first argument to Git is that we'd like to checkout a branch '-b'; the second argument is that we'd like to call the branch 'chapter-1,' and the third argument is that we'd like our local branch 'chapter-1' to track our 'origin' remote's 'chapter-1' branch.
+Let's get your machine switched to this branch of our code -- the one you're reading. To do so we'll pass a 'checkout' command, and several arguments to Git. The first argument to Git is that we'd like to checkout a branch '-b'; the second argument is that we'd like to call the branch 'chapter-1,' and the third argument is that we'd like our local branch 'chapter-1' to track our 'origin' remote's 'chapter-1' branch.
 
 `$ git checkout -b chapter-1 origin/chapter-1`
 
