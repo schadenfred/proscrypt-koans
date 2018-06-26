@@ -48,33 +48,71 @@ Check out the chapter-2 branch on your machine. When you do:
 
 `$ docker-compose build`
 
-...and bring them up:
+...and bring up our database container:
 
 `$ docker-compose up database`
 
-Inside the terminal you'll see a bunch of output from our database that looks something like this:
+You'll see output from our database container like this:
 
-> database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432 \n
-database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv6 address "::", port 5432
-database_1  | 2018-06-26 20:06:02.835 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
-database_1  | 2018-06-26 20:06:02.874 UTC [22] LOG:  database system was shut down at 2018-06-26 07:01:42 UTC
-database_1  | 2018-06-26 20:06:02.900 UTC [1] LOG:  database system is ready to accept connections
+> Starting proscryptkoans_database_1 ... done
+> Attaching to proscryptkoans_database_1
+> database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+> database_1  | 2018-06-26 20:06:02.825 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+> database_1  | 2018-06-26 20:06:02.835 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+> database_1  | 2018-06-26 20:06:02.874 UTC [22] LOG:  database system was shut down at 2018-06-26 07:01:42 UTC
+> database_1  | 2018-06-26 20:06:02.900 UTC [1] LOG:  database system is ready to accept connections
 
+Let's stop our database container using Ctrl-C. When the terminal prompt reappears, let's bring up our web container:
 
-the server and Let's open a new terminal to
+`$ docker-compose up web`
 
-`$ docker-compose exec web bundle exec guard`
+You'll see output from our web container like this:
 
-You should see a red failure error in this terminal now. Buried inside that red text is your next koan -- Koan 2.1. Read it, reflect on it, and then make it pass in one of two ways:
+> Starting proscryptkoans_web_1 ... done
+> Attaching to proscryptkoans_web_1
+> web_1       | => Booting Puma
+> web_1       | => Rails 5.2.0 application starting in development
+> web_1       | => Run `rails server -h` for more startup options
+> web_1       | Puma starting in single mode...
+> web_1       | * Version 3.11.4 (ruby 2.5.1-p57), codename: Love Song
+> web_1       | * Min threads: 5, max threads: 5
+> web_1       | * Environment: development
+> web_1       | * Listening on tcp://0.0.0.0:3000
+> web_1       | Use Ctrl-C to stop
 
-1. Changing an existing file in your editor and saving it, before going back to the test terminal and hitting the spacebar.
+Now hit Ctrl-C to before restarting both containers at the same time:
 
-2. Running a command inside the application, from the command line. In order to run commands inside our app, let's open a second terminal, in the same directory you're in, and then tell Docker Compose to open an interactive shell to our app inside that terminal:
+`$ docker-compose up`
 
-`$ docker-compose exec web sh`
+...and seeing the concatenated output.
 
-...which should make your new terminal prompt inside our app look something like:
+Let's shut both containers down before restarting them in a detached state:
+
+`$ docker-compose up -d`
+
+...which gives us this output:
+
+> Starting proscryptkoans_database_1 ... done
+> Starting proscryptkoans_web_1      ... done
+
+Remember that Leonardio DiCaprio-Inception stuff?
+
+Let's tunnel from your terminal shell into a shell running inside your container:
+
+ `$ docker-compose exec web sh`
+
+...which will look something like:
 
 `/usr/src/app #`
 
-Once you've run your command in the second terminal, the application shell, go back to your test terminal and hit space bar. If you've run the right command, the koan should pass and you should see a new one, until they're all finished.
+We will need to sue this shell for running rails commands, so let's open a second terminal using Ctrl+N and run our tests in it:
+
+`$ docker-compose exec web bundle exec guard`
+
+You should see a red test failure in the terminal. This test failure is the first koan in this chapter. Read it, reflect on it, and then make the test pass in one of two ways:
+
+1. Changing code in an existing file in your editor.
+
+2. Run a command inside your web container's shell
+
+To find out if your code changes or commands make the test pass, go to your test terminal and hit the space bar. If the test passes, you will go to the next test, and the next one after that, until you're finished.
