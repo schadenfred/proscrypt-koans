@@ -44,6 +44,10 @@ Check out the chapter-2 branch on your machine. When you do:
 
 `$ docker-compose stop`
 
+...And remove them:
+
+`$ docker-compose rm -v`
+
 ...and rebuild them:
 
 `$ docker-compse build`
@@ -52,14 +56,20 @@ and then bring them up:
 
 `$ docker-compose up -d`
 
-I mentioned above that one of the mental models you might find useful is TDD, or Test Driven Development. Volumes have been written about TDD and if you decide you like developing, I encourage you to get a tattoo of red-green-refactor under your eyelids, but for now do:
+I mentioned above that one of the mental models you might find useful is TDD, or Test Driven Development. Volumes have been written about TDD, and if you decide you like developing I encourage you to get a tattoo of red-green-refactor under your eyelids, but for now do:
 
 `$ docker-compose exec web bundle exec guard`
 
-You should see Koan 2.1 in red in your terminal. Once you've reflected on it, make it pass, either by changing an existing file in your editor or by running a command from inside the app itself. In order to run commands inside the app, let's open a second terminal, in the same directory, and tell Docker Compose to open an interactive shell inside it:
+You should see a red failure error in this terminal now. Buried inside that red text is your next koan -- Koan 2.1. Read it, reflect on it, and then make it pass in one of two ways:
+
+1. Changing an existing file in your editor and saving it, before going back to the test terminal and hitting the spacebar.
+
+2. Running a command inside the application, from the command line. In order to run commands inside our app, let's open a second terminal, in the same directory you're in, and then tell Docker Compose to open an interactive shell to our app inside that terminal:
 
 `$ docker-compose exec web sh`
 
-...which should look something like:
+...which should make your new terminal prompt inside our app look something like:
 
 `/usr/src/app #`
+
+Once you've run your command in the second terminal, the application shell, go back to your test terminal and hit space bar. If you've run the right command, the koan should pass and you should see a new one, until they're all finished.
