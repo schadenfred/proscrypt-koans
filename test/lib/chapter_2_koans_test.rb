@@ -59,19 +59,9 @@ describe "\nchapter 2 koans \n\n" do
       "#{code}")
   end
 
-  it "must have valid fixtures" do
-    file = 'test/fixtures/user'
-    file_contents = File.read(file)
-    code = "root 'static#home'"
-
-    assert file_contents.match(code), koan_msg(
-      "When a user types 'www.proscrypt.com' in her browser and hits enter, her browser sends a 'request' to the our server, and then routes the request to application. In Rails, we customize some of this routing. Open 'config/routes.rb' and add this just above the last 'end' statement:",
-      "#{code}")
-  end
-
   it "must generate a static pages controller" do
     assert File.exist?("app/controllers/static_controller.rb"), koan_msg(
       "Now that we have a root route defined such that a request to 'www.proscrypt.com' goes to a controller named 'static' and an action inside that controller named 'home', let's go ahead and generate both:",
-      "$ bin/rails g controller Static home about contact terms privacy")
+      "$ bin/rails g controller Static home ")
   end
 end
