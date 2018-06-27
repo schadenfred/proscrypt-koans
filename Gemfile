@@ -43,8 +43,6 @@ gem 'devise'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # gem 'minitest'
-  # gem 'minitest-reporters', '1.1.19'
   gem 'minitest-given'
   gem 'launchy'
   gem 'guard'
