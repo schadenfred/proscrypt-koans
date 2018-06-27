@@ -37,17 +37,6 @@ describe "\nchapter 2 koans \n\n" do
     end
   end
 
-  it "must specify devise in Gemfile" do
-    koan(
-      "There is no gem called 'devise' in our Gemfile.",
-      "Gemfile",
-      placement: "at about line 41",
-      code: "gem 'devise'",
-      command: "bundle",
-      reflect: "https://bundler.io/gemfile.html"
-    )
-  end
-
   it "must generate initializer file" do
     koan(
       "There is no devise initializer or locale file.",
@@ -62,7 +51,7 @@ describe "\nchapter 2 koans \n\n" do
       "Devise needs a secret key.",
       "config/initializers/devise.rb",
       code: "  config.secret_key",
-      placement: "at about line 11"
+      placement: "and uncomment the code at about line 11 (by removing the lead '#')"
 
     )
   end
