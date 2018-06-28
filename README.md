@@ -44,7 +44,15 @@ Check out the chapter-2 branch on your machine. When you do:
 
 `$ git branch`
 
-...and it shows 'chapter-2' with an asterisk, rebuild your images and containers:
+...and it shows 'chapter-2' with an asterisk, let's stop any running containers:
+
+`$ docker-compose stop`
+
+...and remove them, along with any volumes they created:
+
+`$ docker-compose rm -fv`
+
+...and then build them again:
 
 `$ docker-compose build`
 
@@ -95,24 +103,28 @@ Let's shut both containers down before restarting them in a detached state:
 > Starting proscryptkoans_database_1 ... done
 > Starting proscryptkoans_web_1      ... done
 
-Remember that Leonardio DiCaprio-Inception stuff?
+Sometimes I like to see the output, sometimes I don't. You'll figure out what works best for you. Now let's tell our rails web app to create our test and development databases:
 
-Let's tunnel from your terminal shell into a shell running inside your container:
+`$ docker-compose exec web bin/rails db:create`
+
+...and now do you remember that Leonardio DiCaprio-Inception stuff I was writing about earlier?
+
+Let's tunnel from your machine into a shell running on a machine inside your machine, called a container:
 
  `$ docker-compose exec web sh`
 
-...which will look something like:
+...and now your dream machine terminal will look something like:
 
 `/usr/src/app #`
 
-We will need to sue this shell for running rails commands, so let's open a second terminal using Ctrl+N and run our tests in it:
+We will need to use this shell for running rails commands, so let's open a second terminal using Ctrl+N, and run our tests in it:
 
 `$ docker-compose exec web bundle exec guard`
 
-You should see a red test failure in the terminal. This test failure is the first koan in this chapter. Read it, reflect on it, and then make the test pass in one of two ways:
+You should see some red test failure text in the terminal output. This is the first 'test koan' in this chapter. Read it, reflect on it, and then make the test koan pass in one of two ways:
 
-1. Changing code in an existing file in your editor.
+1. Change code in an existing file in your editor.
 
 2. Run a command inside your web container's shell
 
-To find out if your code changes or commands make the test pass, go to your test terminal and hit the space bar. If the test passes, you will go to the next test, and the next one after that, until you're finished.
+To find out if your code changes or the commands you've run made the test koan pass, go to your test terminal and hit the space bar. If the test koan passes, the test terminal will automatically put you onto the next test koan, and the next one after that, until you're finished the chapter.
