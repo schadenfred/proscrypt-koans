@@ -230,10 +230,10 @@ When you can do:
 
 The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Let's recapitulate:
 
-  1. You've figured out how to open and use your terminal.
-  2. You've set up a professional text editor. There are plenty of great text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is plenty good for now.
-  3. You've created an account on GitHub, forked these koans, cloned a copy of them onto your machine, and then checked out and switched into a new branch.
-  4. You've installed Docker and Docker Compose, and learned a few powerful commands that basically turn you into Leonardo DiCaprio in Inception if that move was about computers inside computers inside computers instead of dreams inside dreams inside dreams.
+  1. You've figured out how to open and use your terminal and use it to make directories and change into them.
+  2. You've set up a professional text editor. There are other text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is solid.
+  3. You've created an account on GitHub, forked these koans, created ssh keys, cloned a copy of the koans onto your machine, and then checked out  and switched into a new branch.
+  4. You've installed Docker and Docker Compose, and learned a few powerful commands that turn you into Leonardo DiCaprio in Inception if that movie was about computers inside computers inside computers instead of about dreams inside of dreams inside of dreams.
 
 Now that you've finished the hard part, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
 
