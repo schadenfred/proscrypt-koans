@@ -1,3 +1,7 @@
+load './test/lib/koans/guard_koans.rb'
+require 'byebug'
+
+rails_view_exts = %w(erb haml slim)
 guard 'livereload' do
   extensions = {
     css: :css,
@@ -13,7 +17,6 @@ guard 'livereload' do
     # less: :less, # uncomment if you want LESS stylesheets done in browser
   }
 
-  rails_view_exts = %w(erb haml slim)
 
   # file types LiveReload may optimize refresh for
   compiled_exts = extensions.values.uniq
@@ -38,16 +41,18 @@ guard 'livereload' do
 end
 
 guard :minitest, cli: "-f" do
-  # with Minitest::Unit
+
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
   watch(%r{^test/(.*)\/?(.*)_test\.rb$})
   watch(%r{^lib/(.*/)?([^/]+)\.rb$})     { |m| "test/#{m[1]}test_#{m[2]}.rb" }
   watch(%r{^test/test_helper\.rb$})      { 'test' }
   watch(%r{^test/support/matchers.rb$})      { 'test' }
 
-  watch(%r{^lib/test/chapter_2_koans_test.rb$}) { 'lib/test'}
-
-
+  kf = KoanFiles.new(2)
+  watch(%r{^test/lib/koans/#{kf.chapter}/koans_test.rb$})
+  kf.watchable.each do |watchable|
+    watch(%r{^#{watchable}$})      { "test/lib/koans/#{kf.chapter}/koans_test.rb" }
+  end
 
   # with Minitest::Spec
   # watch(%r{^spec/(.*)_spec\.rb$})

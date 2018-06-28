@@ -1,0 +1,10 @@
+- Gemfile
+- config/initializers/devise.rb
+- config/environments/development.rb
+- app/models/user.rb
+- test/fixtures/files/users.yml
+- app/views/layouts/application.html.haml
+- config/routes.rb
+- app/controllers/static_controller.rb
+- app/views/application/_auth_links.html.haml
+- app/views/application/_flash_messages.html.haml
