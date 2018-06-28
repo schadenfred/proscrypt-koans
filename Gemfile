@@ -38,7 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 ## Gems above this line are rails defaults.
 gem 'haml-rails', '~> 1.0'
-gem 'devise'
+gem "Gemfile"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
