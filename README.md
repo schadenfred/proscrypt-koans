@@ -6,7 +6,7 @@ According to Franklin Spinney, [Ghengis John Boyd](http://radio-weblogs.com/0107
 
 > [A]ny conflict could be viewed as a duel wherein each adversary observes (O) his opponent's actions, orients (O) himself to the unfolding situation, decides (D) on the most appropriate response or counter-move, then acts (A). The competitor who moves through this OODA-loop cycle the fastest gains an inestimable advantage by disrupting his enemy's ability to respond effectively.
 
-There's much more to Boyd's thinking but let's get started with an observation, or a story, take your pick, that is as good an entry point as any into our first OODA loop.
+There's much more to Boyd's thinking but let's get started with an observation, or a story, take your pick, for our first loop.
 
 ## Observe
 
@@ -14,11 +14,11 @@ Last winter, I broke my glasses skiing in Lake Tahoe, and was out of contact len
 
 Or amirite?
 
-Well it turns out I'm wrong, and I'm the fuckface, and that optometrists in California and pretty much everywhere else have bribed their state legislatures to keep opticians from making glasses based on out of date prescriptions. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I would.
+Well it turns out that I'm wrong, and that I'm the fuckface, and that optometrists in California and pretty much everywhere else have bribed their state legislatures to keep opticians from making glasses based on out of date prescriptions. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I would.
 
 "But I'm poor," you'd say.
 
-"Fuck you, pay me," I'd say.
+"Fuck you, pay me."
 
 ## Orient
 
@@ -28,7 +28,7 @@ But you aren't regular.
 
 You're elite.
 
-If you've gotten this far, you have mental models of some kind already: Knowing what it is to be polite, how to show respect, how to persuade, other people's wants and needs, your understanding of economics, accounting, and business processes, and your sense of humor. Maybe you're a little bit entrepreneurial. Maybe you've developed mental models of Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or of Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed, as well as with new ones like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development). Some will prove useful later, others won't. Take what you like.
+If you've gotten this far, you have mental models of some kind already: Knowing what it is to be polite, how to show respect, how to persuade, other people's wants and needs, your understanding of economics, accounting, and business, psychology, and your sense of humor. Maybe you're a little bit entrepreneurial and your mental models include Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed, as well as new ones like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development). Some of these models will prove useful later, others won't. Take what you like. In the brothel of ideas, everyone has their own tastes.
 
 ## Decide
 
@@ -36,7 +36,7 @@ We don't have to know much about what we're going to build to decide that we're 
 
 Where to start though?
 
-Well, most of the time when I'm developing, I think of people as users. So let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information. If you decide you like developing, Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) is a great way to learn about this stuff. But a lot of professional developers prefer to use a packaged system, and Plataformatec's [devise](https://github.com/plataformatec/devise) because it keeps us from doing anything too stupid.  
+I don't have it figured out, necessarily, at this stage. But most of the time when I'm developing, I think of people as users and so let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information. If you decide you like developing, Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) is a great way to learn about this stuff in detail, but we don't know that yet, so let's use a packaged system. Plataformatec's [devise](https://github.com/plataformatec/devise) is a good one, and has kept me from doing a lot of stupid things in the past.  
 
 ## Act
 
