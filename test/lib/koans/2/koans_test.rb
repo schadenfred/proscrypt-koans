@@ -45,9 +45,11 @@ describe "chapter 2 koans" do
 
   it "must add gem to Gemfile" do
     koan(
-      "When we want to use an existing package or library, known as a 'gem' to a Ruby on Rails application, we add it to our application's Gemfile.",
+      "We've added the devise gem to our Gemfile at about line 41, except it's
+      the only gem listed in double quotes, making it unlike the others. Which
+      is ugly. Style matters, especially when nobody is looking",
       "Gemfile",
-      placement: "to replace the existing double-quoted 'gem \"devise\"' specification around line 41, because style matters -- especially when nobody is looking",
+      placement: " to replace the double-quotes",
       code: "gem 'devise'",
       reflect: "https://bundler.io/gemfile.html"
     )
