@@ -4,9 +4,9 @@ Congratulations, you've solved your first koan!
 
 Which if you think about it, is kind of like solving a koan about solving koans.
 
-And which if I think about it, is kind of like saying I've introduced you to recursion in programming, which is something you can learn about later, once you've figured out if you even like developing. For now you may think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+And which if I think about it, is kind of like saying you've been introduced you to the idea of 'recursion' in programming, which is something you can learn about later, once you've figured out if you even like developing. For now you may think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
-And now I'm going to bastardize a French culinary phrase.
+And now I'm going to absolutely wreck a French culinary phrase.
 
 ## Mise en place
 
@@ -88,7 +88,7 @@ If something like the following is returned:
 
 Create an account on [GiHub](https://github.com).
 
-When you can navigate with your browser to:
+When you can log in and navigate with your browser to:
 
 `https://github.com/YOUR-USERNAME`
 
@@ -104,7 +104,19 @@ You may think of forking a repository as making a copy of it, and pretending it'
 
 [Reflect](https://help.github.com/articles/fork-a-repo/)
 
-## koan 1.6: Clone your Fork
+## koan 1.6: Make your keys
+
+In order for GitHub to know you are who you say your, and that your development machine belongs to you, it needs you to set up ssh keys on your machine and put the public pair into your settings on GitHub.
+
+[Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
+
+When you can navigate to your keys page, and it shows the key you just added:
+
+[Github keys page](https://github.com/settings/keys)
+
+...you're ready to move on.
+
+## koan 1.7: Clone your Fork
 
 Let's get a copy of your fork of this repository onto your machine using the 'clone' command. When you can do:
 
@@ -114,7 +126,7 @@ Let's get a copy of your fork of this repository onto your machine using the 'cl
 
 [Reflect](https://help.github.com/articles/cloning-a-repository/)
 
-## koan 1.7: Docker
+## koan 1.8: Docker
 
 Since developers work with other developers, their code must run on other developers' machines. To make sure that our code works on your machine, which might be Windows, Mac, or one of the Linux flavors, we'll set up a 'virtual machine' inside whichever Operating System you're on, download and install a custom 'image' and use several linked 'containers' I've specified which will allow you to work through our code in a standardized way. Docker and virtual machines and images and containers are pretty neat things, and I encourage you to explore them later once you know if you like developing, but for now you may think of them as kind of like that movie 'Inception,' except instead of Leonardo DiCaprio navigaging dreams inside of dreams, it will be you running machines inside of machines. Install it.
 
@@ -134,7 +146,7 @@ When you can do:
 
 ...you're ready to move on.
 
-## koan 1.7: Docker Compose
+## koan 1.9: Docker Compose
 
 Let's also install Docker Compose:
 
@@ -154,7 +166,7 @@ When you can do:
 
 ...you're ready to move on.
 
-## koan 1.8: Text Editor
+## koan 1.10: Text Editor
 
 If you already have a text editor, namaste. Otherwise, install Atom:
 
@@ -170,7 +182,7 @@ When you can do something similar to:
 
 Once you have the haml package installed, you're ready to move on.
 
-## koan 1.9: Checkout this branch
+## koan 1.11: Checkout this branch
 
 Let's get your cloned version of your fork of our code on this machine switched to this branch of our code -- the 'chapter-1' branch. To do so we'll pass a 'checkout' command, and several arguments to Git. The first argument to Git is to checkout a new branch '-b'; the second is to name the new branch 'chapter-1,' and the third is to pull 'chapter-1' from 'origin' into our new local 'chapter-1' branch.
 
@@ -180,7 +192,7 @@ When you can open a copy of this README.md file in your text editor, you're read
 
 [reflect](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
 
-## koan 1.10:
+## koan 1.12:
 
 Let's build our starter ProScrypt app using Docker Compose:
 
@@ -198,7 +210,7 @@ When you can click [this link](http://localhost:3000/), and it looks something l
 
 ...you're ready to move on.
 
-## koan 1.11:
+## koan 1.13:
 
 Let's shut our containers down using Compose:
 
