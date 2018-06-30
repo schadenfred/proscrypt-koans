@@ -8,3 +8,4 @@
 - app/controllers/static_controller.rb
 - app/views/application/_auth_links.html.haml
 - app/views/application/_flash_messages.html.haml
+- app/views/static/home.html.haml

@@ -4,6 +4,37 @@ describe "chapter 2 koans" do
 
   i_suck_and_my_tests_are_order_dependent!
 
+  it "must have converted views from .erb to .haml" do
+    koan(
+      "Life is too short for ugly code like we get in 'app/views/layouts/application.html.haml'. Convert your application layout from .erb to .haml.",
+      "app/views/layouts/application.html.haml",
+      command: "bundle exec rake haml:erb2haml")
+  end
+
+  it "must establish a root route in config/routes.rb" do
+    koan(
+      "When a user enters 'www.some-awesome-domain.com' into her browser, it sends a request to the server at that name. If that server was running our application right now, it would send the request to our router, which would pass it along to the correct controller and action. We'll learn more about routes, controllers, and actions later but let's take a look at our current behavior, which we can see here: http://localhost:3000. Let's start changing this behavior by first defining a route",
+      "config/routes.rb",
+      code: "root 'static#home'",
+      placement: " just above the last 'end' statement in the file")
+  end
+
+  it "must generate a static pages controller" do
+    koan(
+      "In the previous koan we established a root route in our routes.rb file that passes requests to the 'static' controller and the 'home' action inside it. Since this controller, view, and action don't yet exist, we should generate them, as well as a home.html.haml view file",
+      "app/controllers/static_controller.rb",
+      command: "bin/rails g controller Static home")
+  end
+
+  it "must have customized our landing page" do
+    koan(
+      "In the previous koan we generated a static controller and a home action which renders the content in app/views/static/home.html.haml. As you can see our application is now serving up the contents of our home view: http://localhost:3000. We should change that up some",
+      "app/views/static/home.html.haml",
+      placement: "",
+      code: "%h1 Welcome to ProScrypt",
+    )
+  end
+
   it "must add gem to Gemfile" do
     koan(
       "We've added the devise gem to our Gemfile at about line 41, except it's
@@ -38,7 +69,7 @@ describe "chapter 2 koans" do
       "ActionMailer has not been configured.",
       "config/environments/development.rb",
       code: "config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }",
-      placement: "at around line 35",
+      placement: " at around line 35",
       reflect: "https://github.com/plataformatec/devise#getting-started")
   end
 
@@ -51,12 +82,7 @@ describe "chapter 2 koans" do
 
   it "must generate a valid users.yml fixture" do
     koan(
-      "Devise does a lot of things for us that we might not have thought about.
-      One of those things is making sure that people can't sign up without an
-      email address. Another is making sure that a person can't sign up for
-      multiple accounts using the same email address. Our tests for devise rely
-      on test users we create just for our tests, and then destroy when we're
-      done we've finished running them. We will use fixtures for our app.",
+      "Devise does a lot of things for us that we might not have thought about.  One of those things is making sure that people can't sign up without an  email address. Another is making sure that a person can't sign up for multiple accounts using the same email address. Our tests for devise rely  on test users we create just for our tests, and then destroy when we're done we've finished running them. We will use fixtures for our app",
       "test/fixtures/users.yml",
       code: ["one:",
         "\n\s\semail: user@test.com",
@@ -73,36 +99,10 @@ describe "chapter 2 koans" do
 
   end
 
-  it "must have converted views from .erb to .haml" do
-    koan(
-      "Life is too short for ugly code. Convert your application layout from .erb to .haml.",
-      "app/views/layouts/application.html.haml",
-      command: "bundle exec rake haml:erb2haml")
-  end
-
-  it "must establish a root route in config/routes.rb" do
-    koan(
-      "When a user types 'www.proscrypt.com' in her browser and hits enter, her browser sends a 'request' to the our server. The server passes the request to our router.",
-      "config/routes.rb",
-      code: "root 'static#home'",
-      placement: " just above the last 'end' statement in the file")
-  end
-
-  it "must generate a static pages controller" do
-    koan(
-      "In the previous koan we established a root route that sends requests to
-      www.proscrypt.com to the 'static' controller and the 'home' action inside
-      it, which would render a view for the 'home' page. This controller, the
-      action, and the html view do not yet exist",
-      "app/controllers/static_controller.rb",
-      command: "bin/rails g controller Static home")
-  end
 
   it "must have flash message partial" do
     koan(
-      "Users need visual cues for when they've succeeded or failed at signing
-      up or signing in. Let's create a directory named 'application'
-      and a partial named '_flash_messages.html.haml'",
+      "Users need visual cues for when they've succeeded or failed at signing up or signing in. Let's create a directory named 'application' and a partial named '_flash_messages.html.haml'",
       "app/views/application/_flash_messages.html.haml",
       create_command: true)
   end
@@ -149,7 +149,8 @@ describe "chapter 2 koans" do
         "\s\s%li= link_to 'home', root_path\n",
         "\s\s%li= link_to 'sign out \#{current_user.email}', destroy_user_session_path, method: 'delete'\n",
         "- else\n",
-        "\s\s%li= link_to 'Sign in', new_user_session_path\n"
+        "\s\s%li= link_to 'Sign in', new_user_session_path\n",
+        "\s\s%li= link_to 'Sign up', new_user_registration_path\n"
       ].join,
     placement: " inside")
 
