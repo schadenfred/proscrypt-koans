@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 ## Gems above this line are rails defaults.
 gem 'haml-rails', '~> 1.0'
+gem 'bootstrap', '~> 4.1.1'
 gem "devise"
 
 group :development, :test do
