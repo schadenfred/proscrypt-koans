@@ -4,14 +4,18 @@ describe User do
 
   subject { User }
 
+  let(:chapter) { 3 }
+
   describe "db" do
 
-    let(:koan_message) { "replace 'koan' with the column type" }
+    let(:koan_file) { __FILE__.split("app/").last }
+    # let(:koan_message) { "replace 'koan' with the column type" }
+    let(:koan_message) { self.class.name }
+    # let(:koan_message)
 
-    specify "columns & types" do
-
-
-      # must_have_column(:email, koan_message)
+    describe "columns & types" do
+it " " do
+      must_have_column(:email, koan_message)
       # must_have_column(:encrypted_password, koan)
       # must_have_column(:reset_password_token, koan)
       # must_have_column(:reset_password_sent_at, koan)
@@ -23,7 +27,7 @@ describe User do
       # must_have_column(:last_sign_in_ip, koan)
       # must_have_column(:created_at, koan)
       # must_have_column(:updated_at, koan)
-
+end
     end
 
     specify "indexes" do

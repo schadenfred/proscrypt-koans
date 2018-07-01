@@ -4,9 +4,10 @@ module TestMatchers
     if koan_message.nil?
       message { "\n\t#{message}\n\n\t\t#{suggestion}\n" }
     else
-      header = "Koan 3.#{self.name.split("_")[1].to_i}:"
-      # footer = "......."
-      # footer = self.methods.grep(/name/)
+      koan_chapter = "Koan #{chapter}."
+      koan_number = self.name.split("_")[1].to_i.to_s
+      header = koan_chapter + koan_number
+      footer = "......."
       # footer = [self.name, self.class_name].join(" |")
       body = [koan_message]
       message { ["", header, body, footer].join("\n\n") }
