@@ -48,11 +48,11 @@ guard :minitest, cli: "-f" do
   watch(%r{^test/test_helper\.rb$})      { 'test' }
   watch(%r{^test/support/matchers.rb$})      { 'test' }
 
-  kf = KoanFiles.new(2)
-  watch(%r{^test/lib/koans/#{kf.chapter}/koans_test.rb$})
-  kf.watchable.each do |watchable|
-    watch(%r{^#{watchable}$})      { "test/lib/koans/#{kf.chapter}/koans_test.rb" }
-  end
+  # kf = KoanFiles.new(3)
+  # watch(%r{^test/lib/koans/#{kf.chapter}/koans_test.rb$})
+  # kf.watchable.each do |watchable|
+  #   watch(%r{^#{watchable}$})      { "test/lib/koans/#{kf.chapter}/koans_test.rb" }
+  # end
 
   # with Minitest::Spec
   # watch(%r{^spec/(.*)_spec\.rb$})
