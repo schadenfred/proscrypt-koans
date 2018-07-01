@@ -6,7 +6,7 @@ require 'minitest/autorun'
 Dir[File.expand_path('test/support/*.rb')].each { |file| require file }
 
 include TestMatchers
-include KoansHelper
+include KoansHelper::Koans
 include FileManipulationTestHelper
 
 class ActiveSupport::TestCase

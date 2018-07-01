@@ -167,4 +167,18 @@ describe "chapter 2 koans" do
         "\s\s\s\s= yield"].join,
       placement: ", around line 11, between our flash_messages partial and our yield block")
   end
+
+  it "must test the user model" do
+    koan(
+      "Include our partial in our application layout",
+      "app/views/layouts/application.html.haml",
+      code: [
+        "\s\s%body\n",
+        "\s\s\s\s= render 'flash_messages'\n",
+        "\s\s\s\s= render 'auth_links'\n",
+        "\s\s\s\s= yield"].join,
+      placement: ", around line 11, between our flash_messages partial and our yield block")
+  end
+
+
 end

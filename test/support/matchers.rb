@@ -1,7 +1,16 @@
 module TestMatchers
 
   def message_wrapper(message, suggestion=nil)
-    message { "\n\t#{message}\n\n\t\t#{suggestion}\n" }
+    if koan_message.nil?
+      message { "\n\t#{message}\n\n\t\t#{suggestion}\n" }
+    else
+      header = "Koan 3.#{self.name.split("_")[1].to_i}:"
+      # footer = "......."
+      # footer = self.methods.grep(/name/)
+      # footer = [self.name, self.class_name].join(" |")
+      body = [koan_message]
+      message { ["", header, body, footer].join("\n\n") }
+    end
   end
 
   def must_respond_to(method)

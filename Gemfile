@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 ## Gems above this line are rails defaults.
 gem 'haml-rails', '~> 1.0'
+gem 'bootstrap', '~> 4.1.1'
 gem 'devise'
 
 group :development, :test do
@@ -67,6 +68,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
+  gem 'shoulda', '~> 3.5'
+  gem 'shoulda-matchers', '~> 2.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
