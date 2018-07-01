@@ -1,6 +1,6 @@
 module KoansHelper
 
-  module ModelKoans
+  module Model
   end
 
   module Koans

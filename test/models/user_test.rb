@@ -1,4 +1,5 @@
 require 'test_helper'
+include KoansHelper::Model
 
 describe User do
 
@@ -6,38 +7,37 @@ describe User do
 
   let(:chapter) { 3 }
 
+  let(:koan_message) { "Find the test file and failing test inside it and change the test code, so that the behavior we're specifying in our tests matches application behavior." }
+
   describe "db" do
 
-    let(:koan_file) { __FILE__.split("app/").last }
-<<<<<<< HEAD
-    # let(:koan_message) { self.class.name }
-    # let(:koan_message) { "replace 'koan' with the column type" }
-=======
-    # let(:koan_message) { "replace 'koan' with the column type" }
-    let(:koan_message) { self.class.name }
->>>>>>> 8edfac759c2346a4eef8f13004823c783ae8c477
-    # let(:koan_message)
+    let(:expected) { "replace me" }
 
-    describe "columns & types" do
-it " " do
-      must_have_column(:email, koan_message)
-      # must_have_column(:encrypted_password, koan)
-      # must_have_column(:reset_password_token, koan)
-      # must_have_column(:reset_password_sent_at, koan)
-      # must_have_column(:remember_created_at, koan)
-      # must_have_column(:sign_in_count, koan)
-      # must_have_column(:current_sign_in_at, koan)
-      # must_have_column(:last_sign_in_at, koan)
-      # must_have_column(:current_sign_in_ip, koan)
-      # must_have_column(:last_sign_in_ip, koan)
-      # must_have_column(:created_at, koan)
-      # must_have_column(:updated_at, koan)
-end
+    def must_have_column(column, type=nil)
+      subject.column_names.must_include column.to_s, message(koan_message)
+    end
+
+    specify "columns & types" do
+
+
+      # subject.column_names.must_include column.to_s, message_wrapper(msg, sugg)
+
+      must_have_column(:email, expected)
+      # must_have_column(:encrypted_password, expected)
+      # must_have_column(:reset_password_token, expected)
+      # must_have_column(:reset_password_sent_at, expected)
+      # must_have_column(:remember_created_at, expected)
+      # must_have_column(:sign_in_count, expected)
+      # must_have_column(:current_sign_in_at, expected)
+      # must_have_column(:last_sign_in_at, expected)
+      # must_have_column(:current_sign_in_ip, expected)
+      # must_have_column(:last_sign_in_ip, expected)
+      # must_have_column(:created_at, expected)
+      # must_have_column(:updated_at, expected)
     end
 
     specify "indexes" do
-
-      # must_have_index(:email)
+      # must_have_index(:fixme)
       # must_have_index(:name)
       # must_have_index(:reset_password_token)
       # must_have_index([:invited_by_id, :invited_by_type])
@@ -58,8 +58,10 @@ end
     # must_have_one(:avatar)
   end
 
-  specify "methods" do
-    # subject.new.respond_to?(:articles).must_equal true
+  specify "devise modules" do
+    s = subject
+    # s.methods(false).must_equal true
+    subject.devise_modules.must_include "database_authenticatable", message { koan_message }
     # subject.new.respond_to?(:avatar).must_equal true
 
   end

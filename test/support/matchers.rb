@@ -1,16 +1,15 @@
 module TestMatchers
 
-  def message_wrapper(message, suggestion=nil)
+  def message_wrapper(message=nil, suggestion=nil)
     if koan_message.nil?
       message { "\n\t#{message}\n\n\t\t#{suggestion}\n" }
     else
       koan_chapter = "Koan #{chapter}."
       koan_number = self.name.split("_")[1].to_i.to_s
       header = koan_chapter + koan_number
-      footer = "......."
       # footer = [self.name, self.class_name].join(" |")
       body = [koan_message]
-      message { ["", header, body, footer].join("\n\n") }
+      message { ["", header, body].join("\n\n") }
     end
   end
 
@@ -45,7 +44,7 @@ module TestMatchers
     indexes = connection.indexes(subject.table_name).collect(&:columns)
 
     if index.class == Symbol
-      indexes.must_include [index.to_s]
+      indexes.must_include [index.to_s], message_wrapper()
     else
       indexes.must_include(index.map &:to_s)
     end
