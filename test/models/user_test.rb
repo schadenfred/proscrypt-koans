@@ -9,8 +9,13 @@ describe User do
   describe "db" do
 
     let(:koan_file) { __FILE__.split("app/").last }
+<<<<<<< HEAD
     # let(:koan_message) { self.class.name }
     # let(:koan_message) { "replace 'koan' with the column type" }
+=======
+    # let(:koan_message) { "replace 'koan' with the column type" }
+    let(:koan_message) { self.class.name }
+>>>>>>> 8edfac759c2346a4eef8f13004823c783ae8c477
     # let(:koan_message)
 
     describe "columns & types" do
