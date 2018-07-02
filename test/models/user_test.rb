@@ -1,28 +1,24 @@
 require 'test_helper'
-include KoansHelper::Model
+require 'lib/koans/koans_helper'
+include Koans::Helpers::ModelsHelper
 
 describe User do
 
   subject { User }
 
-  let(:chapter) { 3 }
-
-  let(:koan_message) { "Find the test file and failing test inside it and change the test code, so that the behavior we're specifying in our tests matches application behavior." }
-
   describe "db" do
+
+    def must_have_column(column, type)
+      subject.columns_hash[column.to_s].type.must_equal type, koan_message(
+        "If we look at db/schema.rb, we see that devise has given us a users table and a number of columns. It's not important that we know the purpose of each of these columns, but let's rewrite our tests to show we know they're there:"
+      )
+    end
 
     let(:expected) { "replace me" }
 
-    def must_have_column(column, type=nil)
-      subject.column_names.must_include column.to_s, message(koan_message)
-    end
-
     specify "columns & types" do
 
-
-      # subject.column_names.must_include column.to_s, message_wrapper(msg, sugg)
-
-      must_have_column(:email, expected)
+      # must_have_column(:email, expected)
       # must_have_column(:encrypted_password, expected)
       # must_have_column(:reset_password_token, expected)
       # must_have_column(:reset_password_sent_at, expected)
@@ -36,75 +32,17 @@ describe User do
       # must_have_column(:updated_at, expected)
     end
 
+    def must_have_index(index)
+      connection = ActiveRecord::Base.connection
+      indexes = connection.indexes(subject.table_name).collect(&:columns)
+      indexes.must_include [index.to_s], koan_message(
+        "Indexes on database tables greatly improve speed which will be helpful when we have billions of prescriptions in our database and milions of users. Our database currently has two indexes on the users table, which we can verify by looking at db/schema.rb. Let's make our tests specify these indexes as well.")
+    end
+
     specify "indexes" do
-      # must_have_index(:fixme)
-      # must_have_index(:name)
-      # must_have_index(:reset_password_token)
-      # must_have_index([:invited_by_id, :invited_by_type])
+
+      must_have_index(:email)
+      must_have_index(expected)
     end
   end
-
-  specify "associations" do
-
-    # must_belong_to(:plan)
-    # must_have_many(:articles)
-    # must_have_many(:identities)
-    # must_have_many(:invitations)
-    # must_have_many(:positions)
-    # must_have_many(:photographed)
-    # must_have_many(:reviews)
-    # must_have_many(:wishes)
-    #
-    # must_have_one(:avatar)
-  end
-
-  specify "devise modules" do
-    s = subject
-    # s.methods(false).must_equal true
-    subject.devise_modules.must_include "database_authenticatable", message { koan_message }
-    # subject.new.respond_to?(:avatar).must_equal true
-
-  end
-
-  # Given(:user) { build_stubbed(:user, email: email, name: realname) }
-  #
-  # Given(:realname) { nil }
-  #
-  # describe ":name_from_email" do
-  #
-  #   describe "localpart separated by period" do
-  #
-  #     When(:email) { "narcy.david@gmail.com"}
-  #     Then { user.name_from_email.must_equal "Narcy" }
-  #   end
-  #
-  #   describe "localpart separated by underscore" do
-  #
-  #     When(:email) { "narcy_david@gmail.com"}
-  #     Then { user.name_from_email.must_equal "Narcy" }
-  #   end
-  #
-  #   describe "localpart separated by underscore" do
-  #
-  #     When(:email) { "narcydavid@gmail.com"}
-  #     Then { user.name_from_email.must_equal "Narcydavid" }
-  #   end
-  #
-  #   Given(:email) { "narcy.david@gmail.com" }
-  #
-  #   describe ":first_name" do
-  #
-  #     describe "when name attribute not blank" do
-  #
-  #       When(:realname) { "Narciso Davidovich" }
-  #       Then{ user.first_name.must_equal "Narciso"}
-  #     end
-  #
-  #     describe "when name attribute nil" do
-  #
-  #       When(:realname) { nil }
-  #       Then { user.first_name.must_equal "Narcy"}
-  #     end
-  #   end
-  # end
 end
