@@ -40,7 +40,7 @@ guard 'livereload' do
   watch(%r{config/locales/.+\.yml})
 end
 
-guard :minitest, cli: "-f" do
+guard :minitest, cli: "bin/rails test test/lib/koans/2/*.rb" do
 
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
   watch(%r{^test/(.*)\/?(.*)_test\.rb$})

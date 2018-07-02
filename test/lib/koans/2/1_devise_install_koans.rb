@@ -1,4 +1,6 @@
 require 'test_helper'
+require 'lib/koans/koans_helper'
+include Koans::Helpers::CodeHelper
 
 describe "chapter 2 koans" do
 

@@ -2,7 +2,8 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
 require 'minitest/autorun'
-
+require 'minitest/spec'
+require 'minitest/given'
 Dir[File.expand_path('test/support/*.rb')].each { |file| require file }
 
 include TestMatchers
