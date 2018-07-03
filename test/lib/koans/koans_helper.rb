@@ -6,12 +6,12 @@ module KoansHelper
 
   def koan_header
     koan_number = self.name.split("_")[1].to_i.to_s
-    "Koan #{@chapter}.#{koan_number}"
+    "Koan #{@koan_chapter}.#{@koan_group}.#{koan_number}"
   end
 
   def reference_code(file)
     reference_file = file.split("/").last + ".example"
-    File.read("test/lib/koans/#{@chapter}/reference_code/#{reference_file}")
+    File.read("test/lib/koans/#{@koan_chapter}/reference_code/#{reference_file}")
   end
 
   def koan_command(command, suggested_commands=nil)
