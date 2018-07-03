@@ -7,13 +7,15 @@ describe "chapter 2 koans" do
   i_suck_and_my_tests_are_order_dependent!
 
   before do
-    @chapter = 2
+    @chapter = __dir__.split("/").last
   end
 
-  it "must have geneated master key and credentials" do
-    assert Rails.application.credentials.secret_key_base, koan(
+  it "must have generated master key and credentials" do
+    refute Rails.application.credentials.secret_key_base, koan(
       "Securing your application is imoprtant. We should generate a new master key and credentials set.",
-      command: ["EDITOR=\"vi\" bin/rails credentials:edit", ":q"])
+      command: ["EDITOR=\"vi\" bin/rails credentials:edit", ":q",
+      reflect: "https://www.engineyard.com/blog/rails-encrypted-credentials-on-rails-5.2"]
+    )
   end
 
   @proscrypt_gems = [
@@ -96,16 +98,6 @@ describe "chapter 2 koans" do
     )
   end
 
-  # it "must set devise secret key" do
-  #   file = "config/initializers/devise.rb"
-  #   code = "  config.secret_key"
-  #   assert File.read(file).match(code), koan(
-  #     "Devise needs a secret key.",
-  #     code: code,
-  #     placement: "and uncomment the code at about line 11 -- by removing the prepended '#'",
-  #   reflect : )
-  # end
-
   it "must configure ActionMailer for development" do
     file = "config/environments/development.rb"
     code = reference_code(file)
@@ -169,7 +161,6 @@ describe "chapter 2 koans" do
       "Our users need links to signup, sign in, and sign out. Let's make a partial to put that code in.",
     file: file,
     code: code,
-    # placement: " inside",
     reflect: "http://haml.info/tutorial.html")
   end
 
