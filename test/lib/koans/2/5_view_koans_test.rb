@@ -64,7 +64,7 @@ describe "chapter 2 koans" do
       reflect: "http://edgeguides.rubyonrails.org/layouts_and_rendering.html#using-partials")
     end
 
-    it "must have links in _auth_links partial" do
+    it "must have _auth_links partial" do
       file = "app/views/application/_auth_links.html.haml"
       code = reference_code(file)
       assert File.read(file).eql?(code), koan(
@@ -81,24 +81,31 @@ describe "chapter 2 koans" do
     reflect: "http://edgeguides.rubyonrails.org/layouts_and_rendering.html#using-partials")
   end
 
-  it "must have flash message partial" do
+  it "must have code in flash message partial" do
     file = "app/views/application/_flash_messages.html.haml"
     code = reference_code(file)
     assert File.read(file).match(code), koan(
       "We have the partial view, but no code",
       code: code,
-      reflect: "http://haml.info/tutorial.html"
-    )
+      reflect: "http://haml.info/tutorial.html")
   end
 
-
-  it "must include flash and auth_links partials in application.html.haml" do
-    file = "app/views/layouts/application.html.haml"
+  it "must include _flash in _header" do
+    file = "app/views/application/_header.html.haml"
     code = reference_code(file)
 
     assert File.read(file).match(code), koan(
-      "Partials are rendered as part of parent views and layouts. Include our
-      partial in our application layout",
+      "Partials are rendered as part of parent views and layouts. Include our partial in our application layout",
+    file: file,
+    code: code,
+    reflect: "http://edgeguides.rubyonrails.org/layouts_and_rendering.html#structuring-layouts")
+  end
+
+  it "must include _auth_links in _header" do
+    file = "app/views/application/_header.html.haml"
+    code = "render 'auth_links'"
+    assert File.read(file).match(code), koan(
+      "Partials can be rendered inside partials. Let's put our _auth_links partial inside our _header partial, which is already inside our application layout.",
     file: file,
     code: code,
     reflect: "http://edgeguides.rubyonrails.org/layouts_and_rendering.html#structuring-layouts")
