@@ -1,0 +1,8 @@
+one:
+  email: user@test.com
+patient:
+  email: patient@test.com
+optometrist:
+  email: optometrist@test.com
+optician:
+  email: optician@test.com

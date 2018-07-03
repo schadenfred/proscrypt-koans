@@ -37,9 +37,7 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 ## Gems above this line are rails defaults.
-gem 'haml-rails', '~> 1.0'
-gem 'bootstrap', '~> 4.1.1'
-gem "devise"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,7 +49,6 @@ group :development, :test do
   gem 'guard-livereload'
   gem 'rack-livereload'
 end
-
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
