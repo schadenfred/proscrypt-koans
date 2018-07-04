@@ -10,23 +10,21 @@ I'm no Zen Buddhist monk and hope you'll never abandon reason, but I've always h
 
 Maybe you have different goals.
 
-Maybe you're a project manager who wants to understand when the fat, neckbearded shitheads she works with are shining her on. Or maybe you're in prison, looking for something to pass the time: An enlisted Marine standing watch on a nuclear submarine. A bartender with too much college debt. One of those emo kids in high school who hates football and cheerleaders and wears axe body spray and vapes in the bathroom between classes. A Dad with three kids by two different baby Mommas, who doesn't want them to grow up on food stamps. Maybe you're homeless. Shit, maybe you're one of those beauty-queen-trophy-wives who's always been quiet, and perfect, and who nobody ever thought was smart, but yesterday some fat ugly slut threw shade on your Jimmy Choo's and now you're going to show her what is the mothafuckin what. Your motivation doesn't matter, because your code doesn't give a shit. Your code either a) works or b) doesn't work. Your code doesn't have feelings. Your code won't care how old you are, where you live, what car you drive, what your SAT score was, or if you're good at math or science.
+Maybe you're a project manager who wants to understand when the neckbeards she works with are shining her on. Or maybe you're in prison, looking for something to pass the time: An enlisted Marine standing watch on a nuclear submarine. A bartender with too much college debt. One of those emo kids in high school who hates football and cheerleaders and wears axe body spray and vapes in the bathroom between classes. A Dad with three kids by two different baby Mommas, who doesn't want them to grow up on food stamps. Maybe you're homeless. Shit, maybe you're one of those beauty-queen-trophy-wives who's always been quiet, and perfect, and who nobody ever thought was smart, but yesterday some fat ugly slut threw shade on your Jimmy Choo's, and now you're going to show her what is the mothafuckin what. Your motivation doesn't matter, because your code doesn't give a shit. Your code either a) works or b) doesn not work. Your code doesn't have feelings. Your code won't care how old you are, where you live, what car you drive, what your SAT score was, or if you're good at math or science.
 
 You won't need a credit card for these koans, and you won't need to be smart. Let me say that again:
 
 You do not need to be smart.
 
-What you do need is a few hour-long blocks of uninterrupted time to get started, a good attitude, some unhealthy curiosity, some obsessiveness, some stubborn, the humility to ask people for help when you're stuck, a little bit of anger, and the abilities to focus and to pay attention to detail. I've found coffee, ephedrine, and Adderall useful at different times in the past. Because this tutorial and these koans are really hard. Computers and software and other developers will make you feel stupid.
+What you do need is a few hour-long blocks of uninterrupted time to get started, a good attitude, some unhealthy curiosity, some obsessiveness, some stubborn, the humility to ask people for help when you're stuck, a little bit of anger, and the abilities to focus and to pay attention to detail. Because this tutorial and these koans are hard.
 
-They make me feel stupid every day.
-
-I wish I knew how to help you find out if you like developing without making you feel stupid. But I do know that if you finish these koans, nobody will be happier for you than me.
+Computers and software and other developers will make you feel stupid. They make me feel stupid every day. I wish I knew how to help you find out if you like developing without making you feel stupid. I don't. But I do know that if you finish these koans, nobody will be happier for you than me.
 
 Not even your Mom.
 
 ### koans
 
-I'm going to give you a problem, or koan, to solve. Or reflect on. Whatever. You're going to figure out how to solve it, and once you've solved it, you can move onto the next koan, solve it, and move on until you're done. I'm not going to teach you anything, you're going to teach yourself.
+I'm going to give you a problem, or koan, to solve. Or reflect on. Whatever. You're going to figure out how to solve it, and once you've solved it, you're going to move onto the next koan, solve it, and move on kaon, until you're done. I'm not going to teach you anything, you're going to teach yourself.
 
 ### Your first koan
 
