@@ -36,7 +36,7 @@ describe "chapter 2 koans" do
         suggestion,
         file: file,
         code: code,
-        placement: "just below line 39 and then run 'bundle' from inside your web container shell",
+        placement: "just below line 39.",
         command: "bundle",
         reflect: reflect)
     end
