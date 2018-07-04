@@ -16,7 +16,7 @@ describe "chapter 2 koans" do
     assert File.exist?(file), koan(
       "Life is too short for ugly code like we read in #{file}'. We should convert our application layout view from .erb to .haml.",
       file: file,
-      command: "bundle exec rake haml:erb2haml",
+      command: ["bundle exec html2haml #{file} #{file.gsub(".erb",".haml")}", "rm #{file}"],
       reflect: "http://haml.info/tutorial.html")
   end
 
