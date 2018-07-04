@@ -11,15 +11,6 @@ default: &default
 
 development:
   <<: *default
-<<<<<<< HEAD
-  database: proscrypt_development
-test:
-  <<: *default
-  database: proscrypt_test
-production:
-  <<: *default
-  database: proscrypt_production
-=======
 
 test:
   <<: *default
@@ -27,4 +18,3 @@ test:
 
 production:
   <<: *default
->>>>>>> chapter-2
