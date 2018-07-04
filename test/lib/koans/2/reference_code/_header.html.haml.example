@@ -1,0 +1,7 @@
+= render 'flash_messages'
+%nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+  = link_to "ProScrypt", root_url, class: "navbar-brand"
+  %button.navbar-toggler{"aria-controls" => "navbarCollapse", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarCollapse", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarCollapse.collapse.navbar-collapse
+    = render 'auth_links'

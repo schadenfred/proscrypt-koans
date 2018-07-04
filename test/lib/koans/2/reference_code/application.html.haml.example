@@ -1,0 +1,8 @@
+!!!
+%html
+  %head
+    = render 'head'
+  %body
+    = render 'header'
+    = render 'main'
+    = render 'footer'
