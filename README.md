@@ -6,15 +6,25 @@ According to Franklin Spinney, [Ghengis John Boyd](http://radio-weblogs.com/0107
 
 > [A]ny conflict could be viewed as a duel wherein each adversary observes (O) his opponent's actions, orients (O) himself to the unfolding situation, decides (D) on the most appropriate response or counter-move, then acts (A). The competitor who moves through this OODA-loop cycle the fastest gains an inestimable advantage by disrupting his enemy's ability to respond effectively.
 
-There's much more to Boyd's thinking but let's get started with an observation, or a story, take your pick, for our first loop.
+There's much more to Boyd but let's get started with an observation, or a story, take your pick, for our first loop.
 
 ## Observe
 
-Last winter, I broke my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) in Carson City, Nevada. I showed Wesley, the Optician, my broken glasses. He asked if I had my prescription. I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right? -- so Wesley called my optometrist's office, only to be told the prescription was out of date, and that it was the optometrist's policy not to send out-of-date prescriptions. Since I didn't have time to get an appointment with a nearby optometrist, Wesley used a machine to analyze the broken glasses to guess at the prescription, told me he'd have a new pair based on it ready the next day, wired my broken frames together, and sent me home. No problem there, at least with Wesley -- I'm still impressed by his customer service, and that he seemed to so genuinely care -- but it bugged me that the optometrist wouldn't even send a copy of the old prescription. I mean, it's my medical record, not hers, and I payed for it, so why can't I just have a copy? Am I right?
+Last winter, I broke my glasses skiing in Lake Tahoe, and was out of contact lenses, and so went to [Deputy Optics](https://www.deputyoptics.com/) down in Carson City].
+
+I showed Wesley, the Optician, my broken glasses.
+
+He asked if I had my prescription.
+
+I didn't -- Who keeps eyeglass prescriptions in their wallet though anyways, right?
+
+Wesley called my optometrist's office, only to be told the prescription was out of date. And also that it was the optometrist's policy not to send out-of-date prescriptions because people might die. Since I didn't have time to get an appointment with a local optometrist, Wesley used a machine to analyze the broken glasses to guess at the prescription. Then he told me he'd have a new pair based on the machine prescription ready the next day, before wiring my broken frames together and sending me home.
+
+No problem there, at least with Wesley. I'm still impressed by his customer service, and that he seemed to so genuinely care. But it bugged me that the optometrist wouldn't even send a copy of the old prescription. I mean, it's my medical record, not hers, and I payed for it, so why can't I just have a copy? Am I right?
 
 Or amirite?
 
-Well it turns out that I'm wrong, and that I'm the fuckface, and that optometrists in California and pretty much everywhere else have bribed their state legislatures to keep opticians from making glasses based on out of date prescriptions. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I would.
+Well it turns out that I'm wrong, and that I'm a total fuckface, and that optometrists in California and pretty much every state have bribed their legislatures to keep opticians from making glasses based on out of date prescriptions. I guess I don't blame them. If I could use the government to force everyone who wants to learn programming to pay me for this tutorial, I would.
 
 "But I'm poor," you'd say.
 
@@ -22,13 +32,13 @@ Well it turns out that I'm wrong, and that I'm the fuckface, and that optometris
 
 ## Orient
 
-Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and yoke and buttons and radio and gauges and instruments and also her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. If you wear contacts, maybe you have a mental model that caused you to think ahead and buy extra pairs of glasses and contacts, or to have asked your optometrist to email you a copy of your prescription way back when, and now you can find it by searching your email, and you maybe you can use it buy glasses from twelve year olds in Phnom Penh and have them airmailed to you. But regular people don't always have tools or mental models to fight against crony capitalists in healthcare -- except maybe with their vote, or if they're wealthy enough, a well timed political donation.
+Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and her yoke and buttons and her radio and gauges and instruments and also her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point skills. If you wear contacts, maybe you have a mental model that's different from mine, one that allowed you to think ahead and buy extra pairs of glasses and contacts, or to even to have asked your optometrist to email you a copy of your prescription way back when, so that now you can find it by searching your email, you can use it because you're a genius bitcoin investor with wads of delicious wealth and you can buy glasses made by twelve year olds in Phnom Penh and have them airmailed to you first class. But regular people don't always have tools or mental models to fight against crony capitalists in healthcare -- except maybe with their vote, or if they're wealthy enough, a well timed political donation.
 
 But you aren't regular.
 
 You're elite.
 
-If you've gotten this far, you have mental models of some kind already: Knowing what it is to be polite, how to show respect, how to persuade, other people's wants and needs, your understanding of economics, accounting, and business, psychology, and your sense of humor. Maybe you're a little bit entrepreneurial and your mental models include Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed, as well as new ones like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development). Some of these models will prove useful later, others won't. Take what you like. In the brothel of ideas, everyone has their own tastes.
+If you've gotten this far, you have mental models of some kind: Knowing what it is to be polite, how to show respect, how to persuade, models of other people's wants and needs, models of economics, of accounting, business, psychology, and your sense of humor. Maybe you're a little bit entrepreneurial, and your mental models include Steve Blank's [Customer Development](https://en.wikipedia.org/wiki/Customer_development), or Eric Ries's ironically much fatter and doughier [lean startup methodology](https://en.wikipedia.org/wiki/Lean_startup). As we go through these koans, your inventory of models will grow to include familiarity with the tools we just installed, as well as new ones like [agile software development](https://en.wikipedia.org/wiki/Agile_software_development) and [test driven development](https://en.wikipedia.org/wiki/Test-driven_development). Some of these models will prove useful later, others won't. Take what you like. In the brothel of ideas, everyone has their own kinks.
 
 ## Decide
 
@@ -36,38 +46,21 @@ We don't have to know much about what we're going to build to decide that we're 
 
 Where to start though?
 
-I don't have it figured out, necessarily, at this stage. But most of the time when I'm developing, I think of people as users and so let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information. If you decide you like developing, Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) is a great way to learn about this stuff in detail, but we don't know that yet, so let's use a packaged system. Plataformatec's [devise](https://github.com/plataformatec/devise) is a good one, and has kept me from doing a lot of stupid things in the past.  
+I don't have it figured out, necessarily, at this stage. But most of the time when I'm developing, I think of people as users and so let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information.
+
+If you decide you like developing, Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) is a great way to learn about this stuff in detail, but we don't know that yet, so let's use a packaged system. Plataformatec's [devise](https://github.com/plataformatec/devise) is a good one, and has kept me from doing a lot of stupid things in the past.  
 
 ## Act
-## koan 1.11:
 
-Let's shut our containers down using Compose:
+Let's shut everything down that we started in the last chapter:
 
-`$ docker-compose stop`
+`$ docker-compose down`
 
-And let's remove our stopped containers:
-
-`$ docker-compose rm -f -v`
-
-When you can do:
-
-`$ docker ps`
-
-...and see there are no running containers, move on.
-
-Check out the chapter-2 branch on your machine. When you do:
+Check out the chapter-2 branch on your machine. When you can do:
 
 `$ git branch`
 
-...and it shows 'chapter-2' with an asterisk, let's stop any running containers:
-
-`$ docker-compose stop`
-
-...and remove them, along with any volumes they created:
-
-`$ docker-compose rm -fv`
-
-...and then build them again:
+...and it shows 'chapter-2' with an asterisk, let's go ahead and build:
 
 `$ docker-compose build`
 
@@ -85,7 +78,9 @@ You'll see output from our database container like this:
 > database_1  | 2018-06-26 20:06:02.874 UTC [22] LOG:  database system was shut down at 2018-06-26 07:01:42 UTC
 > database_1  | 2018-06-26 20:06:02.900 UTC [1] LOG:  database system is ready to accept connections
 
-Let's stop our database container using Ctrl-C. When the terminal prompt reappears, bring up our web container:
+Let's stop our database container, using Ctrl-C.
+
+When the terminal prompt reappears, bring up our web container:
 
 `$ docker-compose up web`
 
@@ -107,7 +102,7 @@ Now hit Ctrl-C to before restarting both containers at the same time:
 
 `$ docker-compose up`
 
-...and seeing the concatenated output.
+...and you should see output from the web appliation container and the database conatainer it stores shit in, concatenated.
 
 Let's shut both containers down before restarting them in a detached state:
 
@@ -118,28 +113,30 @@ Let's shut both containers down before restarting them in a detached state:
 > Starting proscryptkoans_database_1 ... done
 > Starting proscryptkoans_web_1      ... done
 
-Sometimes I like to see the output, sometimes I don't. You'll figure out what works best for you. Now let's tell our rails web app to create our test and development databases:
+Sometimes I like to see the output, sometimes I don't. You'll figure out what works best for you.
+
+Now let's tell our web app to create our test and development databases:
 
 `$ docker-compose exec web bin/rails db:create`
 
-...and now do you remember that Leonardio DiCaprio-Inception stuff I was writing about earlier?
-
-Let's tunnel from your machine into a shell running on a machine inside your machine, called a container:
+...and now do you remember that Leonardio DiCaprio-Inception stuff I was writing about earlier? With the dreams and the tunneling inside dreams? Let's tunnel from your machine into a shell running on a machine inside your machine:
 
  `$ docker-compose exec web sh`
 
-...and now your dream machine terminal will look something like:
+...and now your dream machine terminal prompt will look something like:
 
 `/usr/src/app #`
 
-We will need to use this shell for running rails commands, so let's open a second terminal using Ctrl+N, and run our tests in it:
+Right on.
+
+Let's leave this machine in a machine terminal shell open for running commands inside our app -- otherwise, we'd need to prepend each command with 'docker-compose exec web' -- and open a second terminal in our host OS using Ctrl+N, so we can run our tests in it:
 
 `$ docker-compose exec web bundle exec guard`
 
-You should see some red test failure text in the terminal output. This is the first 'test koan' in this chapter. Read it, reflect on it, and then make the test koan pass in one of two ways:
+You should see some red text in the terminal output. This is the first 'test koan' in this chapter. Read it, reflect on it, and then make the test koan pass, in one of two ways:
 
 1. Change code in an existing file in your editor.
 
 2. Run a command inside your web container's shell
 
-To find out if your code changes or the commands you've run made the test koan pass, go to your test terminal and hit the space bar. If the test koan passes, the test terminal will automatically put you onto the next test koan, and the next one after that, until you're finished the chapter.
+To find out if your code changes or the commands you've run have made the test koan pass, go to your test terminal and hit the spacebar. If the test koan passes, the test terminal will automatically put you onto the next test koan, and when you destroy it, the next one after that, until you're finished with the chapter.
