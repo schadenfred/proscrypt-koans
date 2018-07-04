@@ -39,6 +39,21 @@ Where to start though?
 I don't have it figured out, necessarily, at this stage. But most of the time when I'm developing, I think of people as users and so let's decide to start by building a way for users to sign up, sign in, log out, and update their personal information. If you decide you like developing, Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) is a great way to learn about this stuff in detail, but we don't know that yet, so let's use a packaged system. Plataformatec's [devise](https://github.com/plataformatec/devise) is a good one, and has kept me from doing a lot of stupid things in the past.  
 
 ## Act
+## koan 1.11:
+
+Let's shut our containers down using Compose:
+
+`$ docker-compose stop`
+
+And let's remove our stopped containers:
+
+`$ docker-compose rm -f -v`
+
+When you can do:
+
+`$ docker ps`
+
+...and see there are no running containers, move on.
 
 Check out the chapter-2 branch on your machine. When you do:
 
