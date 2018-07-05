@@ -1,4 +1,4 @@
-require_relative '2/koans/1_bundle_gems.rb'
+require_relative '2/koans/1_install_and_bundle_gems.rb'
 # require_relative '2/koans/2_static_pages.rb'
 # require_relative 'koans/3_styles.rb'
 # require_relative 'koans/4_devise.rb'

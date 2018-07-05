@@ -57,17 +57,6 @@ module KoansHelper
     end
 
     instructions.join(newline)
-
-      # byebug
-    #
-    # actual = yaml["actual"]["code"]
-    # expected = yaml["expected"]["code"]
-    # line = yaml["actual"]["line"]
-    # instruction = "Open this file: \n\n  #{options[:file]}"
-    # instruction << "\n\nReplace this code on line #{line}:"
-    # instruction << "\n\n#{actual}"
-    # instruction << "\n\nWith this code:"
-    # instruction << "\n\n#{expected}"
   end
 
   def koan(msg=nil, options=nil)
@@ -76,6 +65,6 @@ module KoansHelper
     body << koan_replace(options) if options[:yaml]
     body << koan_command(options[:command]) if options[:command]
     body << "Reflect:\n\n  #{options[:reflect]}" if options[:reflect]
-    message { ["", koan_header, body, "...."].join("\n\n") }
+    message { ["", body, "...."].join("\n\n") }
   end
 end

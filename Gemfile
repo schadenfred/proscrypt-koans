@@ -48,6 +48,10 @@ group :development, :test do
   gem 'guard-minitest'
   gem 'guard-livereload'
   gem 'rack-livereload'
+
+  gem 'minitest-reporters'
+  gem 'minitest-fail-fast'
+
 end
 
 group :development do
