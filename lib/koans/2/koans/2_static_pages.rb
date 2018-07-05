@@ -1,6 +1,3 @@
-require 'test_helper'
-require 'lib/koans/koans_helper'
-include KoansHelper
 
 describe "chapter 2 koans" do
 

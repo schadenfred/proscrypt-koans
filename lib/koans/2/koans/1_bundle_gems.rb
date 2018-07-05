@@ -1,14 +1,11 @@
-require 'test_helper'
-require 'lib/koans/koans_helper'
-include KoansHelper
+require_relative '../../koans_runner'
 
-describe "chapter 2 koans" do
+describe "Koan" do
 
   i_suck_and_my_tests_are_order_dependent!
 
   before do
-    @koan_chapter = __dir__.split("/").last
-    @koan_group = __FILE__.split("/").last.split("_").first
+    @koans = Koans::Runner.new(self, __FILE__)
   end
 
   @proscrypt_gems = [
@@ -38,7 +35,7 @@ describe "chapter 2 koans" do
         code: code,
         placement: "just below line 39 and then run 'bundle' from inside your web container shell",
         command: "bundle",
-        reflect: reflect)
+        reflect: @koans.group)
     end
   end
 end

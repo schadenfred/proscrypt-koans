@@ -6,16 +6,16 @@ module KoansHelper
 
   def koan_header
     koan_number = self.name.split("_")[1].to_i.to_s
-    "Koan #{@koan_chapter}.#{@koan_group}.#{koan_number}"
+    "Koan #{@koans.chapter}.#{@koans.group}.#{@koans.name}"
   end
 
   def reference_code(file)
     reference_file = file.split("/").last + ".example"
-    File.read("test/lib/koans/#{@koan_chapter}/reference_code/#{reference_file}")
+    File.read("test/lib/koans/#{@koans.chapter}/reference_code/#{reference_file}")
   end
 
   def koan_yaml(file)
-    refdir = "test/lib/koans/#{@koan_chapter}/reference_code/"
+    refdir = "test/lib/koans/#{@koans.chapter}/reference_code/"
 
     reference_file = refdir + file + '.yml'
     yaml = YAML.load_file(reference_file)

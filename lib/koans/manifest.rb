@@ -1,0 +1,6 @@
+require_relative '2/koans/1_bundle_gems.rb'
+# require_relative '2/koans/2_static_pages.rb'
+# require_relative 'koans/3_styles.rb'
+# require_relative 'koans/4_devise.rb'
+# require_relative 'koans/5_view_koans.rb'
+# require_relative 'koans/6_devise_bootstrap.rb'
