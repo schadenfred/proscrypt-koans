@@ -26,7 +26,7 @@ Not even your Mom.
 
 ### koans
 
-I'm going to give you a problem, or koan, to solve. Or reflect on. Whatever. You're going to figure out how to solve it, and once you've solved it, you're going to move onto the next koan, and then solve it, and move on to the next koan, until you're done. I'm not going to teach you anything. You're going to teach yourself.
+I'm going to give you a problem, or koan, to solve. Or reflect on. Whatever. You're going to figure out how to solve it, and once you've solved it, you're going to move onto the next koan, and then solve that one, and then move on to the next koan, and solve it, until you're done or have enough time invested to understand whether or not this stuff is for you. I'm not going to teach you anything. You're going to teach yourself.
 
 ### Your first koan
 
