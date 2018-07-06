@@ -1,10 +1,6 @@
 # Chapter 1
 
-Congratulations, you've solved your first koan.
-
-Which if you think about it, is kind of like solving a koan about solving koans.
-
-And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll see more examples of recursion later. For now you may choose to think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+Congratulations, you've solved your first koan. Which if you think about it, is kind of like solving a koan about solving koans. And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll see more examples of recursion later. For now you may choose to think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 I know I do.
 
@@ -12,7 +8,7 @@ And now I'm going to absolutely wreck a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ashtray arranged the way she likes them to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. A cook's mise en place will change depending on the menu she's responsible for reproducing, as will yours change depending on the things you're trying to build. The mise presented in this chapter is a plausible starting point, and will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ashtray arranged the way she likes them, to the right and the left of her stove, so too will you as a developer have your tools arranged on your machine. A cook's mise en place will change depending on the menu she's responsible for reproducing as will yours change depending on the things you're trying to build. The mise presented in this chapter is a plausible one, and will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -20,13 +16,13 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are. Just understand that setting up your mise is one of the most difficult things developers have to do. If I could have you do this chapter later, after first building your confidence first, I would. But I can't.
+Don't worry if you don't know what these things are. Just understand that setting up your mise is one of the most difficult things developers have to do. If I could have you do this chapter later, after first building your confidence first, I would. But I can't. But you've got this.
 
-But you've got this. You can do it.
+You can do it.
 
 ## koan 1.1: Terminal
 
-If you've never used your terminal before, it is to the developer what the light saber is to Darth Vader, what incognito mode is to the pornography addict, and what lecturing middle aged liberals about race is to Trevor Noah. Use one of these links to figure out how to open it, install it, or both.
+If you've never used your terminal before it is to the developer what the light saber is to Darth Vader, what incognito mode is to the pornography addict, and what lecturing middle aged liberals about race is to Trevor Noah. Use one of these links to figure out how to open it or install it or both.
 
 [Reflect for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
 
@@ -50,25 +46,29 @@ Now let's go to your home directory. To do so, go to your prompt and enter 'cd':
 
 `$ cd`
 
-This changes your directory into your home folder. Now let's make a new directory inside your home folder called 'work':
+This changes your directory into your home directory.
+
+Make a new directory inside your home directory called 'work':
 
 `$ mkdir work`
 
-To confirm the above command made a work directory in your home folder, request a list of directories:
+Request a list of directories inside your home folder:
 
 `$ ls`
 
-You should see output that lists your directories, one of which is the newly created work directory. To confirm that there is nothing inside this new directory, enter:
+You should see output that lists your directories, one of which is the newly created work directory. To see what's inside your work directory, enter:
 
 `$ ls work/`
 
-You should see nothing. Great. Change into the work directory we just made:
+You should see nothing. Great.
+
+Change into the work directory you just made:
 
 `$ cd work`
 
-Make a new directory called 'training,' and change into it.
+Make a new directory called 'training,' and change into it using some combination of the above commands.
 
-When you can do this command without the terminal barfing:
+When you can enter this without the terminal barfing:
 
 `$ cd ~/work/training`
 
@@ -82,11 +82,11 @@ You're reading these koans on Github, which uses a version control system called
 
 [Reflect](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-Once you've installed it, do:
+Once you can do:
 
 `$ git --version`
 
-...and if you see something like this:
+...and see something like:
 
 `git version 2.17.0`
 
@@ -100,11 +100,11 @@ When you can log in and navigate with your browser to:
 
 `https://github.com/YOUR-USERNAME`
 
-...where YOUR-USERNAME is the name you chose at GitHub, you're ready to move on.
+...where YOUR-USERNAME is your new GitHub username, you're ready to move on.
 
 ## koan 1.5: Fork these koans
 
-You may think of forking a repository as making a copy of it, and pretending it's your own. Once you can navigate to:
+You may think of forking a repository as making a copy of it and pretending it's your own. Once you can navigate to:
 
 `https://github.com/YOUR-USERNAME/proscrypt-koans`
 
@@ -114,11 +114,11 @@ You may think of forking a repository as making a copy of it, and pretending it'
 
 ## koan 1.6: Set up your keys
 
-GitHub needs you to make a set of keys on your machine. One is public, and one is private. Then GitHub needs you to make a copy of the public key and paste it inside the settings page of your GitHub account. Here are some instructions on how to do that:
+GitHub needs you to make a set of keys on your machine if want to pull or push code. One key is public, and one key is private. Then it needs you to make a copy of the public key you just made, and paste it inside the settings page of your GitHub account. Here are some instructions:
 
 [Setup Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
-When you can go to your [GitHub Settings](https://github.com/settings/keys) and see a key on the page, move on.
+When you can go to your [GitHub Settings](https://github.com/settings/keys) and see the public key you pasted in has been added, move on.
 
 ## koan 1.7: Clone your Fork
 
@@ -192,7 +192,7 @@ Once you can navigate inside Atom to Packages > Settings View > Manage Packages,
 
 ## koan 1.11: Checkout this branch
 
-Switch your cloned version of your fork of this code to the 'chapter-1' branch -- the same one you're reading right now -- by passing a 'checkout' command and several arguments to git. The first argument is '-b' for branch, the second is 'chapter-1' for the name of the branch you want to create, and the third is 'origin/chapter-1' for the branch in your fork you will be tracking.
+Switch your cloned version of your fork of this code to the 'chapter-1' branch -- the same one you're reading right now -- by passing a 'checkout' command and several arguments to Git. The first argument is '-b' for branch, the second is 'chapter-1' for the name of the branch you want to create, and the third is 'origin/chapter-1' for the branch in your fork you want to be tracking.
 
 `$ git checkout -b chapter-1 origin/chapter-1`
 
@@ -202,15 +202,15 @@ When you can open a copy of this README.md in your text editor, you're ready to 
 
 ## koan 1.12:
 
-Orchestrate the building of our starter ProScrypt app and database and the network connections between the two with Docker Compose:
+Orchestrate the building of our starter ProScrypt app and database -- and the network connections between the two -- with Docker Compose:
 
 `$ docker-compose build`
 
-Spool our web app and database up:
+Spool up your web app and database:
 
 `$ docker-compose up -d`
 
-Tell Rails to create our database in our database container:
+Tell Rails to create a database in our database container:
 
 `$ docker-compose exec web bin/rails db:create`
 
@@ -220,7 +220,7 @@ When you can click [this link](http://localhost:3000/), and it looks like: ![thi
 
 ## koan 1.13:
 
-If you try to shut down your real life machine while the Docker virtual machine is running containers, your machine may stop and get all hot and melty like a Snickers bar on a hot summer day in Los Angeles. Shut our containers down using Compose:
+If you try to shut down your real life machine while the Docker virtual machine is running containers, your real life machine may stop and get all hot and melty like a Snickers bar on a hot summer day in Los Angeles. Practice shutting down your containers using Docker Compose:
 
 `$ docker-compose stop`
 
@@ -236,11 +236,11 @@ When you can do:
 
 ## What you've learned
 
-The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Let's recapitulate:
+The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. To recapitulate:
 
-  1. You've figured out how to open and use your terminal and use it to make directories and change into them.
-  2. You've set up a professional text editor. There are other text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is like Meryl Streep, it an inhabit just about any role on any platform and make you forget you're looking at Meryl Streep.
-  3. You've created an account on GitHub, forked these koans into a repo at your username on GitHub, created keys on your machine, put the public key on GitHub, and cloned your fork of these koans onto your machine.
+  1. You've figured out how to use your terminal to make directories and change into them.
+  2. You've set up a professional text editor. There are other text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is like Meryl Streep, it an inhabit just about any role on any platform, and make you forget you're looking at Meryl Streep.
+  3. You've created an account on GitHub, forked these koans into a repo at your username on GitHub, created keys on your machine, put the public key on GitHub, and cloned your fork onto your machine.
   4. You've checked out and switched into the chapter-1 branch of the koans, which tracks the chapter-1 branch your fork.
   5. You've installed Docker and Docker Compose, and learned some commands that basically turn you into Steve McQueen.
 
