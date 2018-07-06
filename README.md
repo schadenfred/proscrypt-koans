@@ -129,30 +129,34 @@ From now on we will distinguish between terminals. If the command looks like thi
 
 `$ <command>`
 
-You should run it inside your machine. 
+You should run it inside your machine.
 
 If the command looks like this:
 
 `# <command>`
 
-You should run it in the web app container terminal. Let's tell our web app to create a new postgres database for us inside our database container:
+You should run it in your web app container terminal.
+
+Tell your web app to create a new postgres database inside our database container:
 
 `# bin/ docker-compose exec web bin/rails db:create`
 
-Recreate our test and development databases in our database container:
+Run our migrations to create a schema:
 
-`$ docker-compose exec web bin/rails db:migrate`
+`# bin/rails db:migrate`
 
-Let's leave this machine in a machine terminal shell open for running commands inside our web app container -- otherwise, we'd need to prepend each command with 'docker-compose exec web' -- and open a second terminal in our host OS using Ctrl+N.
+Verify that our web app created a db/schema.rb file for you:
 
-Run our koans in this new terminal:
+`$ git status`
+
+Run our koans:
 
 `$ docker-compose exec web bundle exec guard`
 
 Read the koan, reflect on it, and make it pass by doing one of these two things:
 
-1. Change code in an existing file in your editor.
+1. Use your editor to change code in an existing file.
 
 2. Run a command inside your web container's shell
 
-To find out if your code changes or the commands you've run have made the koan pass, go to your test terminal and hit the spacebar. If the koan passes, the terminal will move you to the next koan and so on, until you're finished with the chapter.
+Once you think you've correctly edited the code or run th ecommand, Go to your koans terminal and hit spacebar. If the koan passes, the terminal will move you to the next koan and so on.
