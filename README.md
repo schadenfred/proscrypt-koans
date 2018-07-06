@@ -32,7 +32,7 @@ Well it turns out that I'm wrong, and that I'm a total pathetic worthless loser,
 
 Humans have different mental models we use to make decisions. A fighter pilot in a dogfight has her pedals and her yoke and buttons and dials and her radio and gauges and instruments and also her training to put herself between the sun and any threat. A basketball player has her body, her knowledge of her teammates and her opponents, and her 3-point shooting skills. If you wear contacts, maybe you have a mental model that's different from mine, one that allowed you to think ahead and buy extra pairs of glasses and contacts, or to even to have told your optometrist to email you a copy of your prescription way back when, before you paid her, so that now you can find it by searching your email, and you can use it because you're a genius bitcoin investor with wads of delicious wealth and you can buy glasses made by twelve year olds in Phnom Penh and have them airmailed to you. But regular people don't always have tools or mental models to fight against crony capitalists in healthcare -- except maybe with their vote, or if they're wealthy enough, a well timed political donation.
 
-Lukcy for you, you aren't regular.
+Lucky for you, you aren't regular.
 
 You're elite.
 
@@ -48,17 +48,19 @@ I don't have it figured out, necessarily, at this stage. But most of the time wh
 
 ## Act
 
-Let's shut everything down that we started in the last chapter:
-
-`$ docker-compose down`
-
 Check out the chapter-2 branch on your machine. When you can do:
 
 `$ git branch`
 
-...and it shows 'chapter-2' with an asterisk, let's go ahead and build:
+...and it shows 'chapter-2' with an asterisk, you're good.
 
-`$ docker-compose build`
+Shut everything down from the previous branch.
+
+`$ docker-compose down`
+
+Remove all images, containers, and volumes.
+
+`$ docker system prune -a`
 
 ...and bring up our database container:
 
@@ -74,7 +76,7 @@ You'll see output from our database container like this:
 > database_1  | 2018-06-26 20:06:02.874 UTC [22] LOG:  database system was shut down at 2018-06-26 07:01:42 UTC
 > database_1  | 2018-06-26 20:06:02.900 UTC [1] LOG:  database system is ready to accept connections
 
-Stop your database container, using Ctrl-C.
+Hit Ctrl-C.
 
 When the terminal prompt reappears, bring up our web container:
 
@@ -94,15 +96,17 @@ You'll see output from our web container like this:
 > web_1       | * Listening on tcp://0.0.0.0:3000
 > web_1       | Use Ctrl-C to stop
 
-Now hit Ctrl-C.
+Hit Ctrl-C.
 
-When the terminal reappears, start both containers at the same time:
+When the terminal reappears, start both containers:
 
 `$ docker-compose up`
 
-...and you should see output from the web application container and the database container, concatenated.
+...and you will see output from the web application container concatenated with that from the database container.
 
-Shut both containers down before restarting them in a detached state:
+Hit Ctrl-C.
+
+Start both containers again, but this time in a -d detached state:
 
 `$ docker-compose up -d`
 
@@ -111,25 +115,33 @@ Shut both containers down before restarting them in a detached state:
 > Starting proscryptkoans_database_1 ... done
 > Starting proscryptkoans_web_1      ... done
 
-Sometimes I like to see the output, sometimes I don't. You'll figure out what works best for you.
+Sometimes I like to see the output, sometimes I don't. You'll figure out what works best for you. If you like seeing the output in this terminal, open a new one.
 
-Tell our web app to drop any current databases from the previous chapter:
+Remember that stuff earlier about dreams inside dreams and machines inside machines? Let's tunnel from a terminal in your machine into a terminal running inside a container inside Docker on your machine:
 
-`$ docker-compose exec web bin/rails db:drop`
+`$ docker-compose exec web sh`
+
+Your dream machine terminal prompt will look like this:
+
+`/usr/src/app #`
+
+From now on we will distinguish between terminals. If the command looks like this:
+
+`$ <command>`
+
+You should run it inside your machine. 
+
+If the command looks like this:
+
+`# <command>`
+
+You should run it in the web app container terminal. Let's tell our web app to create a new postgres database for us inside our database container:
+
+`# bin/ docker-compose exec web bin/rails db:create`
 
 Recreate our test and development databases in our database container:
 
 `$ docker-compose exec web bin/rails db:migrate`
-
-...and now do you remember that Leonardio DiCaprio-Inception stuff I was writing about earlier? With the dreams and the tunneling inside dreams? Let's tunnel from your machine into a shell running on a machine inside your machine:
-
- `$ docker-compose exec web sh`
-
-...and now your dream machine terminal prompt will look something like:
-
-`/usr/src/app #`
-
-Right on.
 
 Let's leave this machine in a machine terminal shell open for running commands inside our web app container -- otherwise, we'd need to prepend each command with 'docker-compose exec web' -- and open a second terminal in our host OS using Ctrl+N.
 
