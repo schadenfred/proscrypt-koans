@@ -8,7 +8,7 @@ And which if I think about it, is kind of like saying I've introduced you to the
 
 I know I do.
 
-And now I'm going to bastardize a French culinary phrase.
+And now I'm going to absolutely wreck a French culinary phrase.
 
 ## Mise en place
 
@@ -94,7 +94,9 @@ Once you've installed it, do:
 
 ## koan 1.4: Create a GitHub Account
 
-Create an account on [GiHub](https://github.com). When you can navigate with your browser to:
+Create an account on [GiHub](https://github.com).
+
+When you can log in and navigate with your browser to:
 
 `https://github.com/YOUR-USERNAME`
 
@@ -112,11 +114,11 @@ You may think of forking a repository as making a copy of it, and pretending it'
 
 ## koan 1.6: Set up your keys
 
-GitHub needs you to make a set of keys on your machine. One is public, and one is private. Then GitHub needs you to make a copy of the public key and paste it inside the setting page of your GitHub account. Here are some instructions on how to do that:
+GitHub needs you to make a set of keys on your machine. One is public, and one is private. Then GitHub needs you to make a copy of the public key and paste it inside the settings page of your GitHub account. Here are some instructions on how to do that:
 
 [Setup Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
-When you can see an SSH key in your [GitHub Settings](https://github.com/settings/keys) page, move on.
+When you can go to your [GitHub Settings](https://github.com/settings/keys) and see a key on the page, move on.
 
 ## koan 1.7: Clone your Fork
 
@@ -131,8 +133,6 @@ When you can do:
 ...you're ready move on.
 
 ## koan 1.8: Docker
-
-Since developers work with other people, their code must run on other people's machines. To make sure our code works on your machine -- which might be Windows, Mac, or one of the Linux flavors -- use Docker to set up a virtual machine inside your machine, download and install a custom 'image' into the Docker machine, and then spool up several linked 'containers' on that image which will compose our application. For now you may choose to think of Docker, images, and containers as like that movie 'Inception' with Leonardo DiCaprio, that except instead of navigating dreams inside of dreams, you'll be running machines inside of machines.
 
 Install Docker:
 
@@ -188,29 +188,29 @@ Install the 'haml' package:
 
 [reflect](https://flight-manual.atom.io/using-atom/sections/atom-packages/)
 
-Once you can navigate inside Atom to Packages > Settings View > Manage Packages and see that the haml package is installed, you're ready to move on.
+Once you can navigate inside Atom to Packages > Settings View > Manage Packages, and see that the haml package is installed, you're ready to move on.
 
 ## koan 1.11: Checkout this branch
 
-Switch your cloned version of your fork of this code to the 'chapter-1' branch -- the same one you're reading right now. To do so we'll pass a 'checkout' command and several arguments to git. The first argument is '-b' for branch, the second is 'chapter-1' for the name of the branch you want to create, and the third is 'origin/chapter-1' the branch in your forked repo you need to be tracking.
+Switch your cloned version of your fork of this code to the 'chapter-1' branch -- the same one you're reading right now -- by passing a 'checkout' command and several arguments to git. The first argument is '-b' for branch, the second is 'chapter-1' for the name of the branch you want to create, and the third is 'origin/chapter-1' for the branch in your fork you will be tracking.
 
 `$ git checkout -b chapter-1 origin/chapter-1`
 
-When you can open a copy of this README.md file in your text editor, you're ready to move on.
+When you can open a copy of this README.md in your text editor, you're ready to move on.
 
 [reflect](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
 
 ## koan 1.12:
 
-Orchestrate the building of our starter ProScrypt app and database and the network connections between the two using Docker Compose:
+Orchestrate the building of our starter ProScrypt app and database and the network connections between the two with Docker Compose:
 
 `$ docker-compose build`
 
-Spool it up:
+Spool our web app and database up:
 
 `$ docker-compose up -d`
 
-Create our database:
+Tell Rails to create our database in our database container:
 
 `$ docker-compose exec web bin/rails db:create`
 
@@ -218,14 +218,31 @@ When you can click [this link](http://localhost:3000/), and it looks like: ![thi
 
 ...you're ready to move on.
 
+## koan 1.13:
+
+If you try to shut down your real life machine while the Docker virtual machine is running containers, your machine may stop and get all hot and melty like a Snickers bar on a hot summer day in Los Angeles. Shut our containers down using Compose:
+
+`$ docker-compose stop`
+
+And let's remove our stopped containers:
+
+`$ docker-compose rm -f -v`
+
+When you can do:
+
+`$ docker ps`
+
+...and see there are no running containers, move on.
+
 ## What you've learned
 
 The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Let's recapitulate:
 
-  1. You've figured out how to open and use your terminal.
-  2. You've set up a professional text editor. There are plenty of good text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is good and free and should work fine on any OS.
-  3. You've created an account on GitHub, forked these koans into a repo at your username on GitHub, created keys on your machine and put the public key on GitHub, and cloned your fork of these koans onto your machine. Then you checked out and switched into the chapter-1 branch of the koans, which tracks the chapter-1 branch your fork.
-  4. You've installed Docker and Docker Compose, and learned some commands that basically turn you into Steve McQueen.
+  1. You've figured out how to open and use your terminal and use it to make directories and change into them.
+  2. You've set up a professional text editor. There are other text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is like Meryl Streep, it an inhabit just about any role on any platform and make you forget you're looking at Meryl Streep.
+  3. You've created an account on GitHub, forked these koans into a repo at your username on GitHub, created keys on your machine, put the public key on GitHub, and cloned your fork of these koans onto your machine.
+  4. You've checked out and switched into the chapter-1 branch of the koans, which tracks the chapter-1 branch your fork.
+  5. You've installed Docker and Docker Compose, and learned some commands that basically turn you into Steve McQueen.
 
 Now that you've finished the hardest chapter, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
 
