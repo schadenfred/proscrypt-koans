@@ -1,10 +1,10 @@
 # Chapter 1
 
-Congratulations, you've solved your first koan!
+Congratulations, you've solved your first koan.
 
 Which if you think about it, is kind of like solving a koan about solving koans.
 
-And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming, which we'll see concrete examples of later. For now you may choose to think of recursion as Russell Brand fixing his hair inside a house of mirrors.
+And which if I think about it, is kind of like saying I've introduced you to the concept of recursion in programming. We'll see more examples of recursion later. For now you may choose to think of recursion as Russell Brand fixing his hair inside a house of mirrors.
 
 I know I do.
 
@@ -12,7 +12,7 @@ And now I'm going to bastardize a French culinary phrase.
 
 ## Mise en place
 
-One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ash tray arranged the way she likes to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. A cook's mise en place will change depending on the menu she's responsible for reproducing, as will yours depending on the things you're trying to build. The mise presented in this chapter is a plausible starting point, and will include:
+One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "everything in its place." Just as a professional cook will have her salt and pepper, chopped vegetables, garnishes, unfiltered Gauloises and ashtray arranged the way she likes them to the right and the left of her stove, so too will you as a developer have your tools set up and arranged on your machine. A cook's mise en place will change depending on the menu she's responsible for reproducing, as will yours change depending on the things you're trying to build. The mise presented in this chapter is a plausible starting point, and will include:
 
 1. Terminal -- Bash.
 2. Text editor -- Atom.
@@ -20,13 +20,13 @@ One meaning of [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) is "
 4. Git host -- Github.
 5. Containerization -- Docker
 
-Don't worry if you don't know what these things are. For now just understand that setting up your environment is one of the most difficult things developers have to do. If I could have you do this chapter later after building your confidence first, I would, but I can't.
+Don't worry if you don't know what these things are. Just understand that setting up your mise is one of the most difficult things developers have to do. If I could have you do this chapter later, after first building your confidence first, I would. But I can't.
 
-## koan 1.1: Terminal or Console
+But you've got this. You can do it.
 
-If you've never used your terminal before, the terminal is to the developer what the light saber is to Darth Vader, what incognito mode is to the sex addict, and what jokes about how dumb, white, and racist all Trump voters are to Trevor Noah.
+## koan 1.1: Terminal
 
-When you've opened your terminal and see something like the [image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
+If you've never used your terminal before, it is to the developer what the light saber is to Darth Vader, what incognito mode is to the pornography addict, and what lecturing middle aged liberals about race is to Trevor Noah. Use one of these links to figure out how to open it, install it, or both.
 
 [Reflect for windows](https://duckduckgo.com/?q=how+do+open+terminal+on+windows&t=h_&ia=web)
 
@@ -34,6 +34,7 @@ When you've opened your terminal and see something like the [image](https://en.w
 
 [Reflect for linux](https://duckduckgo.com/?q=how+do+open+terminal+on+linux&t=h_&ia=web)
 
+When you've opened your terminal and see something like the [image](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) on the right side of this page, you're ready to move on.
 
 ## koan 1.2: Work Directories
 
@@ -41,30 +42,33 @@ Here's what my terminal prompt looks like:
 
 `schadenfred@summerseve:~$`
 
-It doesn't matter what your terminal prompt looks like, but it probably ends with a `#` or a `%` or a `$`. When I ask that you enter a command at the prompt, I'll abbreviate the above prompt to just the '$' character, followed by the command:
+It doesn't matter what your terminal prompt looks like. It might end with a `#` or a `%` or a `$`. When I ask that you enter a command, I'll abbreviate the full prompt to the '$' character, followed by the command:
 
 `$ <command>`
 
-Now let's go to your home directory. To do so, enter 'cd':
+Now let's go to your home directory. To do so, go to your prompt and enter 'cd':
 
 `$ cd`
 
-This puts you into your home folder. Now let's make a new directory called 'work':
+This changes your directory into your home folder. Now let's make a new directory inside your home folder called 'work':
 
 `$ mkdir work`
 
-To confirm the above command made a work directory in your home folder, we should request a list of directories:
+To confirm the above command made a work directory in your home folder, request a list of directories:
 
 `$ ls`
 
-Let's change into the work directory we just made:
+You should see output that lists your directories, one of which is the newly created work directory. To confirm that there is nothing inside this new directory, enter:
+
+`$ ls work/`
+
+You should see nothing. Great. Change into the work directory we just made:
 
 `$ cd work`
 
-Let's make a new directory called 'training,' and change into it.
+Make a new directory called 'training,' and change into it.
 
 When you can do this command without the terminal barfing:
-
 
 `$ cd ~/work/training`
 
@@ -74,7 +78,7 @@ When you can do this command without the terminal barfing:
 
 ## koan 1.3: Git
 
-You're reading these koans on Github, which uses a version control system called 'Git' under the hood. Since GitHub expects you to have Git installed, let's install it:
+You're reading these koans on Github, which uses a version control system called 'Git' under the hood. GitHub expects you to have Git installed:
 
 [Reflect](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -106,9 +110,17 @@ You may think of forking a repository as making a copy of it, and pretending it'
 
 [Reflect](https://help.github.com/articles/fork-a-repo/)
 
-## koan 1.6: Clone your Fork
+## koan 1.6: Set up your keys
 
-Let's get a copy of your fork of onto your machine using the 'clone' command.
+GitHub needs you to make a set of keys on your machine. One is public, and one is private. Then GitHub needs you to make a copy of the public key and paste it inside the setting page of your GitHub account. Here are some instructions on how to do that:
+
+[Setup Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+
+When you can see an SSH key in your [GitHub Settings](https://github.com/settings/keys) page, move on.
+
+## koan 1.7: Clone your Fork
+
+Copy your fresh new fork of these koans onto your machine, using the 'clone' command.
 
 [Reflect](https://help.github.com/articles/cloning-a-repository/)
 
@@ -118,11 +130,11 @@ When you can do:
 
 ...you're ready move on.
 
-## koan 1.7: Docker
+## koan 1.8: Docker
 
-Since developers work with other people, their code must run on other people's machines. To make sure our code works on your machine, which might be Windows, Mac, or one of the Linux flavors, we'll set up a virtual machine called 'Docker' inside whichever Operating System you're on, download and install a custom 'image' into Docker, and use several linked 'containers' on that image so you can work through our koans in a standardized way. Docker and virtual machines and images and containers are pretty neat things, and I encourage you to explore them later if you decide you like developing -- they're kinda awesome, and I really only just discovered them -- but for now you may choose to think of them as like that movie 'Inception' with Leonardo DiCaprio except instead of navigating dreams inside of dreams, you'll be running machines inside of machines.
+Since developers work with other people, their code must run on other people's machines. To make sure our code works on your machine -- which might be Windows, Mac, or one of the Linux flavors -- use Docker to set up a virtual machine inside your machine, download and install a custom 'image' into the Docker machine, and then spool up several linked 'containers' on that image which will compose our application. For now you may choose to think of Docker, images, and containers as like that movie 'Inception' with Leonardo DiCaprio, that except instead of navigating dreams inside of dreams, you'll be running machines inside of machines.
 
-Install it:
+Install Docker:
 
 [Reflect mac](https://docs.docker.com/docker-for-mac/install/)
 
@@ -140,9 +152,9 @@ When you can do:
 
 ...you're ready to move on.
 
-## koan 1.7: Docker Compose
+## koan 1.9: Docker Compose
 
-Let's also install Docker Compose:
+Install Docker Compose:
 
 [Mac](https://docs.docker.com/v17.09/compose/install/#mac)
 
@@ -160,7 +172,7 @@ When you can do:
 
 ...you're ready to move on.
 
-## koan 1.8: Text Editor
+## koan 1.10: Text Editor
 
 If you already have a text editor, namaste. Otherwise, install Atom:
 
@@ -170,15 +182,17 @@ When you can do something similar to:
 
 `$ atom . &`
 
-...and it opens up our project, you're almost there. Now you just need to install the 'haml' package:
+...and it opens up our project, you're almost there.
+
+Install the 'haml' package:
 
 [reflect](https://flight-manual.atom.io/using-atom/sections/atom-packages/)
 
-Once you've installed the haml package, you're ready to move on.
+Once you can navigate inside Atom to Packages > Settings View > Manage Packages and see that the haml package is installed, you're ready to move on.
 
-## koan 1.9: Checkout this branch
+## koan 1.11: Checkout this branch
 
-Let's get your cloned version of your fork of our code on this machine switched to the 'chapter-1' branch -- the same one you're reading right now. To do so we'll pass a 'checkout' command and several arguments to git. The first is '-b' for branch, the second is 'chapter-1' because that's the name of the branch you want to create, and the third is 'origin/chapter-1' because that's the branch in your forked repo you need to be tracking on.
+Switch your cloned version of your fork of this code to the 'chapter-1' branch -- the same one you're reading right now. To do so we'll pass a 'checkout' command and several arguments to git. The first argument is '-b' for branch, the second is 'chapter-1' for the name of the branch you want to create, and the third is 'origin/chapter-1' the branch in your forked repo you need to be tracking.
 
 `$ git checkout -b chapter-1 origin/chapter-1`
 
@@ -186,33 +200,33 @@ When you can open a copy of this README.md file in your text editor, you're read
 
 [reflect](https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch)
 
-## koan 1.10:
+## koan 1.12:
 
-Let's build our starter ProScrypt app using Docker Compose:
+Orchestrate the building of our starter ProScrypt app and database and the network connections between the two using Docker Compose:
 
 `$ docker-compose build`
 
-And spool it up:
+Spool it up:
 
 `$ docker-compose up -d`
 
-And create our database:
+Create our database:
 
-`$ docker-compose exec web rails db:create`
+`$ docker-compose exec web bin/rails db:create`
 
-When you can click [this link](http://localhost:3000/), and it looks something like: ![this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
+When you can click [this link](http://localhost:3000/), and it looks like: ![this picture](http://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
 
 ...you're ready to move on.
 
 ## What you've learned
 
-The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets before coming out to your family as a narcissist. Let's recapitulate:
+The hardest parts of being a novelist and heroin addict are getting over your fear of needles and tourniquets and coming out to your family as a narcissist. Let's recapitulate:
 
   1. You've figured out how to open and use your terminal.
-  2. You've set up a professional text editor. There are plenty of great text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is plenty good for now.
-  3. You've created an account on GitHub, forked these koans, cloned a copy of them onto your machine, and then checked out and switched into a new branch.
-  4. You've installed Docker and Docker Compose, and learned a few powerful commands that basically turn you into Leonardo DiCaprio in Inception if that move was about computers inside computers inside computers instead of dreams inside dreams inside dreams.
+  2. You've set up a professional text editor. There are plenty of good text editors out there including Vim, Emacs, and SublimeText, as well as more powerful IDE's like RubyMine, but Atom is good and free and should work fine on any OS.
+  3. You've created an account on GitHub, forked these koans into a repo at your username on GitHub, created keys on your machine and put the public key on GitHub, and cloned your fork of these koans onto your machine. Then you checked out and switched into the chapter-1 branch of the koans, which tracks the chapter-1 branch your fork.
+  4. You've installed Docker and Docker Compose, and learned some commands that basically turn you into Steve McQueen.
 
-Now that you've finished the hard part, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
+Now that you've finished the hardest chapter, the rest of these koans will feel pretty much exactly like a series of gauzy, kale-fueled conversations with Judy Blume.
 
 Switch to the "chapter-2 branch."
