@@ -1,6 +1,7 @@
 describe "Koan" do
 
-  @proscrypt_gems = [
+  proscrypt_gems = [
+
     [
       "'haml-rails'",
       "HTML is ugly, especially with ruby embedded inside.",
@@ -24,7 +25,7 @@ describe "Koan" do
     ]
   ]
 
-  @proscrypt_gems.each do |gem, msg, reflect, version|
+  proscrypt_gems.each do |gem, msg, reflect, version|
 
     it "must have installed #{gem}" do
       msg << " Install it."

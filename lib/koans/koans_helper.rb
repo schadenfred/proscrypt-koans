@@ -1,6 +1,3 @@
-require 'test_helper'
-include ANSI::Code
-
 module Koans
 
   module Helper
