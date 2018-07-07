@@ -1,5 +1,5 @@
-require 'minitest/fail_fast'
 require 'test_helper'
+require 'minitest/fail_fast'
 require './lib/koans/koans_helper'
 require './lib/koans/koans_minitest'
 require './lib/koans/koans_reporter'
