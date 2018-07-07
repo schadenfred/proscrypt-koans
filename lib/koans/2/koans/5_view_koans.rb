@@ -1,15 +1,4 @@
-require 'test_helper'
-require 'lib/koans/koans_helper'
-include KoansHelper
-
 describe "chapter 2 koans" do
-
-  i_suck_and_my_tests_are_order_dependent!
-
-  before do
-    @koan_chapter = __dir__.split("/").last
-    @koan_group = __FILE__.split("/").last.split("_").first
-  end
 
   it "must have converted views from .erb to .haml" do
     file = "app/views/layouts/application.html.haml"

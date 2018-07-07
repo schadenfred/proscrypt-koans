@@ -54,7 +54,11 @@ guard 'livereload' do
   watch(%r{config/locales/.+\.yml})
 end
 
-guard :minitest, test_folders: ['lib', 'test'], cli: '-f'    do
+guard :minitest,
+  test_folders: ['lib', 'test'],
+  test_file_patterns: %w[*_test.rb *_runner.rb],
+  cli: '-f'    do
+
   # with Minitest::Unit
 
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
@@ -63,11 +67,8 @@ guard :minitest, test_folders: ['lib', 'test'], cli: '-f'    do
 
   # custom watchers
 
-  # watch(%r{^lib/koans/koans_test\.rb$}) { 'lib/koans/koans_test.rb' }
   watch(%r{^lib/(.*/)?([^/]+)\.rb$})     { |m| "test/#{m[1]}test_#{m[2]}.rb" }
-  # watch(%r{^lib/koans/(.+)\.rb$}) { 'lib/koans/koan_test.rb' }
-  watch(%r{^lib/(.+)\.rb$}) { 'lib/koans/koans_test.rb' }
-  # watch(%r{^lib/koans/.+_test\.rb$}) { 'test' }
+  watch(%r{^lib/(.+)\.rb$}) { 'lib/koans/koans_runner.rb' }
 
   # with Minitest::Spec
   # watch(%r{^spec/(.*)_spec\.rb$})

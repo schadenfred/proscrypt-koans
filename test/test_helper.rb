@@ -14,6 +14,8 @@ Minitest::Reporters.use! Minitest::Reporters::KoansReporter.new
 include Minitest::HandsomeMatchers
 include FileManipulationTestHelper
 
+Minitest::Test.i_suck_and_my_tests_are_order_dependent!
+
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
 

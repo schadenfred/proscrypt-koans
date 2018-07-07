@@ -159,4 +159,4 @@ Read the koan, reflect on it, and make it pass by doing one of these two things:
 
 2. Run a command inside your web container's shell
 
-Once you think you've correctly edited the code or run th ecommand, Go to your koans terminal and hit spacebar. If the koan passes, the terminal will move you to the next koan and so on.
+Once you've changed the code or run the command, go to your koans terminal and hit spacebar. If the koan passes, the terminal will move you to the next one.

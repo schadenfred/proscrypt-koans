@@ -1,40 +1,41 @@
-require_relative '../../koans_runner'
-
 describe "Koan" do
-
-  i_suck_and_my_tests_are_order_dependent!
-
-  before do
-    @koans = Koans::Runner.new(self, __FILE__)
-  end
 
   @proscrypt_gems = [
     [
       "'haml-rails'",
-      "HTML is ugly with all those gross tags, and even uglier when we have to embed ruby inside it, which we're going to have to do a heck of a lot of. We should switch our view templating language to haml.",
-      "https://github.com/indirect/haml-rails"
+      "HTML is ugly, especially with ruby embedded inside.",
+      "http://haml.info/",
+      "'~> 1.0'"
     ],
     [
-      "'bootstrap', '~> 4.1.1'", "Nobody writes .css without a framework these days. We should use Bootstrap."
+      "'bootstrap'", "There are lots of good .css and .js frameworks to choose from in building web apps. Bootstrap is a good one.",
+      "https://getbootstrap.com/",
+      "'~> 4.1.1'"
     ],
     [
-      "'jquery-rails'", "We need jquery for Bootstrap"
+      "'jquery-rails'",
+      "We need jquery for bootstrap.",
+      "https://jquery.com/"
     ],
-    ["'devise'", "User authentication is a fascinating subject and you should learn as much about it as you can, and learn how to handle it on your own, if you decide you like developing. However Devise, maintained by Plataformatec, is a terrific gem that lets us move fast and will keep us from making too many bad decisions."
+    [
+      "'devise'",
+      "Devise will handle user authentication for us.",
+      "https://github.com/plataformatec/devise"
     ]
   ]
 
-  @proscrypt_gems.each do |gem, suggestion, reflect, version|
+  @proscrypt_gems.each do |gem, msg, reflect, version|
 
-    it "must have added #{gem} to Gemfile" do
+    it "must have installed #{gem}" do
+      msg << " Install it."
       file = "Gemfile"
       code = version.present? ? "gem #{gem + ", " + version}" : "gem #{gem}"
       assert File.read(file).match(code), koan(
-        suggestion,
+        msg,
         file: file,
         code: code,
-        placement: "just below line 39 and then run 'bundle' from inside your web container shell",
-        command: "bundle",
+        placement: "just below line 39",
+        command: "bundle install",
         reflect: reflect)
     end
   end
