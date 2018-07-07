@@ -1,9 +1,12 @@
 require 'test_helper'
 require 'minitest/fail_fast'
-
+require 'ansi/code'
+require 'minitest/reporters/ansi'
 module Koans
 
   module Helper
+
+    def
 
     def default_koan_message
       "Find the line in the test file listed below and fix it, so that it matches our actual code."
@@ -37,16 +40,16 @@ module Koans
           koan_command(comm, suggested_commands)
         end
       else
-        suggested_commands << "\n\n  # #{command}"
+        suggested_commands << (ANSI.white "\n\n# #{command}")
       end
       "Command:" + suggested_commands.join("\n\nFollowed by:")
     end
 
     def koan_code(options)
-      instruction = "Open this file: \n\n  #{options[:file]}"
+      instruction = "Open this file: \n\n#{ANSI.white options[:file]}"
       instruction << "\n\nAdd this code"
       instruction << " " + options[:placement] if options[:placement]
-      instruction + ":\n\n" + options[:code]
+      instruction + ":\n\n" + (ANSI.white options[:code])
     end
 
     def koan_replace(options)
@@ -56,9 +59,9 @@ module Koans
       instructions << "#{options[:file]}"
       yaml.each do |line, code|
         instructions << "Replace this code on line #{line}:"
-        instructions << code.first
+        instructions << (ANSI.white code.first)
         instructions << "...with this code:"
-        instructions << code.second
+        instructions << (ANSI.white code.second)
       end
 
       instructions.join(newline)
@@ -69,7 +72,7 @@ module Koans
       body << koan_code(options) if options[:code]
       body << koan_replace(options) if options[:yaml]
       body << koan_command(options[:command]) if options[:command]
-      body << "Reflect:\n\n  #{options[:reflect]}" if options[:reflect]
+      body << "Reflect:\n\n#{options[:reflect]}" if options[:reflect]
       message { ["", body, "...."].join("\n\n") }
     end
   end

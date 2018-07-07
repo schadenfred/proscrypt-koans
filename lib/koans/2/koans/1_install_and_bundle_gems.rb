@@ -4,7 +4,7 @@ describe "Koan" do
 
     [
       "'haml-rails'",
-      "HTML is ugly, especially with ruby embedded inside.",
+      "HTML is ugly, especially with ruby embedded inside. One way to make it prettier is to use .haml.",
       "http://haml.info/",
       "'~> 1.0'"
     ],

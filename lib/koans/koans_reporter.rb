@@ -36,8 +36,8 @@ module Minitest
        return if test.skipped? && !@detailed_skip
        if test.failure
          print "\e[0m\e[1000D\e[K"
-         print_koan_with_time(test)
-         puts white test.failure
+         print_koan(test)
+         puts test.failure
          puts
        end
 
@@ -72,7 +72,7 @@ module Minitest
        end
      end
 
-     def print_koan_with_time(test)
+     def print_koan(test)
        koan_file = test.source_location.to_s.split("/")
        chapter = "Chapter #{koan_file[-3]}"
        group = koan_file.last.split(".rb").first.split("_")
@@ -83,7 +83,7 @@ module Minitest
        puts
        puts "#{[chapter, group_number, group_name].join(" / ")}"
        puts "\n\n"
-       puts cyan "Koan #{number} of #{total_count}: #{koan_name}"
+       puts "Koan #{number} of #{total_count}: #{koan_name}"
      end
 
      def color
