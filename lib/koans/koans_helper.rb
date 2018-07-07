@@ -1,3 +1,6 @@
+require 'test_helper'
+require 'minitest/fail_fast'
+
 module Koans
 
   module Helper
