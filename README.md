@@ -4,13 +4,11 @@
 
 ### What is this?
 
-This is Proscrypt Koans, a web development tutorial, intended for an audience new to developing. The author has always been better at teaching than doing, nevertheless his vanity induces him to suggest it may also demonstrate techniques, tools, and workflows of interest to salty coding veterans.
+This is Proscrypt Koans, a web development tutorial intended for an audience new to developing. The author has always been better at teaching than doing, nevertheless his vanity induces him to suggest it may also demonstrate techniques, tools, and workflows of interest to salty coding veterans.
 
 ### Who is this for?
 
-Perhaps you're a project manager who wants to understand when the linux neck-beards she works with are shining her on with gobbledy-gook or made up jargon. Maybe you're a Marine standing watch at an embassy or a sailor on a nuclear submarine, looking to idle away some time. A bartender with too much college debt. One of those emo kids who hates football and wears axe body spray and vapes and fantasizes about the cheerleaders who get all excited when the cheerleaders look at them, if only momentarily, until they realize she's impressed at the size and color of the pimple on your nose. A beauty-queen trophy-wife who has always been quiet and perfect, and who nobody thought was smart, but who just yesterday overheard some fat ugly slut thowing shade on her Masters degree in Art History, and now she's going to show everyone what is the mothafucking what. Your motivation doesn't matter to me because it won't matter to your code. Your code either a) will work or b) won't. Your code doesn't care how old you are, where you live, what car you drive, or what your SAT score was. Your code doesn't even care if you're smart.
-
-Let me write that a different way: Your code doesn't care how smart you are and neither do I.
+Perhaps you're a project manager who wants to understand when the linux neck-beards she works with are shining her on with gobbledy-gook or made up jargon. Maybe you're a Marine standing watch at an embassy or a sailor on a nuclear submarine, looking to idle away some time. A bartender with too much college debt. One of those emo kids who hates football and wears axe body spray and vapes and fantasizes about the cheerleaders who get all excited when the cheerleaders look at them, if only momentarily, until he realizes she's merely impressed at the size and color of the inflamed pimple on his nose. A beauty-queen trophy-wife who has always been quiet and perfect, and who nobody thought was smart, but who just yesterday overheard some fat ugly slut throwing shade on her Masters in Art History, and now she's going to show everyone what is the mothafucking what. Your motivation doesn't matter to me because it won't matter to your code. Your code either a) will work or b) won't. Your code doesn't care how old you are, where you live, what car you drive, how smart you are or what your SAT score was.
 
 ### What do you need?
 
