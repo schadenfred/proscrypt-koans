@@ -1,4 +1,5 @@
-FROM ruby:2.5-alpine
+FROM ruby:2.5.3-alpine
+
 
 LABEL maintainer="fred.schoeneman@gmail.com"
 
